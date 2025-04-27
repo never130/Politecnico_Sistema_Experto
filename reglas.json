@@ -1,0 +1,223 @@
+{
+    "sistema_experto": "Evaluador de Créditos Personales",
+    "version": "0.1",
+    "dominio": "Finanzas",
+    "subdominio": "Evaluación de riesgo crediticio",
+    "fecha_actualizacion": "2025-04-27",
+    "descripcion_general": "Representación estructurada del conocimiento para la evaluación automatizada de solicitudes de crédito personal. Esta estructura facilita la integración con sistemas de software para la toma de decisiones y la explicación de los resultados.",
+    "metadatos": {
+      "autor": "Ever Loza",
+      "institucion": "Centro Politecnico Superior Malvinas Argentinas"
+    },
+    "variables": [
+      {
+        "nombre": "historial_crediticio",
+        "tipo": "integer",
+        "rango": "1-5",
+        "descripcion": "Puntuación del buró de crédito, donde 1 indica un historial excelente y 5 un historial muy pobre. Este es un factor primario en la evaluación del riesgo."
+      },
+      {
+        "nombre": "ratio_deuda_ingresos",
+        "tipo": "float",
+        "rango": "0-1",
+        "descripcion": "Relación entre las deudas totales del solicitante y sus ingresos anuales. Un ratio menor indica una mayor capacidad de pago."
+      },
+      {
+        "nombre": "antiguedad_laboral",
+        "tipo": "integer",
+        "unidad": "años",
+        "descripcion": "Número de años que el solicitante ha estado empleado en su trabajo actual. Se considera un indicador de estabilidad financiera."
+      },
+      {
+        "nombre": "garantias",
+        "tipo": "boolean",
+        "descripcion": "Indica si el solicitante dispone de garantías colaterales para el préstamo."
+      },
+      {
+        "nombre": "valor_garantias",
+        "tipo": "float",
+        "unidad": "USD",
+        "descripcion": "Valor monetario total de las garantías ofrecidas en dólares estadounidenses. Relevante cuando se evalúan solicitudes con historial crediticio deficiente."
+      },
+      {
+        "nombre": "monto_solicitado",
+        "tipo": "float",
+        "unidad": "USD",
+        "descripcion": "Cantidad de dinero que el solicitante desea obtener en préstamo."
+      },
+      {
+        "nombre": "plazo",
+        "tipo": "integer",
+        "unidad": "meses",
+        "descripcion": "Duración del préstamo solicitada en meses. Influye en la cuota mensual y, por lo tanto, en la capacidad de pago."
+      },
+      {
+        "nombre": "ahorros",
+        "tipo": "float",
+        "unidad": "USD",
+        "descripcion": "Cantidad total de ahorros líquidos disponibles del solicitante. Puede mitigar el riesgo en ciertos escenarios."
+      },
+      {
+        "nombre": "ingresos",
+        "tipo": "float",
+        "unidad": "USD",
+        "descripcion": "Ingresos mensuales totales del solicitante. Crucial para evaluar la capacidad de pago, especialmente en casos sin garantías sólidas."
+      },
+      {
+        "nombre": "cuota_mensual",
+        "tipo": "float",
+        "unidad": "USD",
+        "descripcion": "Estimación de la cuota mensual del préstamo. Se calcula a partir del monto solicitado y el plazo."
+      }
+    ],
+    "reglas": [
+      {
+        "id": "R1",
+        "nombre": "Evaluación Inicial por Historial Crediticio",
+        "descripcion": "Primera etapa de evaluación, basada en la calidad del historial crediticio del solicitante.",
+        "condicion": "historial_crediticio >= 3",
+        "resultado_verdadero": "Evaluar Capacidad de Pago (R2)",
+        "resultado_falso": "Evaluar Garantías (R5)",
+        "explicacion": "Clientes con un historial crediticio igual o superior a 3 (bueno o excelente) pasan a la evaluación de su capacidad de pago. Aquellos con historial deficiente se evalúan en función de las garantías ofrecidas."
+      },
+      {
+        "id": "R2",
+        "nombre": "Evaluación de la Capacidad de Pago por Ratio Deuda/Ingresos",
+        "descripcion": "Evalúa si el nivel de endeudamiento del solicitante es manejable en relación con sus ingresos.",
+        "condicion": "ratio_deuda_ingresos < 0.35",
+        "resultado_verdadero": "Evaluar Estabilidad Laboral (R3)",
+        "resultado_falso": "Evaluar Ahorros (R4)",
+        "explicacion": "Un ratio de deuda/ingresos inferior a 0.35 sugiere una buena capacidad para asumir nuevas deudas. Si el ratio es mayor, se consideran los ahorros como un factor mitigante."
+      },
+      {
+        "id": "R3",
+        "nombre": "Evaluación de la Estabilidad Laboral",
+        "descripcion": "Considera la antigüedad del solicitante en su empleo actual como un indicador de estabilidad financiera.",
+        "condicion": "antiguedad_laboral > 2",
+        "resultado_verdadero": {
+          "decision": "Aprobar",
+          "tasa": 8.5,
+          "tipo_tasa": "preferencial",
+          "nota": "Aprobación con tasa preferencial debido a buen historial, baja deuda y estabilidad laboral."
+        },
+        "resultado_falso": "Revisión Manual (RM1)",
+        "explicacion": "Una antigüedad laboral superior a 2 años, combinada con un buen historial y baja deuda, generalmente conduce a la aprobación con una tasa preferencial. Otros casos requieren revisión manual."
+      },
+      {
+        "id": "R4",
+        "nombre": "Evaluación de Ahorros como Mitigante",
+        "descripcion": "Evalúa si un nivel significativo de ahorros puede compensar un ratio de deuda/ingresos ligeramente elevado.",
+        "condicion": "ahorros > cuota_mensual * 3",
+        "resultado_verdadero": {
+          "decision": "Aprobar",
+          "tasa": 12.0,
+          "tipo_tasa": "estándar",
+          "nota": "Aprobación con tasa estándar debido a buen historial, ahorros significativos a pesar de un ratio de deuda/ingresos moderado."
+        },
+        "resultado_falso": "Revisión Manual (RM2)",
+        "explicacion": "Si los ahorros líquidos son superiores a tres veces la cuota mensual estimada, se puede aprobar el crédito con una tasa estándar. De lo contrario, se requiere una revisión manual."
+      },
+      {
+        "id": "R5",
+        "nombre": "Evaluación de Garantías Colaterales",
+        "descripcion": "Evalúa si el valor de las garantías ofrecidas es suficiente para cubrir el riesgo en casos de historial crediticio deficiente.",
+        "condicion": "garantias == true AND valor_garantias >= monto_solicitado * 1.5",
+        "resultado_verdadero": "Evaluar Tipo de Garantía (R6)",
+        "resultado_falso": "Evaluar Ingresos Excepcionales (R7)",
+        "explicacion": "Si se ofrecen garantías y su valor es al menos 1.5 veces el monto solicitado, se procede a evaluar el tipo de garantía. Si no hay garantías suficientes, se consideran los ingresos excepcionales."
+      },
+      {
+        "id": "R6",
+        "nombre": "Evaluación del Tipo de Garantía",
+        "descripcion": "Determina el tipo de garantía ofrecida y aplica condiciones específicas.",
+        "condicion": "tipo_garantia == 'liquidas'",
+        "resultado_verdadero": {
+          "decision": "Aprobar",
+          "tasa": 18.0,
+          "tipo_tasa": "alta_con_garantia",
+          "nota": "Aprobación con tasa alta debido a historial deficiente pero con garantías líquidas significativas."
+        },
+        "resultado_falso": {
+          "condicion": "tipo_garantia == 'inmuebles'",
+          "resultado_verdadero": {
+            "decision": "Aprobar",
+            "tasa": 18.0,
+            "tipo_tasa": "alta_con_garantia_con_avaluo",
+            "requisitos": ["avaluo_garantia"],
+            "nota": "Aprobación con tasa alta y requerimiento de avalúo debido a historial deficiente pero con garantía inmobiliaria."
+          },
+          "resultado_falso": "Revisión Manual (RM3)",
+          "explicacion_falso": "Otros tipos de garantías requieren una revisión manual para determinar su aceptabilidad y condiciones."
+        },
+        "explicacion": "Las garantías líquidas permiten una aprobación directa con una tasa alta. Las garantías inmobiliarias también se aprueban con una tasa alta, pero requieren un avalúo. Otros tipos de garantías necesitan revisión manual."
+      },
+      {
+        "id": "R7",
+        "nombre": "Evaluación por Ingresos Excepcionales sin Garantías",
+        "descripcion": "Considera si ingresos significativamente altos pueden compensar la falta de garantías y un historial crediticio deficiente.",
+        "condicion": "ingresos > cuota_mensual * 8",
+        "resultado_verdadero": {
+          "decision": "Aprobar",
+          "tasa": 22.0,
+          "tipo_tasa": "especial_alto_riesgo",
+          "nota": "Aprobación con tasa especial de alto riesgo debido a ingresos excepcionalmente altos a pesar de historial deficiente y sin garantías."
+        },
+        "resultado_falso": {
+          "decision": "Rechazar",
+          "razon": "Ingresos insuficientes para compensar historial crediticio deficiente y falta de garantías."
+        },
+        "explicacion": "Si los ingresos mensuales son superiores a ocho veces la cuota mensual estimada, se puede aprobar el crédito con una tasa especial de alto riesgo. De lo contrario, la solicitud se rechaza."
+      }
+    ],
+    "clasificaciones_riesgo": [
+      {
+        "tipo": "Premium",
+        "descripcion": "Clientes con excelente historial crediticio y baja relación deuda/ingresos.",
+        "condiciones": [
+          "historial_crediticio <= 2",
+          "ratio_deuda_ingresos < 0.3"
+        ],
+        "tasa_base": 7.5,
+        "beneficios": ["tasas preferenciales", "límites de crédito más altos"]
+      },
+      {
+        "tipo": "Estándar",
+        "descripcion": "Clientes con buen historial crediticio y una relación deuda/ingresos moderada.",
+        "condiciones": [
+          "historial_crediticio <= 3",
+          "ratio_deuda_ingresos < 0.45"
+        ],
+        "tasa_base": 12.0
+      },
+      {
+        "tipo": "Alto Riesgo con Garantía",
+        "descripcion": "Clientes con historial crediticio deficiente pero con garantías sólidas.",
+        "condiciones": [
+          "historial_crediticio > 3",
+          "garantias == true",
+          "valor_garantias >= monto_solicitado * 1.5"
+        ],
+        "tasa_base": 18.0
+      },
+      {
+        "tipo": "Alto Riesgo por Ingresos",
+        "descripcion": "Clientes con historial crediticio deficiente pero con ingresos excepcionalmente altos.",
+        "condiciones": [
+          "historial_crediticio > 3",
+          "garantias == false",
+          "ingresos > cuota_mensual * 8"
+        ],
+        "tasa_base": 22.0
+      }
+    ],
+    "revision_manual": {
+      "RM1": "Antigüedad laboral menor a 2 años con buen historial y ratio de deuda moderado.",
+      "RM2": "Ratio de deuda/ingresos moderado sin ahorros suficientes.",
+      "RM3": "Otros tipos de garantías ofrecidas que requieren evaluación especializada."
+    },
+    "mensajes": {
+      "aprobado": "La solicitud de crédito ha sido aprobada según las políticas internas.",
+      "rechazado": "La solicitud de crédito no cumple con los criterios mínimos establecidos.",
+      "revision_requerida": "La solicitud requiere un análisis adicional por parte de un oficial de crédito."
+    }
+  }

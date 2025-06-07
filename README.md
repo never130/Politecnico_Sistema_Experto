@@ -1,11 +1,29 @@
-# Sistema Experto de Evaluación de Créditos Personales
+# Sistema Experto para el Diagnóstico de Enfermedades Respiratorias
+Autor: Ever Loza – Centro Politécnico Superior Malvinas Argentinas
 
-[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-## Descripción del Proyecto
+## 🎯 Objetivo
+Este proyecto implementa un sistema experto basado en reglas que asiste al personal de salud en el diagnóstico de enfermedades respiratorias comunes (asma, bronquitis, neumonía y EPOC) en Tierra del Fuego. Está orientado a apoyar la toma de decisiones clínicas en atención primaria, especialmente en zonas con acceso limitado a especialistas.
 
-Este proyecto implementa un sistema experto para la evaluación automatizada del riesgo crediticio en solicitudes de préstamos personales de consumo. Utiliza una base de conocimiento estructurada en formato JSON y un motor de decisiones en Python para analizar diversos atributos del solicitante y determinar la aprobación o rechazo del crédito, así como la tasa de interés aplicable.
+## 🧠 Representación del Conocimiento
+El conocimiento se extrajo a partir de una entrevista simulada con un agente sanitario local y se representa mediante reglas `SI–ENTONCES`, organizadas por módulos clínicos:
+- Evaluación clínica
+- Factores de riesgo
+- Diagnóstico
+- Derivación
+- Seguimiento
 
-El sistema se enfoca en préstamos personales con montos entre \$5,000 y \$50,000 y considera factores como el historial crediticio, la capacidad de pago, la estabilidad laboral, las garantías ofrecidas y los ingresos del solicitante.
+## 🛠️ Implementación
+El sistema fue desarrollado en Python. Utiliza:
+- Motor de inferencia por encadenamiento hacia adelante
+- Reglas almacenadas en JSON
+- Interfaz (por desarrollar) basada en Flask o consola
+- Persistencia opcional con CSV o SQLite
 
-## Estructura del Proyecto
+## 📁 Estructura del Proyecto
+- `entrevista/`: archivo de entrevista al experto
+- `conocimiento/`: reglas y arquitectura del conocimiento
+- `implementacion/`: código del sistema experto
+- `documentacion/`: entregas académicas
+- `reglas.json`: base de reglas en formato estructurado
+
+## 📦 Requisitos

@@ -1,0 +1,24 @@
+
+# Entorno Virtual
+.venv/
+venv/
+ENV/
+
+# Archivos de caché de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos de Jupyter Notebook
+.ipynb_checkpoints
+
+# Archivos generados por el proyecto
+data/processed/
+models/
+
+# Archivos de configuración del editor
+.vscode/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db

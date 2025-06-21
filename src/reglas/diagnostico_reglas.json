@@ -1,0 +1,70 @@
+
+{
+  "metadata": {
+    "version": "1.0",
+    "autor": "Daniel Pressacco (CAPS 2, Tierra del Fuego)",
+    "descripcion": "Reglas para el diagnóstico de enfermedades respiratorias en Tierra del Fuego."
+  },
+  "reglas": [
+    {
+      "id": "neumonia_grave",
+      "descripcion": "Tríada clásica de neumonía con factores de riesgo.",
+      "condiciones": {
+        "todos": [
+          {"hecho": "tos", "operador": "igual", "valor": "con_flema_purulenta_sangre"},
+          {"hecho": "fiebre", "operador": "mayor_que", "valor": 38},
+          {"hecho": "dolor_toracico", "operador": "igual", "valor": "puntada_al_respirar"}
+        ],
+        "alguno_de": [
+           {"hecho": "falta_de_aire", "operador": "igual", "valor": "agotado"},
+           {"hecho": "confusion", "operador": "igual", "valor": true}
+        ]
+      },
+      "diagnostico": "Neumonía",
+      "gravedad": "Grave"
+    },
+    {
+      "id": "bronquitis_aguda",
+      "descripcion": "Tos persistente post-resfrío con malestar general.",
+      "condiciones": {
+        "todos": [
+          {"hecho": "tos", "operador": "igual", "valor": "con_flema_transparente_verdosa"},
+          {"hecho": "malestar_general", "operador": "igual", "valor": true},
+          {"hecho": "fiebre", "operador": "menor_que", "valor": 38}
+        ]
+      },
+      "diagnostico": "Bronquitis Aguda",
+      "gravedad": "Leve"
+    },
+    {
+      "id": "crisis_asma",
+      "descripcion": "Episodio agudo de asma, a menudo en jóvenes o con antecedentes.",
+      "condiciones": {
+        "todos": [
+          {"hecho": "falta_de_aire", "operador": "igual", "valor": "repentina"},
+          {"hecho": "sibilancias", "operador": "igual", "valor": true},
+          {"hecho": "pecho_apretado", "operador": "igual", "valor": true}
+        ],
+        "alguno_de": [
+          {"hecho": "antecedentes_asma", "operador": "igual", "valor": true},
+          {"hecho": "antecedentes_alergias", "operador": "igual", "valor": true}
+        ]
+      },
+      "diagnostico": "Crisis Asmática",
+      "gravedad": "Moderado"
+    },
+    {
+      "id": "epoc_cronico",
+      "descripcion": "Paciente mayor, fumador, con disnea progresiva.",
+      "condiciones": {
+        "todos": [
+          {"hecho": "edad", "operador": "mayor_que", "valor": 60},
+          {"hecho": "fumador", "operador": "igual", "valor": "de_toda_la_vida"},
+          {"hecho": "falta_de_aire", "operador": "igual", "valor": "empeora_con_anios"}
+        ]
+      },
+      "diagnostico": "EPOC",
+      "gravedad": "Moderado"
+    }
+  ]
+}

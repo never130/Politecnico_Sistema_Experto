@@ -1,4 +1,3 @@
-
 import pandas as pd
 import numpy as np
 import json
@@ -40,9 +39,19 @@ def aplicar_regla(regla):
         if ATRIBUTOS.get(hecho) == 'bool':
             paciente[hecho] = valor
         elif ATRIBUTOS.get(hecho) == 'float':
-            paciente[hecho] = valor + np.random.uniform(0.5, 2) if op == 'mayor_que' else valor - np.random.uniform(0.5, 2)
+            if op == 'mayor_que':
+                paciente[hecho] = valor + np.random.uniform(0.5, 2)
+            elif op == 'menor_que':
+                paciente[hecho] = valor - np.random.uniform(0.5, 2)
+            else:
+                paciente[hecho] = valor
         elif ATRIBUTOS.get(hecho) == 'int':
-             paciente[hecho] = valor + np.random.randint(1, 10) if op == 'mayor_que' else valor - np.random.randint(1, 10)
+            if op == 'mayor_que':
+                paciente[hecho] = valor + np.random.randint(1, 10)
+            elif op == 'menor_que':
+                paciente[hecho] = max(1, valor - np.random.randint(1, 10))
+            else:
+                paciente[hecho] = valor
         else: # Categórico
             paciente[hecho] = valor
 
@@ -55,27 +64,27 @@ def aplicar_regla(regla):
         else:
             paciente[hecho] = valor
 
+    # Condiciones 'ninguno_de' (asegurar que NO se cumplan)
+    if 'ninguno_de' in regla['condiciones']:
+        for cond in regla['condiciones']['ninguno_de']:
+            hecho, op, valor = cond['hecho'], cond['operador'], cond['valor']
+            if ATRIBUTOS.get(hecho) == 'bool':
+                paciente[hecho] = not valor
+            elif hecho not in paciente:  # Solo si no se ha asignado ya
+                if ATRIBUTOS.get(hecho) == 'float':
+                    paciente[hecho] = round(np.random.uniform(36.0, 37.0), 1)
+                else:
+                    # Para categóricos, elegir cualquier valor excepto el prohibido
+                    opciones_validas = [x for x in ATRIBUTOS[hecho] if x != valor]
+                    if opciones_validas:
+                        paciente[hecho] = np.random.choice(opciones_validas)
+
     paciente['diagnostico'] = regla['diagnostico']
     paciente['gravedad'] = regla['gravedad']
     return paciente
 
-def generar_paciente_aleatorio():
-    """Genera un paciente con atributos completamente aleatorios."""
-    paciente = {}
-    for attr, tipo in ATRIBUTOS.items():
-        if tipo == 'bool':
-            paciente[attr] = np.random.choice([True, False])
-        elif tipo == 'float':
-            paciente[attr] = round(np.random.uniform(36.0, 40.0), 1)
-        elif tipo == 'int':
-            paciente[attr] = np.random.randint(1, 90)
-        else: # Categórico
-            paciente[attr] = np.random.choice(tipo)
-    
-    # Diagnóstico y gravedad por defecto para casos aleatorios
-    paciente['diagnostico'] = 'Resfrio_Comun'
-    paciente['gravedad'] = 'Leve'
-    return paciente
+# Función eliminada - ya no generamos pacientes aleatorios
+# Solo utilizamos las reglas médicas definidas en el JSON
 
 def make_dataset():
     """Crea el dataset sintético y lo guarda en un archivo CSV."""
@@ -86,18 +95,12 @@ def make_dataset():
     reglas = reglas_json['reglas']
     
     dataset = []
-    
-    # Generar datos basados en reglas (70% de los datos)
-    num_rule_based = int(NUM_SAMPLES * 0.7)
-    for i in range(num_rule_based):
+      # Generar datos basados ÚNICAMENTE en reglas (100% de los datos)
+    # Esto asegura que todos los casos tengan lógica médica coherente
+    for i in range(NUM_SAMPLES):
         regla_a_aplicar = reglas[i % len(reglas)] # Ciclar sobre las reglas
         paciente = aplicar_regla(regla_a_aplicar)
         dataset.append(paciente)
-        
-    # Generar datos aleatorios (30% de los datos)
-    num_random = NUM_SAMPLES - num_rule_based
-    for _ in range(num_random):
-        dataset.append(generar_paciente_aleatorio())
 
     # Crear DataFrame y rellenar valores faltantes
     df = pd.DataFrame(dataset)
@@ -106,16 +109,20 @@ def make_dataset():
     for col, tipo in ATRIBUTOS.items():
         if col not in df.columns:
             continue
-        if tipo == 'bool':
-            df[col].fillna(np.random.choice([True, False]), inplace=True)
-        elif tipo == 'float':
-            df[col].fillna(round(np.random.uniform(36.5, 37.5), 1), inplace=True)
-        elif tipo == 'int':
-            df[col].fillna(np.random.randint(20, 60), inplace=True)
-        else: # Categórico
-            # Rellenar con el valor más común o uno por defecto
-            default_value = 'ninguno' if 'ninguno' in tipo else tipo[0]
-            df[col].fillna(default_value, inplace=True)
+        
+        if df[col].isnull().any():
+            if tipo == 'bool':
+                # Para bool, rellenamos los NaNs con una elección aleatoria para cada fila NaN
+                na_mask = df[col].isnull()
+                df.loc[na_mask, col] = np.random.choice([True, False], size=na_mask.sum())
+                df[col] = df[col].astype(bool)
+            elif tipo == 'float':
+                df[col] = df[col].fillna(round(np.random.uniform(36.5, 37.5), 1))
+            elif tipo == 'int':
+                df[col] = df[col].fillna(np.random.randint(20, 60)).astype(int)
+            else: # Categórico
+                default_value = 'ninguno' if 'ninguno' in tipo else tipo[0]
+                df[col] = df[col].fillna(default_value)
 
     # Asegurar que el directorio de salida exista
     os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)

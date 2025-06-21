@@ -4,8 +4,7 @@
     "version": "1.0",
     "autor": "Daniel Pressacco (CAPS 2, Tierra del Fuego)",
     "descripcion": "Reglas para el diagnóstico de enfermedades respiratorias en Tierra del Fuego."
-  },
-  "reglas": [
+  },  "reglas": [
     {
       "id": "neumonia_grave",
       "descripcion": "Tríada clásica de neumonía con factores de riesgo.",
@@ -64,6 +63,49 @@
         ]
       },
       "diagnostico": "EPOC",
+      "gravedad": "Moderado"
+    },
+    {
+      "id": "resfrio_comun",
+      "descripcion": "Síntomas leves y generales sin complicaciones.",
+      "condiciones": {
+        "todos": [
+          {"hecho": "tos", "operador": "igual", "valor": "seca"},
+          {"hecho": "fiebre", "operador": "menor_que", "valor": 37.5},
+          {"hecho": "malestar_general", "operador": "igual", "valor": true}
+        ],
+        "ninguno_de": [
+          {"hecho": "falta_de_aire", "operador": "igual", "valor": "agotado"},
+          {"hecho": "dolor_toracico", "operador": "igual", "valor": "puntada_al_respirar"}
+        ]
+      },
+      "diagnostico": "Resfrio Común",
+      "gravedad": "Leve"
+    },
+    {
+      "id": "gripe",
+      "descripcion": "Fiebre alta súbita con malestar general intenso.",
+      "condiciones": {
+        "todos": [
+          {"hecho": "fiebre", "operador": "mayor_que", "valor": 38.5},
+          {"hecho": "malestar_general", "operador": "igual", "valor": true},
+          {"hecho": "tos", "operador": "igual", "valor": "seca"}
+        ]
+      },
+      "diagnostico": "Gripe",
+      "gravedad": "Moderado"
+    },
+    {
+      "id": "bronquiolitis",
+      "descripcion": "Infección respiratoria en niños menores de 2 años.",
+      "condiciones": {
+        "todos": [
+          {"hecho": "edad", "operador": "menor_que", "valor": 2},
+          {"hecho": "falta_de_aire", "operador": "igual", "valor": "repentina"},
+          {"hecho": "sibilancias", "operador": "igual", "valor": true}
+        ]
+      },
+      "diagnostico": "Bronquiolitis",
       "gravedad": "Moderado"
     }
   ]

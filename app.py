@@ -118,18 +118,9 @@ HTML_TEMPLATE = '''
             <div class="checkbox-group">
                 <input type="checkbox" id="antecedentes_asma" name="antecedentes_asma">
                 <label for="antecedentes_asma">¿Antecedentes de Asma?</label>
-            </div>
-            <div class="checkbox-group">
+            </div>            <div class="checkbox-group">
                 <input type="checkbox" id="antecedentes_alergias" name="antecedentes_alergias">
                 <label for="antecedentes_alergias">¿Antecedentes de Alergias/Rinitis?</label>
-            </div>
-            <div class="checkbox-group">
-                <input type="checkbox" id="exposicion_humo_lenia" name="exposicion_humo_lenia">
-                <label for="exposicion_humo_lenia">¿Exposición a humo de leña?</label>
-            </div>
-            <div class="checkbox-group">
-                <input type="checkbox" id="vivienda_mal_ventilada" name="vivienda_mal_ventilada">
-                <label for="vivienda_mal_ventilada">¿Vivienda mal ventilada / hacinamiento?</label>
             </div>
 
             <button type="submit" class="btn-submit">Obtener Diagnóstico</button>
@@ -153,8 +144,7 @@ def home():
     return render_template_string(HTML_TEMPLATE)
 
 @app.route('/diagnosticar', methods=['POST'])
-def diagnosticar():
-    # Recolectar datos del formulario
+def diagnosticar():    # Recolectar datos del formulario
     datos_paciente = {
         'tos': request.form['tos'],
         'fiebre': float(request.form['fiebre']),
@@ -167,9 +157,7 @@ def diagnosticar():
         'edad': int(request.form['edad']),
         'fumador': request.form['fumador'],
         'antecedentes_asma': 'antecedentes_asma' in request.form,
-        'antecedentes_alergias': 'antecedentes_alergias' in request.form,
-        'exposicion_humo_lenia': 'exposicion_humo_lenia' in request.form,
-        'vivienda_mal_ventilada': 'vivienda_mal_ventilada' in request.form
+        'antecedentes_alergias': 'antecedentes_alergias' in request.form
     }
 
     # Obtener diagnóstico del motor

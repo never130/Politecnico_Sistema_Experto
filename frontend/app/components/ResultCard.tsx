@@ -17,17 +17,16 @@ interface ResultCardProps {
   isLoading: boolean
 }
 
-export default function ResultCard({ result, isLoading }: ResultCardProps) {
-  const getSeverityIcon = (gravedad: string) => {
+export default function ResultCard({ result, isLoading }: ResultCardProps) {  const getSeverityIcon = (gravedad: string) => {
     switch (gravedad?.toLowerCase()) {
       case 'grave':
-        return <ExclamationTriangleIcon className="h-6 w-6 text-red-600" />
+        return <ExclamationTriangleIcon className="h-5 w-5 sm:h-6 sm:w-6 text-red-600" />
       case 'moderado':
-        return <InformationCircleIcon className="h-6 w-6 text-yellow-600" />
+        return <InformationCircleIcon className="h-5 w-5 sm:h-6 sm:w-6 text-yellow-600" />
       case 'leve':
-        return <CheckCircleIcon className="h-6 w-6 text-green-600" />
+        return <CheckCircleIcon className="h-5 w-5 sm:h-6 sm:w-6 text-green-600" />
       default:
-        return <ClipboardDocumentCheckIcon className="h-6 w-6 text-gray-600" />
+        return <ClipboardDocumentCheckIcon className="h-5 w-5 sm:h-6 sm:w-6 text-gray-600" />
     }
   }
 
@@ -43,10 +42,9 @@ export default function ResultCard({ result, isLoading }: ResultCardProps) {
         return 'bg-gray-100 text-gray-800'
     }
   }
-
   return (
     <motion.div 
-      className="medical-card h-fit"
+      className="medical-card h-fit p-4 sm:p-6 lg:p-8"
       whileHover={{ y: -2 }}
       transition={{ duration: 0.2 }}
     >

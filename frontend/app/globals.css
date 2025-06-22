@@ -12,18 +12,19 @@
 
 @layer components {
   .medical-card {
-    @apply bg-white rounded-xl shadow-medical border border-gray-100 p-6;
+    @apply bg-white rounded-lg sm:rounded-xl shadow-medical border border-gray-100;
   }
   
   .medical-input {
-    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-medical-500 focus:border-transparent transition-all duration-200;
+    @apply w-full px-3 py-2 sm:px-4 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-medical-500 focus:border-transparent transition-all duration-200 text-sm sm:text-base;
   }
   
   .medical-select {
-    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-medical-500 focus:border-transparent transition-all duration-200 bg-white;
+    @apply w-full px-3 py-2 sm:px-4 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-medical-500 focus:border-transparent transition-all duration-200 bg-white text-sm sm:text-base;
   }
-    .medical-button {
-    @apply bg-gradient-to-r from-medical-500 to-medical-600 text-white px-8 py-4 rounded-lg font-medium transform hover:scale-105 transition-all duration-200 shadow-lg;
+  
+  .medical-button {
+    @apply bg-gradient-to-r from-medical-500 to-medical-600 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-medium transform hover:scale-105 transition-all duration-200 shadow-lg text-sm sm:text-base;
   }
   
   .medical-button:hover {
@@ -31,7 +32,7 @@
   }
   
   .medical-badge {
-    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium;
+    @apply inline-flex items-center px-2 py-1 sm:px-3 sm:py-1 rounded-full text-xs sm:text-sm font-medium;
   }
   
   .severity-grave {

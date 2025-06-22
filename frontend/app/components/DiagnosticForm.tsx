@@ -37,20 +37,19 @@ export default function DiagnosticForm({ onSubmit, isLoading }: DiagnosticFormPr
     }))
   }
 
-  return (
-    <motion.div 
-      className="medical-card"
+  return (    <motion.div 
+      className="medical-card p-4 sm:p-6 lg:p-8"
       whileHover={{ y: -2 }}
       transition={{ duration: 0.2 }}
     >
-      <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-        <div className="bg-medical-100 p-2 rounded-lg mr-3">
-          <PaperAirplaneIcon className="h-6 w-6 text-medical-600" />
+      <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6 flex flex-col sm:flex-row items-start sm:items-center">
+        <div className="bg-medical-100 p-2 rounded-lg mb-2 sm:mb-0 sm:mr-3">
+          <PaperAirplaneIcon className="h-5 w-5 sm:h-6 sm:w-6 text-medical-600" />
         </div>
-        Evaluación Clínica
+        <span className="text-lg sm:text-xl lg:text-2xl">Evaluación Clínica</span>
       </h2>
       
-      <form onSubmit={handleSubmit} className="space-y-6">
+      <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
         {/* Tipo de Tos */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-2">
@@ -122,29 +121,27 @@ export default function DiagnosticForm({ onSubmit, isLoading }: DiagnosticFormPr
             <option value="empeora_con_anios">Empeora con los Años</option>
             <option value="agotado">Agotado/En Reposo</option>
           </select>
-        </div>
-
-        {/* Checkboxes en Grid */}
-        <div className="grid md:grid-cols-2 gap-4">
-          <div className="space-y-4">
-            <div className="flex items-center">
+        </div>        {/* Checkboxes en Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
+          <div className="space-y-3 sm:space-y-4">
+            <div className="flex items-start sm:items-center">
               <input
                 type="checkbox"
                 id="sibilancias"
-                className="h-4 w-4 text-medical-600 focus:ring-medical-500 border-gray-300 rounded"
+                className="h-4 w-4 text-medical-600 focus:ring-medical-500 border-gray-300 rounded mt-1 sm:mt-0"
                 checked={formData.sibilancias}
                 onChange={(e) => handleChange('sibilancias', e.target.checked)}
               />
-              <label htmlFor="sibilancias" className="ml-2 text-sm text-gray-700">
+              <label htmlFor="sibilancias" className="ml-2 text-sm text-gray-700 leading-relaxed">
                 ¿Silbido al respirar (sibilancias)?
               </label>
             </div>
 
-            <div className="flex items-center">
+            <div className="flex items-start sm:items-center">
               <input
                 type="checkbox"
                 id="pecho_apretado"
-                className="h-4 w-4 text-medical-600 focus:ring-medical-500 border-gray-300 rounded"
+                className="h-4 w-4 text-medical-600 focus:ring-medical-500 border-gray-300 rounded mt-1 sm:mt-0"
                 checked={formData.pecho_apretado}
                 onChange={(e) => handleChange('pecho_apretado', e.target.checked)}
               />

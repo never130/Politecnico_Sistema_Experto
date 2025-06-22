@@ -12,12 +12,22 @@ __pycache__/
 # Archivos de Jupyter Notebook
 .ipynb_checkpoints
 
-# Archivos generados por el proyecto
-data/processed/
-models/
+# Archivos temporales de datos
+data/raw/*.tmp
+data/interim/*.tmp
 
 # Archivos de configuración del editor
 .vscode/
+
+# Frontend dependencies y builds
+frontend/node_modules/
+frontend/.next/
+frontend/dist/
+frontend/.env.local
+
+# Archivos temporales del sistema
+.DS_Store
+Thumbs.db
 
 # Archivos del sistema operativo
 .DS_Store

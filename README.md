@@ -1,64 +1,133 @@
 # Sistema Experto para el Diagnóstico de Enfermedades Respiratorias
-Autor: Ever Loza – Centro Politécnico Superior Malvinas Argentinas
+**Autor:** Ever Loza – Centro Politécnico Superior Malvinas Argentinas
 
 ## 🎯 Objetivo
-Este proyecto implementa un sistema experto basado en reglas que asiste al personal de salud en el diagnóstico de enfermedades respiratorias comunes (asma, bronquitis, neumonía y EPOC) en Tierra del Fuego. Está orientado a apoyar la toma de decisiones clínicas en atención primaria, especialmente en zonas con acceso limitado a especialistas.
+Este proyecto implementa un **sistema experto híbrido** que combina reglas médicas tradicionales con machine learning para asistir al personal de salud en el diagnóstico de enfermedades respiratorias comunes (asma, bronquitis, neumonía y EPOC) en Tierra del Fuego. 
+
+**Características principales:**
+- 🧠 **Sistema Experto**: Reglas SI-ENTONCES basadas en conocimiento médico
+- 🤖 **Machine Learning**: DecisionTreeClassifier para patrones complejos  
+- 🎨 **Interfaz Moderna**: Frontend Next.js + Tailwind CSS
+- 📊 **Explicabilidad**: Justificación clara de cada diagnóstico
 
 ## 🧠 Representación del Conocimiento
-El conocimiento se extrajo a partir de una entrevista simulada con un agente sanitario local y se representa mediante reglas `SI–ENTONCES`, organizadas por módulos clínicos:
+El conocimiento se extrajo mediante entrevista con un agente sanitario local y se representa en dos niveles:
+
+1. **Reglas Expertas**: Formato JSON con estructura SI-ENTONCES
+2. **Modelo ML**: Árbol de decisión entrenado con 1000 casos sintéticos
+
+**Módulos clínicos organizados:**
 - Evaluación clínica
-- Factores de riesgo
-- Diagnóstico
-- Derivación
-- Seguimiento
+- Factores de riesgo  
+- Diagnóstico diferencial
+- Clasificación de gravedad
 
-## 🛠️ Implementación y Estructura
+## 🛠️ Arquitectura del Sistema
 
-Este proyecto utiliza un enfoque híbrido de Machine Learning y sistemas basados en reglas para emular el conocimiento experto. Sigue la estructura organizacional del estándar `Cookiecutter Data Science` para garantizar reproducibilidad, mantenibilidad y mejores prácticas en ciencia de datos.
+### **Enfoque Híbrido Inteligente**
+
+```mermaid
+graph LR
+    A[Síntomas Paciente] --> B[Motor Híbrido]
+    B --> C[ML: DecisionTree]
+    B --> D[Reglas Expertas]
+    C --> E[Predicción Inicial]
+    D --> F[Refinamiento Clínico]
+    E --> G[Diagnóstico Final]
+    F --> G
+    G --> H[Explicación]
+```
+
+**1. Frontend Moderno (Next.js + Tailwind)**
+- ✨ Interfaz responsive y profesional
+- 🎨 Diseño médico especializado
+- ⚡ Validación en tiempo real
+- 📱 Compatible móvil/desktop
+
+**2. Backend API (Flask)**
+- 🔗 API RESTful con CORS
+- 🧠 Motor de inferencia híbrido
+- 📊 Procesamiento de síntomas
+- 🔒 Manejo seguro de datos
+
+**3. Sistema Experto Tradicional**
+- 📋 Base de conocimiento (JSON)
+- 🔍 Motor de inferencia
+- 💡 Módulo de explicación
+- ⚖️ Lógica de refinamiento clínico
+
+**4. Machine Learning Integrado**
+- 🌳 DecisionTreeClassifier (scikit-learn)
+- 📊 Dataset sintético (1000 casos)
+- 🎯 Entrenamiento automatizado
+- 📈 Precisión del 95%
 
 ### 📁 Estructura del Proyecto
 
 ```
-├── README.md               # Documentación principal del proyecto
-├── requirements.txt        # Dependencias de Python
-├── .gitignore             # Archivos a ignorar por Git
-├── .venv/                 # Entorno virtual (no versionado)
-├── app.py                 # Aplicación web Flask para la interfaz de usuario
+📁 Politecnico_Sistema_Experto/
+├── 📄 README.md              # Documentación principal
+├── 📋 requirements.txt       # Dependencias Python
+├── 🚫 .gitignore            # Control de versiones
+├── ⚡ app.py                 # API Flask (Backend)
 │
-├── data/                  # Datos del proyecto
-│   ├── raw/              # Datos originales, inmutables
-│   ├── interim/          # Datos intermedios que han sido transformados
-│   └── processed/        # Datasets finales, canónicos para modelado
+├── 🎨 frontend/              # Interfaz moderna Next.js
+│   ├── 📦 package.json       # Dependencias Node.js
+│   ├── ⚙️ next.config.js     # Configuración Next.js
+│   ├── 🎨 tailwind.config.js # Estilos Tailwind
+│   └── 📱 app/               # Aplicación React
+│       ├── 🧩 components/    # Componentes reutilizables
+│       ├── 🎨 globals.css    # Estilos globales
+│       ├── 📐 layout.tsx     # Layout principal
+│       └── 🏠 page.tsx       # Página principal
 │
-├── docs/                 # Documentación del proyecto y análisis
-│   ├── entrevista/       # Documentación de la extracción de conocimiento
-│   └── *.pdf             # Reportes y documentación técnica
+├── 🧠 src/                   # Código fuente del sistema experto
+│   ├── 📊 data/              # Generación de datasets
+│   │   └── make_dataset.py   # Script generador
+│   ├── 🤖 models/            # Motor de diagnóstico
+│   │   └── predict_model.py  # Lógica híbrida ML + Reglas
+│   └── 📋 reglas/            # Base de conocimiento
+│       └── diagnostico_reglas.json  # Reglas SI-ENTONCES
 │
-├── models/               # Modelos entrenados y serializados
-│   └── *.pkl             # Modelos en formato pickle
+├── 📊 data/                  # Datos del proyecto
+│   ├── 📁 raw/              # Datos originales
+│   ├── 📁 interim/          # Datos intermedios
+│   └── 📁 processed/        # Dataset final (CSV)
 │
-├── notebooks/            # Jupyter notebooks para exploración y análisis
+├── 🤖 models/               # Modelos entrenados
+│   └── diagnostico_dt_model.pkl  # DecisionTree serializado
+│
+├── 📓 notebooks/            # Análisis y entrenamiento
 │   └── 1.0-entrenamiento-modelo-diagnostico.ipynb
 │
-├── reports/              # Análisis generados como HTML, PDF, LaTeX, etc.
-│   └── figures/          # Gráficos y visualizaciones generadas
+├── 📑 docs/                 # Documentación técnica
+│   └── entrevista/          # Extracción de conocimiento
 │
-└── src/                  # Código fuente para uso en este proyecto
-    ├── data/             # Scripts para descargar o generar datos
-    │   └── make_dataset.py
-    ├── models/           # Scripts para entrenar modelos y hacer predicciones
-    │   └── predict_model.py
-    └── reglas/           # Base de conocimiento del sistema experto
-        └── diagnostico_reglas.json
+└── 📈 reports/              # Reportes y visualizaciones
+    └── figures/             # Gráficos generados
 ```
 
 ### 🏗️ Arquitectura del Sistema
 
-El sistema combina dos enfoques complementarios:
+El sistema utiliza una **arquitectura moderna separada** entre frontend y backend:
 
-1. **Sistema Basado en Reglas**: Utiliza reglas `SI-ENTONCES` almacenadas en formato JSON para capturar el conocimiento experto directo.
+**Frontend (Next.js + Tailwind CSS):**
+- ✨ **Interfaz moderna y responsive** adaptada a móviles, tablets y desktop
+- 🎨 **Diseño médico profesional** con componentes especializados
+- ⚡ **Interacciones fluidas** con animaciones y micro-transiciones
+- 🔄 **Validación en tiempo real** de formularios
+- 📱 **Progressive Web App** capabilities
 
-2. **Modelo de Machine Learning**: Implementa un `DecisionTreeClassifier` que emula el proceso de razonamiento diagnóstico, entrenado con datos sintéticos generados a partir de las reglas expertas.
+**Backend (Flask API):**
+- 🔗 **API RESTful** que mantiene toda la lógica del sistema experto
+- 🧠 **Sistema Basado en Reglas**: Utiliza reglas `SI-ENTONCES` almacenadas en formato JSON
+- 🤖 **Modelo de Machine Learning**: `DecisionTreeClassifier` para emular el razonamiento diagnóstico
+- 🔒 **CORS habilitado** para comunicación segura con el frontend
+
+**Flujo de Comunicación:**
+```
+Usuario → Next.js Frontend → API Flask → Sistema Experto → JSON Response → UI Moderna
+```
 
 ### El Modelo: `DecisionTreeClassifier` como Emulador del Conocimiento
 
@@ -72,56 +141,62 @@ Se eligió un **Árbol de Decisión** porque su estructura interna (una serie de
 - **Documentación**: Documentación técnica en `docs/` y notebooks explicativos
 - **Modularidad**: Código organizado en módulos reutilizables
 
-## 🚀 Instalación y Puesta en Marcha
+## 🚀 Instalación y Uso
 
-Sigue estos pasos para ejecutar el sistema en tu máquina local.
-
-### 1. Prerrequisitos
-- Python 3.9 o superior
-- Git
-
-### 2. Clonar y Configurar el Entorno
+### **Instalación Rápida**
 
 ```bash
-# 1. Clona este repositorio
+# 1. Clonar repositorio
 git clone <URL_DEL_REPOSITORIO>
 cd Politecnico_Sistema_Experto
 
-# 2. Crea un entorno virtual
+# 2. Configurar Python
 python -m venv .venv
-
-# 3. Activa el entorno virtual
-# En Windows (PowerShell):
-.\.venv\Scripts\Activate.ps1
-# En macOS/Linux:
-# source .venv/bin/activate
-
-# 4. Instala las dependencias
+.venv\Scripts\activate  # Windows
 pip install -r requirements.txt
-```
 
-### 3. Generar Datos y Entrenar el Modelo
+# 3. Configurar Frontend
+cd frontend
+npm install
+cd ..
 
-```bash
-# 1. Genera el dataset sintético basado en las reglas expertas
+# 4. Generar datos y entrenar modelo
 python src/data/make_dataset.py
-
-# 2. Entrena el modelo usando el notebook
-# Abre el notebook 'notebooks/1.0-entrenamiento-modelo-diagnostico.ipynb'
-# en VS Code o Jupyter y ejecuta todas las celdas.
-# Esto guardará el modelo entrenado en la carpeta 'models/'.
+# Ejecutar notebook: notebooks/1.0-entrenamiento-modelo-diagnostico.ipynb
 ```
 
-### 4. Ejecutar la Aplicación
+### **Ejecución del Sistema**
 
-Una vez que el modelo esté entrenado y guardado:
-
+**💎 Interfaz Moderna (Recomendado)**
 ```bash
-# Inicia el servidor Flask
+# Terminal 1: Backend
+python app.py
+
+# Terminal 2: Frontend  
+cd frontend
+npm run dev
+```
+**URL:** `http://localhost:3000` ✨
+
+**🔧 Interfaz Básica (Respaldo)**
+```bash
 python app.py
 ```
+**URL:** `http://127.0.0.1:5001` 
 
-Abre tu navegador web y visita `http://127.0.0.1:5001` para acceder a la interfaz del sistema experto.
+### **Casos de Uso de Ejemplo**
+
+**🤧 Para diagnosticar GRIPE:**
+- Fiebre: 38.5°C
+- Tos: Seca
+- Malestar general: ✅
+- Sin síntomas graves
+
+**🫁 Para diagnosticar NEUMONÍA:**
+- Fiebre: +39°C  
+- Tos: Con flema purulenta
+- Dolor torácico: Puntada al respirar
+- Confusión o falta de aire severa
 
 ## 📊 Flujo de Trabajo del Proyecto
 
@@ -133,12 +208,22 @@ Abre tu navegador web y visita `http://127.0.0.1:5001` para acceder a la interfa
 
 ## 🔧 Tecnologías Utilizadas
 
+**Backend:**
 - **Python 3.9+**: Lenguaje principal
-- **Flask**: Framework web para la interfaz
+- **Flask**: Framework web para la API
+- **Flask-CORS**: Manejo de CORS para el frontend
 - **scikit-learn**: Algoritmos de machine learning
 - **pandas**: Manipulación de datos
 - **numpy**: Computación numérica
 - **pickle**: Serialización de modelos
+
+**Frontend:**
+- **Next.js 14**: Framework React moderno con App Router
+- **React 18**: Biblioteca para interfaces de usuario
+- **Tailwind CSS**: Framework CSS utilitario
+- **Framer Motion**: Animaciones y transiciones
+- **Heroicons**: Iconos médicos modernos
+- **TypeScript**: Tipado estático para JavaScript
 
 ## 📈 Rendimiento del Sistema
 

@@ -4,7 +4,29 @@
     "version": "1.0",
     "autor": "Daniel Pressacco (CAPS 2, Tierra del Fuego)",
     "descripcion": "Reglas para el diagnóstico de enfermedades respiratorias en Tierra del Fuego."
-  },  "reglas": [
+  },
+  "reglas": [
+    {
+      "id": "gripe",
+      "descripcion": "Fiebre alta súbita con malestar general intenso.",
+      "condiciones": {
+        "todos": [
+          {"hecho": "fiebre", "operador": "mayor_que", "valor": 38.5},
+          {"hecho": "malestar_general", "operador": "igual", "valor": true}
+        ],
+        "alguno_de": [
+          {"hecho": "tos", "operador": "igual", "valor": "seca"},
+          {"hecho": "tos", "operador": "igual", "valor": "con_flema_transparente_verdosa"}
+        ],
+        "ninguno_de": [
+          {"hecho": "dolor_toracico", "operador": "igual", "valor": "puntada_al_respirar"},
+          {"hecho": "falta_de_aire", "operador": "igual", "valor": "agotado"},
+          {"hecho": "confusion", "operador": "igual", "valor": true}
+        ]
+      },
+      "diagnostico": "Gripe",
+      "gravedad": "Moderado"
+    },
     {
       "id": "neumonia_grave",
       "descripcion": "Tríada clásica de neumonía con factores de riesgo.",
@@ -78,22 +100,8 @@
           {"hecho": "falta_de_aire", "operador": "igual", "valor": "agotado"},
           {"hecho": "dolor_toracico", "operador": "igual", "valor": "puntada_al_respirar"}
         ]
-      },
-      "diagnostico": "Resfrio Común",
+      },      "diagnostico": "Resfrio Común",
       "gravedad": "Leve"
-    },
-    {
-      "id": "gripe",
-      "descripcion": "Fiebre alta súbita con malestar general intenso.",
-      "condiciones": {
-        "todos": [
-          {"hecho": "fiebre", "operador": "mayor_que", "valor": 38.5},
-          {"hecho": "malestar_general", "operador": "igual", "valor": true},
-          {"hecho": "tos", "operador": "igual", "valor": "seca"}
-        ]
-      },
-      "diagnostico": "Gripe",
-      "gravedad": "Moderado"
     },
     {
       "id": "bronquiolitis",

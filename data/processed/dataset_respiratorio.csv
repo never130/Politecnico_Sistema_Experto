@@ -1,0 +1,1001 @@
+fiebre,malestar_general,tos,dolor_toracico,falta_de_aire,confusion,diagnostico,gravedad,sibilancias,pecho_apretado,antecedentes_asma,edad,fumador,antecedentes_alergias
+39.27279139071245,True,con_flema_transparente_verdosa,molestia_leve,repentina,False,Gripe,Moderado,True,True,True,52,si_activo,False
+39.38298845721819,False,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,False,True,False,52,si_activo,False
+37.414094837704226,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,True,False,True,52,si_activo,True
+37.1,False,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,False,True,68,de_toda_la_vida,True
+36.403843530249205,True,seca,ninguno,al_caminar_rapido,False,Resfrio Común,Leve,False,True,False,52,si_activo,True
+37.1,True,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,True,False,1,si_activo,False
+39.405541645800916,True,seca,molestia_leve,ninguna,False,Gripe,Moderado,False,False,True,52,si_activo,True
+39.17451789305785,False,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,True,True,True,52,si_activo,True
+36.38069142894491,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,False,True,False,52,si_activo,True
+37.1,False,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,True,True,False,62,de_toda_la_vida,True
+36.928735483414115,True,seca,molestia_leve,ninguna,False,Resfrio Común,Leve,True,False,True,52,si_activo,True
+37.1,True,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,True,True,1,si_activo,True
+39.402007832169225,True,con_flema_transparente_verdosa,ninguno,empeora_con_anios,False,Gripe,Moderado,False,True,True,52,si_activo,False
+39.38668428756216,False,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,True,True,True,52,si_activo,False
+36.80542998020552,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,False,False,True,52,si_activo,True
+37.1,True,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,True,True,63,de_toda_la_vida,False
+35.85836145029862,True,seca,ninguno,ninguna,True,Resfrio Común,Leve,True,True,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,False,False,1,si_activo,False
+39.85190154294763,True,seca,ninguno,empeora_con_anios,False,Gripe,Moderado,False,False,True,52,si_activo,True
+39.22879323049389,False,con_flema_purulenta_sangre,puntada_al_respirar,agotado,False,Neumonía,Grave,False,True,True,52,si_activo,False
+36.38689022899022,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,True,False,False,52,si_activo,False
+37.1,False,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,False
+37.1,True,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,True,False,False,64,de_toda_la_vida,False
+36.26352632404263,True,seca,molestia_leve,empeora_con_anios,False,Resfrio Común,Leve,True,True,True,52,si_activo,True
+37.1,True,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,True,True,1,si_activo,True
+39.681460604609555,True,con_flema_transparente_verdosa,ninguno,ninguna,False,Gripe,Moderado,False,True,True,52,si_activo,False
+38.627272932482036,False,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,False,True,False,52,si_activo,False
+36.57991282173607,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,False,True,False,52,si_activo,True
+37.1,False,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,False
+37.1,True,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,True,True,True,67,de_toda_la_vida,True
+36.53356388986059,True,seca,ninguno,ninguna,True,Resfrio Común,Leve,False,False,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,False,True,1,si_activo,True
+39.502051761769735,True,seca,molestia_leve,repentina,False,Gripe,Moderado,False,True,True,52,si_activo,False
+39.04558091696061,True,con_flema_purulenta_sangre,puntada_al_respirar,agotado,True,Neumonía,Grave,True,False,True,52,si_activo,True
+37.28259493519174,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,True,False,True,52,si_activo,True
+37.1,False,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,True,True,True,69,de_toda_la_vida,False
+36.99905304535914,True,seca,ninguno,empeora_con_anios,True,Resfrio Común,Leve,False,True,False,52,si_activo,True
+37.1,False,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,True,False,1,si_activo,False
+40.389506036314685,True,seca,molestia_leve,empeora_con_anios,False,Gripe,Moderado,False,False,True,52,si_activo,False
+39.99764869958613,False,con_flema_purulenta_sangre,puntada_al_respirar,agotado,True,Neumonía,Grave,False,False,False,52,si_activo,False
+36.885044002950806,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,False,True,True,52,si_activo,True
+37.1,False,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,False,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,True,False,68,de_toda_la_vida,False
+36.01672082715863,True,seca,ninguno,al_caminar_rapido,False,Resfrio Común,Leve,False,True,True,52,si_activo,False
+37.1,True,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,False,False,1,si_activo,False
+39.27098804393786,True,seca,ninguno,al_caminar_rapido,False,Gripe,Moderado,False,True,True,52,si_activo,False
+39.51297136367019,False,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,True,False,True,52,si_activo,True
+37.45721051234113,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,True,True,62,de_toda_la_vida,False
+36.69828294922692,True,seca,molestia_leve,ninguna,False,Resfrio Común,Leve,False,True,True,52,si_activo,True
+37.1,False,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,False,False,1,si_activo,True
+39.42679444191039,True,seca,ninguno,empeora_con_anios,False,Gripe,Moderado,True,True,True,52,si_activo,False
+39.28304388672626,True,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,False,False,True,52,si_activo,False
+36.0620382183179,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,True,False,True,52,si_activo,True
+37.1,False,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,True,False,False,65,de_toda_la_vida,False
+36.9166014706022,True,seca,ninguno,al_caminar_rapido,True,Resfrio Común,Leve,True,True,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,False,False,1,si_activo,True
+39.81334008032931,True,con_flema_transparente_verdosa,molestia_leve,empeora_con_anios,False,Gripe,Moderado,True,False,True,52,si_activo,False
+39.25039958915791,True,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,False,True,True,52,si_activo,False
+36.495622229702214,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,False,False,True,52,si_activo,True
+37.1,True,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,False,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,True,True,67,de_toda_la_vida,False
+36.58290751627715,True,seca,molestia_leve,repentina,False,Resfrio Común,Leve,True,False,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,True,True,1,si_activo,False
+39.62462646258571,True,seca,molestia_leve,al_caminar_rapido,False,Gripe,Moderado,False,True,False,52,si_activo,False
+38.751106252428215,True,con_flema_purulenta_sangre,puntada_al_respirar,agotado,True,Neumonía,Grave,True,True,False,52,si_activo,True
+37.185574271930356,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,True,True,False,52,si_activo,True
+37.1,True,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,True,False,False,64,de_toda_la_vida,False
+36.877973460020236,True,seca,molestia_leve,empeora_con_anios,False,Resfrio Común,Leve,False,False,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,False,False,1,si_activo,False
+39.15947472142045,True,seca,ninguno,ninguna,False,Gripe,Moderado,True,False,False,52,si_activo,False
+38.8442064396118,False,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,False,False,False,52,si_activo,False
+36.893006246694284,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,False,False,False,52,si_activo,True
+37.1,False,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,False,True,61,de_toda_la_vida,False
+35.726796399379765,True,seca,molestia_leve,al_caminar_rapido,False,Resfrio Común,Leve,True,True,False,52,si_activo,False
+37.1,False,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,True,True,1,si_activo,True
+39.45108836819943,True,con_flema_transparente_verdosa,ninguno,empeora_con_anios,False,Gripe,Moderado,True,False,False,52,si_activo,True
+38.5743160513463,False,con_flema_purulenta_sangre,puntada_al_respirar,agotado,True,Neumonía,Grave,True,True,True,52,si_activo,False
+36.40168448005699,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,False,True,True,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,False,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,True,False,True,69,de_toda_la_vida,True
+36.76062872307117,True,seca,ninguno,repentina,False,Resfrio Común,Leve,False,True,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,True,True,1,si_activo,True
+40.16833445318026,True,seca,ninguno,repentina,False,Gripe,Moderado,True,True,False,52,si_activo,True
+39.18608884205766,True,con_flema_purulenta_sangre,puntada_al_respirar,agotado,True,Neumonía,Grave,True,False,False,52,si_activo,True
+36.34685111006672,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,True,False,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,False
+37.1,True,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,True,True,67,de_toda_la_vida,True
+36.2643444093389,True,seca,molestia_leve,repentina,True,Resfrio Común,Leve,False,True,False,52,si_activo,True
+37.1,True,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,False,True,1,si_activo,False
+39.963680721086774,True,con_flema_transparente_verdosa,ninguno,ninguna,False,Gripe,Moderado,False,False,False,52,si_activo,False
+38.6148643912506,True,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,True,True,False,52,si_activo,False
+36.55859766593765,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,False,False,True,52,si_activo,False
+37.1,False,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,True,True,61,de_toda_la_vida,False
+35.78434615428957,True,seca,ninguno,repentina,True,Resfrio Común,Leve,False,False,True,52,si_activo,True
+37.1,False,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,False,True,1,si_activo,False
+39.14275704551491,True,con_flema_transparente_verdosa,molestia_leve,empeora_con_anios,False,Gripe,Moderado,False,True,True,52,si_activo,True
+38.69392121905726,True,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,False,False,True,52,si_activo,False
+36.67622296502061,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,False,False,False,52,si_activo,False
+37.1,False,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,True,False,True,69,de_toda_la_vida,True
+35.73994419942529,True,seca,molestia_leve,ninguna,False,Resfrio Común,Leve,False,True,True,52,si_activo,True
+37.1,False,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,True,False,1,si_activo,False
+39.162053635685865,True,seca,molestia_leve,repentina,False,Gripe,Moderado,False,True,False,52,si_activo,True
+39.39429881091587,False,con_flema_purulenta_sangre,puntada_al_respirar,agotado,True,Neumonía,Grave,True,True,False,52,si_activo,True
+37.1482056929468,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,False,True,False,52,si_activo,False
+37.1,False,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,False
+37.1,True,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,False,False,68,de_toda_la_vida,False
+36.32861534603324,True,seca,ninguno,al_caminar_rapido,True,Resfrio Común,Leve,True,True,False,52,si_activo,True
+37.1,False,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,True,False,1,si_activo,False
+39.77865903828799,True,seca,molestia_leve,ninguna,False,Gripe,Moderado,False,False,False,52,si_activo,True
+38.75855730368028,True,con_flema_purulenta_sangre,puntada_al_respirar,agotado,False,Neumonía,Grave,False,False,False,52,si_activo,True
+36.19203228595164,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,True,True,False,52,si_activo,True
+37.1,True,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,False,False,65,de_toda_la_vida,False
+36.94642072455386,True,seca,molestia_leve,ninguna,True,Resfrio Común,Leve,True,False,True,52,si_activo,True
+37.1,True,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,False,False,1,si_activo,True
+39.48113061985371,True,seca,molestia_leve,repentina,False,Gripe,Moderado,True,True,True,52,si_activo,False
+38.89958670387008,False,con_flema_purulenta_sangre,puntada_al_respirar,agotado,True,Neumonía,Grave,False,True,False,52,si_activo,False
+37.1856124266147,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,False,True,True,52,si_activo,True
+37.1,False,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,True,False,61,de_toda_la_vida,False
+36.25048981212824,True,seca,ninguno,al_caminar_rapido,False,Resfrio Común,Leve,True,False,True,52,si_activo,True
+37.1,True,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,False,True,1,si_activo,False
+39.805126915890185,True,con_flema_transparente_verdosa,ninguno,repentina,False,Gripe,Moderado,True,True,True,52,si_activo,False
+39.32453563935219,True,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,True,False,True,52,si_activo,True
+36.59131881226198,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,True,False,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,False,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,True,False,True,66,de_toda_la_vida,False
+35.70517957084838,True,seca,ninguno,empeora_con_anios,True,Resfrio Común,Leve,True,False,False,52,si_activo,True
+37.1,False,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,False,True,1,si_activo,True
+40.39238588306407,True,con_flema_transparente_verdosa,ninguno,ninguna,False,Gripe,Moderado,False,True,True,52,si_activo,False
+39.058395182621766,False,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,False,True,False,52,si_activo,False
+36.19728427493314,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,True,False,True,52,si_activo,True
+37.1,False,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,False,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,False,True,61,de_toda_la_vida,False
+35.63809579041167,True,seca,molestia_leve,empeora_con_anios,False,Resfrio Común,Leve,False,False,True,52,si_activo,False
+37.1,False,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,True,False,1,si_activo,False
+40.26893851068312,True,con_flema_transparente_verdosa,molestia_leve,repentina,False,Gripe,Moderado,True,False,True,52,si_activo,True
+38.915460253344,False,con_flema_purulenta_sangre,puntada_al_respirar,agotado,False,Neumonía,Grave,False,True,True,52,si_activo,True
+37.08084253358324,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,True,False,True,52,si_activo,True
+37.1,False,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,False,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,False,False,66,de_toda_la_vida,True
+36.73172363734576,True,seca,ninguno,repentina,True,Resfrio Común,Leve,False,False,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,False,False,1,si_activo,False
+39.94230298828201,True,con_flema_transparente_verdosa,molestia_leve,ninguna,False,Gripe,Moderado,False,True,True,52,si_activo,False
+39.29100485561002,False,con_flema_purulenta_sangre,puntada_al_respirar,agotado,False,Neumonía,Grave,False,False,False,52,si_activo,False
+37.38385843847687,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,True,False,False,52,si_activo,True
+37.1,False,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,False,True,69,de_toda_la_vida,True
+35.80879065011788,True,seca,molestia_leve,repentina,False,Resfrio Común,Leve,False,True,False,52,si_activo,True
+37.1,True,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,True,False,1,si_activo,False
+40.15841133339259,True,seca,molestia_leve,al_caminar_rapido,False,Gripe,Moderado,False,True,False,52,si_activo,True
+39.85595822471276,False,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,True,False,False,52,si_activo,False
+36.44147270124771,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,True,False,False,52,si_activo,False
+37.1,False,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,False,False,65,de_toda_la_vida,True
+36.06393868231528,True,seca,molestia_leve,ninguna,True,Resfrio Común,Leve,True,True,False,52,si_activo,False
+37.1,False,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,False,False,1,si_activo,True
+40.03482367911469,True,con_flema_transparente_verdosa,molestia_leve,ninguna,False,Gripe,Moderado,True,True,True,52,si_activo,True
+39.133473525990865,False,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,True,False,True,52,si_activo,False
+36.841985076444765,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,False,True,True,52,si_activo,False
+37.1,False,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,False,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,True,True,False,66,de_toda_la_vida,False
+36.620538012924925,True,seca,ninguno,al_caminar_rapido,True,Resfrio Común,Leve,True,True,False,52,si_activo,False
+37.1,False,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,False,False,1,si_activo,True
+39.445147975305176,True,con_flema_transparente_verdosa,ninguno,repentina,False,Gripe,Moderado,True,True,True,52,si_activo,False
+39.87151484427208,False,con_flema_purulenta_sangre,puntada_al_respirar,agotado,False,Neumonía,Grave,False,True,False,52,si_activo,True
+36.329893212198826,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,True,False,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,False,False,62,de_toda_la_vida,True
+35.53146217925497,True,seca,molestia_leve,empeora_con_anios,False,Resfrio Común,Leve,True,True,False,52,si_activo,False
+37.1,False,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,True,True,1,si_activo,True
+39.96808416203757,True,seca,molestia_leve,ninguna,False,Gripe,Moderado,False,True,True,52,si_activo,True
+39.06879301414088,True,con_flema_purulenta_sangre,puntada_al_respirar,agotado,True,Neumonía,Grave,True,False,False,52,si_activo,False
+36.246786682421714,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,True,False,True,52,si_activo,False
+37.1,True,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,True,True,65,de_toda_la_vida,True
+35.87727247580606,True,seca,molestia_leve,repentina,True,Resfrio Común,Leve,True,True,False,52,si_activo,False
+37.1,False,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,False,False,1,si_activo,False
+39.556962910828645,True,con_flema_transparente_verdosa,molestia_leve,al_caminar_rapido,False,Gripe,Moderado,False,True,False,52,si_activo,False
+38.94629715606839,False,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,True,False,False,52,si_activo,True
+37.32126948113402,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,True,False,False,52,si_activo,True
+37.1,True,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,True,True,True,61,de_toda_la_vida,False
+36.64863880144187,True,seca,molestia_leve,empeora_con_anios,False,Resfrio Común,Leve,False,False,True,52,si_activo,True
+37.1,True,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,False,True,1,si_activo,False
+40.359072590018584,True,con_flema_transparente_verdosa,molestia_leve,empeora_con_anios,False,Gripe,Moderado,False,False,False,52,si_activo,False
+38.84263091648585,False,con_flema_purulenta_sangre,puntada_al_respirar,agotado,True,Neumonía,Grave,True,True,False,52,si_activo,True
+37.14253078242679,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,True,False,True,52,si_activo,False
+37.1,True,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,True,True,65,de_toda_la_vida,False
+35.70525547921676,True,seca,molestia_leve,repentina,True,Resfrio Común,Leve,False,True,False,52,si_activo,False
+37.1,False,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,False,False,1,si_activo,False
+39.101704082679454,True,con_flema_transparente_verdosa,ninguno,ninguna,False,Gripe,Moderado,True,True,False,52,si_activo,False
+39.64188524447284,False,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,False,False,True,52,si_activo,True
+36.59068878415594,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,False,True,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,False
+37.1,True,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,True,False,False,68,de_toda_la_vida,False
+36.47471989006257,True,seca,molestia_leve,al_caminar_rapido,False,Resfrio Común,Leve,True,False,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,True,True,1,si_activo,True
+39.37842529272669,True,seca,molestia_leve,repentina,False,Gripe,Moderado,True,False,True,52,si_activo,True
+39.5167761504353,False,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,False,False,False,52,si_activo,False
+37.11010015931693,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,True,False,False,52,si_activo,True
+37.1,True,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,True,True,63,de_toda_la_vida,False
+36.518749724828155,True,seca,molestia_leve,al_caminar_rapido,True,Resfrio Común,Leve,False,True,False,52,si_activo,False
+37.1,False,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,False,False,1,si_activo,True
+39.392343109834655,True,seca,ninguno,empeora_con_anios,False,Gripe,Moderado,True,True,True,52,si_activo,True
+39.68944775456922,False,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,False,True,True,52,si_activo,True
+36.62538849121171,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,False,True,True,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,False,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,True,False,68,de_toda_la_vida,False
+36.41670570983228,True,seca,ninguno,ninguna,True,Resfrio Común,Leve,False,True,True,52,si_activo,True
+37.1,True,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,True,False,1,si_activo,False
+39.5777991086876,True,con_flema_transparente_verdosa,ninguno,al_caminar_rapido,False,Gripe,Moderado,False,True,False,52,si_activo,True
+39.711867942528606,False,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,True,True,False,52,si_activo,False
+36.136812440222016,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,False,True,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,False,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,True,True,61,de_toda_la_vida,False
+36.279119353019276,True,seca,molestia_leve,al_caminar_rapido,True,Resfrio Común,Leve,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,False,False,1,si_activo,False
+40.26813842288711,True,seca,molestia_leve,al_caminar_rapido,False,Gripe,Moderado,True,True,False,52,si_activo,True
+39.62908566293891,True,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,True,False,True,52,si_activo,False
+36.559684950435475,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,False,False,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,False
+37.1,True,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,False,False,68,de_toda_la_vida,True
+35.87722763807767,True,seca,ninguno,ninguna,True,Resfrio Común,Leve,False,False,True,52,si_activo,True
+37.1,False,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,True,True,1,si_activo,True
+39.609043197832385,True,con_flema_transparente_verdosa,ninguno,al_caminar_rapido,False,Gripe,Moderado,True,True,True,52,si_activo,True
+39.009180172071474,True,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,True,True,True,52,si_activo,False
+37.33840486629299,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,True,True,True,52,si_activo,False
+37.1,True,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,True,True,64,de_toda_la_vida,False
+35.8957200786538,True,seca,ninguno,repentina,True,Resfrio Común,Leve,False,True,True,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,True,True,1,si_activo,False
+39.41142509994988,True,seca,ninguno,ninguna,False,Gripe,Moderado,True,False,True,52,si_activo,True
+38.94148107558488,False,con_flema_purulenta_sangre,puntada_al_respirar,agotado,False,Neumonía,Grave,True,False,False,52,si_activo,False
+37.390552458939105,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,True,True,True,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,True,False,True,68,de_toda_la_vida,True
+35.70195452998612,True,seca,molestia_leve,empeora_con_anios,True,Resfrio Común,Leve,True,True,True,52,si_activo,True
+37.1,True,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,False,True,1,si_activo,True
+40.05847285682744,True,seca,ninguno,empeora_con_anios,False,Gripe,Moderado,False,True,False,52,si_activo,False
+39.2401975929712,True,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,False,True,True,52,si_activo,True
+36.19540598151004,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,True,True,False,52,si_activo,False
+37.1,False,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,False
+37.1,True,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,True,True,True,62,de_toda_la_vida,False
+36.06577451881263,True,seca,molestia_leve,empeora_con_anios,True,Resfrio Común,Leve,False,True,False,52,si_activo,True
+37.1,True,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,False,False,1,si_activo,False
+39.01996246767278,True,seca,ninguno,ninguna,False,Gripe,Moderado,True,True,True,52,si_activo,True
+39.52980065934193,False,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,True,True,False,52,si_activo,True
+36.473164092670906,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,True,True,False,52,si_activo,False
+37.1,False,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,False,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,True,True,63,de_toda_la_vida,False
+36.52010901220865,True,seca,ninguno,empeora_con_anios,False,Resfrio Común,Leve,True,False,True,52,si_activo,True
+37.1,True,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,False,True,1,si_activo,False
+39.509365034514985,True,seca,molestia_leve,ninguna,False,Gripe,Moderado,True,True,True,52,si_activo,False
+38.51169749768499,False,con_flema_purulenta_sangre,puntada_al_respirar,agotado,True,Neumonía,Grave,True,True,True,52,si_activo,False
+37.40452127800079,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,False,True,False,52,si_activo,False
+37.1,False,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,False,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,False,False,65,de_toda_la_vida,False
+35.51252501916344,True,seca,molestia_leve,al_caminar_rapido,True,Resfrio Común,Leve,False,False,True,52,si_activo,False
+37.1,True,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,True,False,1,si_activo,True
+39.41261487799947,True,con_flema_transparente_verdosa,molestia_leve,ninguna,False,Gripe,Moderado,False,True,True,52,si_activo,False
+38.77135238180317,True,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,False,False,True,52,si_activo,True
+36.46302542390979,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,False,True,False,52,si_activo,True
+37.1,False,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,True,False,False,65,de_toda_la_vida,True
+36.88722161123433,True,seca,molestia_leve,ninguna,False,Resfrio Común,Leve,True,True,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,False,False,1,si_activo,True
+39.97559717894693,True,con_flema_transparente_verdosa,molestia_leve,empeora_con_anios,False,Gripe,Moderado,False,True,True,52,si_activo,True
+39.98747397210037,False,con_flema_purulenta_sangre,puntada_al_respirar,agotado,True,Neumonía,Grave,False,False,False,52,si_activo,True
+36.904419513281105,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,True,False,True,52,si_activo,True
+37.1,True,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,True,False,61,de_toda_la_vida,False
+36.54159581081353,True,seca,molestia_leve,ninguna,True,Resfrio Común,Leve,True,True,False,52,si_activo,True
+37.1,True,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,True,False,1,si_activo,False
+39.03739153137748,True,con_flema_transparente_verdosa,ninguno,al_caminar_rapido,False,Gripe,Moderado,True,False,True,52,si_activo,False
+39.337191661712716,False,con_flema_purulenta_sangre,puntada_al_respirar,agotado,False,Neumonía,Grave,False,True,True,52,si_activo,True
+36.20762471151364,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,False,True,False,52,si_activo,True
+37.1,False,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,False,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,True,False,False,67,de_toda_la_vida,False
+36.23666469798802,True,seca,molestia_leve,ninguna,False,Resfrio Común,Leve,False,False,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,False,True,1,si_activo,True
+40.44882257908761,True,seca,molestia_leve,ninguna,False,Gripe,Moderado,False,False,False,52,si_activo,True
+38.55819567874242,True,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,True,False,True,52,si_activo,True
+36.30929611034337,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,False,True,False,52,si_activo,True
+37.1,False,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,False,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,True,True,True,69,de_toda_la_vida,True
+36.108744880414946,True,seca,ninguno,ninguna,False,Resfrio Común,Leve,False,True,True,52,si_activo,False
+37.1,False,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,True,True,1,si_activo,False
+39.92462913504694,True,seca,molestia_leve,al_caminar_rapido,False,Gripe,Moderado,True,False,True,52,si_activo,True
+39.48264340775557,True,con_flema_purulenta_sangre,puntada_al_respirar,agotado,True,Neumonía,Grave,False,True,True,52,si_activo,False
+36.040768865338265,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,False,True,False,52,si_activo,True
+37.1,False,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,False,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,True,True,False,68,de_toda_la_vida,False
+36.16318609128577,True,seca,molestia_leve,repentina,True,Resfrio Común,Leve,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,True,False,1,si_activo,True
+39.973730780183345,True,seca,molestia_leve,repentina,False,Gripe,Moderado,False,True,True,52,si_activo,True
+39.037566496504354,False,con_flema_purulenta_sangre,puntada_al_respirar,agotado,True,Neumonía,Grave,False,True,False,52,si_activo,False
+36.906637368859066,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,False,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,False,True,68,de_toda_la_vida,True
+36.58973981150836,True,seca,ninguno,ninguna,False,Resfrio Común,Leve,False,True,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,True,False,1,si_activo,False
+39.57970963466804,True,seca,ninguno,ninguna,False,Gripe,Moderado,True,False,True,52,si_activo,False
+39.14581266973466,True,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,False,False,False,52,si_activo,False
+36.20956207705422,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,False,False,True,52,si_activo,True
+37.1,True,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,True,False,65,de_toda_la_vida,False
+36.300183354478875,True,seca,molestia_leve,al_caminar_rapido,True,Resfrio Común,Leve,True,False,True,52,si_activo,True
+37.1,True,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,False,False,1,si_activo,False
+40.034381934379006,True,seca,molestia_leve,al_caminar_rapido,False,Gripe,Moderado,False,True,True,52,si_activo,False
+39.375879763589914,True,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,True,False,True,52,si_activo,True
+36.28867948972538,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,True,True,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,False,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,False,True,62,de_toda_la_vida,False
+36.653764646840045,True,seca,molestia_leve,repentina,False,Resfrio Común,Leve,True,False,True,52,si_activo,True
+37.1,True,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,True,True,1,si_activo,True
+40.26152004704732,True,con_flema_transparente_verdosa,ninguno,empeora_con_anios,False,Gripe,Moderado,True,False,True,52,si_activo,False
+39.927907696393625,False,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,False,False,True,52,si_activo,False
+37.321050152159266,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,True,True,True,52,si_activo,False
+37.1,False,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,False,True,65,de_toda_la_vida,False
+36.839825376899306,True,seca,ninguno,ninguna,False,Resfrio Común,Leve,False,False,True,52,si_activo,False
+37.1,False,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,False,False,1,si_activo,True
+39.21579523076549,True,con_flema_transparente_verdosa,molestia_leve,empeora_con_anios,False,Gripe,Moderado,True,False,False,52,si_activo,False
+39.12325294523357,True,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,False,False,True,52,si_activo,True
+37.28553557745101,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,True,False,True,52,si_activo,True
+37.1,True,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,True,False,66,de_toda_la_vida,False
+35.99656561211732,True,seca,molestia_leve,empeora_con_anios,False,Resfrio Común,Leve,True,True,False,52,si_activo,False
+37.1,False,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,False,False,1,si_activo,True
+39.55548000323839,True,con_flema_transparente_verdosa,molestia_leve,ninguna,False,Gripe,Moderado,False,False,False,52,si_activo,False
+39.969419326875496,True,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,True,False,True,52,si_activo,False
+36.10553627515167,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,False,False,True,52,si_activo,True
+37.1,False,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,False,True,63,de_toda_la_vida,True
+36.675494931885375,True,seca,ninguno,ninguna,False,Resfrio Común,Leve,False,True,False,52,si_activo,True
+37.1,False,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,True,True,1,si_activo,True
+39.41928470175594,True,con_flema_transparente_verdosa,ninguno,ninguna,False,Gripe,Moderado,False,True,True,52,si_activo,False
+39.60077859413418,True,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,False,False,False,52,si_activo,True
+37.2148650738977,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,False,True,True,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,True,True,True,64,de_toda_la_vida,False
+36.48907737205956,True,seca,molestia_leve,repentina,False,Resfrio Común,Leve,True,True,True,52,si_activo,True
+37.1,True,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,True,True,1,si_activo,False
+39.0258888771115,True,seca,molestia_leve,ninguna,False,Gripe,Moderado,False,False,True,52,si_activo,True
+39.18068965657997,True,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,True,True,False,52,si_activo,True
+37.14554342125085,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,True,False,False,52,si_activo,True
+37.1,True,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,False,False,61,de_toda_la_vida,False
+36.301173620554074,True,seca,molestia_leve,ninguna,False,Resfrio Común,Leve,True,False,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,False,True,1,si_activo,False
+39.080018764308946,True,seca,ninguno,repentina,False,Gripe,Moderado,True,False,False,52,si_activo,False
+39.56285311851107,False,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,False,True,False,52,si_activo,False
+36.95786372354125,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,False,True,True,52,si_activo,False
+37.1,False,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,False,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,True,True,True,67,de_toda_la_vida,True
+35.8481390550171,True,seca,molestia_leve,ninguna,True,Resfrio Común,Leve,False,False,True,52,si_activo,True
+37.1,True,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,False,True,1,si_activo,True
+39.17767068564775,True,con_flema_transparente_verdosa,molestia_leve,al_caminar_rapido,False,Gripe,Moderado,True,True,True,52,si_activo,False
+38.94262123709093,True,con_flema_purulenta_sangre,puntada_al_respirar,agotado,False,Neumonía,Grave,True,True,False,52,si_activo,False
+36.76019929196574,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,False,True,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,False,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,True,True,False,65,de_toda_la_vida,False
+36.57210399584792,True,seca,molestia_leve,al_caminar_rapido,False,Resfrio Común,Leve,True,True,False,52,si_activo,True
+37.1,False,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,True,True,1,si_activo,True
+39.816832394068854,True,con_flema_transparente_verdosa,ninguno,ninguna,False,Gripe,Moderado,False,False,True,52,si_activo,False
+39.230830961953046,False,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,False,True,True,52,si_activo,True
+36.601488973424914,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,False,True,True,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,False,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,True,False,65,de_toda_la_vida,False
+35.78862907755306,True,seca,molestia_leve,al_caminar_rapido,True,Resfrio Común,Leve,False,True,False,52,si_activo,True
+37.1,False,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,True,False,1,si_activo,True
+40.327574309581635,True,con_flema_transparente_verdosa,ninguno,al_caminar_rapido,False,Gripe,Moderado,True,True,False,52,si_activo,False
+38.57686067955357,True,con_flema_purulenta_sangre,puntada_al_respirar,agotado,False,Neumonía,Grave,False,False,False,52,si_activo,False
+36.39148686974632,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,True,False,False,52,si_activo,True
+37.1,False,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,True,True,False,63,de_toda_la_vida,False
+35.85680690231933,True,seca,molestia_leve,empeora_con_anios,False,Resfrio Común,Leve,False,True,True,52,si_activo,True
+37.1,False,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,True,False,1,si_activo,True
+40.39117910661816,True,seca,molestia_leve,repentina,False,Gripe,Moderado,False,True,False,52,si_activo,False
+39.77517293161104,False,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,False,False,False,52,si_activo,True
+36.1447279889288,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,False,False,True,52,si_activo,True
+37.1,True,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,False
+37.1,False,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,False,False,69,de_toda_la_vida,False
+36.06393486993659,True,seca,molestia_leve,ninguna,False,Resfrio Común,Leve,False,False,False,52,si_activo,True
+37.1,False,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,True,True,1,si_activo,True
+40.191520606330194,True,con_flema_transparente_verdosa,ninguno,repentina,False,Gripe,Moderado,False,False,True,52,si_activo,False
+38.80493042247014,True,con_flema_purulenta_sangre,puntada_al_respirar,agotado,False,Neumonía,Grave,True,False,False,52,si_activo,True
+36.90945713741402,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,True,False,True,52,si_activo,True
+37.1,False,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,True,False,68,de_toda_la_vida,False
+36.70368504744019,True,seca,ninguno,repentina,False,Resfrio Común,Leve,True,False,False,52,si_activo,False
+37.1,False,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,True,True,1,si_activo,False
+39.35773325342883,True,con_flema_transparente_verdosa,molestia_leve,empeora_con_anios,False,Gripe,Moderado,True,True,True,52,si_activo,False
+38.94257066388259,True,con_flema_purulenta_sangre,puntada_al_respirar,agotado,False,Neumonía,Grave,False,False,True,52,si_activo,True
+36.837805998475666,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,False,False,True,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,True,True,True,63,de_toda_la_vida,True
+36.733917213639145,True,seca,molestia_leve,repentina,False,Resfrio Común,Leve,False,False,True,52,si_activo,True
+37.1,True,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,True,True,1,si_activo,False
+40.47849082297041,True,con_flema_transparente_verdosa,molestia_leve,al_caminar_rapido,False,Gripe,Moderado,True,True,False,52,si_activo,False
+39.72065093243135,False,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,False,False,True,52,si_activo,False
+36.235027483688164,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,True,True,True,52,si_activo,False
+37.1,False,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,False,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,True,True,64,de_toda_la_vida,True
+36.45949753123085,True,seca,molestia_leve,empeora_con_anios,True,Resfrio Común,Leve,False,True,False,52,si_activo,True
+37.1,True,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,False,True,1,si_activo,True
+39.390060752522466,True,con_flema_transparente_verdosa,ninguno,repentina,False,Gripe,Moderado,True,True,False,52,si_activo,True
+38.911702108514646,True,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,True,True,False,52,si_activo,False
+36.15468818886861,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,True,False,False,52,si_activo,True
+37.1,True,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,True,False,False,61,de_toda_la_vida,False
+36.89599696261854,True,seca,molestia_leve,repentina,True,Resfrio Común,Leve,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,False,True,1,si_activo,False
+39.673620089767255,True,con_flema_transparente_verdosa,ninguno,ninguna,False,Gripe,Moderado,False,True,False,52,si_activo,False
+39.590413971159286,True,con_flema_purulenta_sangre,puntada_al_respirar,agotado,True,Neumonía,Grave,False,True,True,52,si_activo,True
+36.23678440707646,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,True,True,False,52,si_activo,True
+37.1,False,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,False,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,True,False,66,de_toda_la_vida,False
+35.749039994561045,True,seca,ninguno,empeora_con_anios,True,Resfrio Común,Leve,True,False,False,52,si_activo,True
+37.1,False,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,True,False,1,si_activo,True
+39.498458593801665,True,con_flema_transparente_verdosa,ninguno,repentina,False,Gripe,Moderado,True,True,False,52,si_activo,False
+39.503343540212356,False,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,True,True,False,52,si_activo,False
+36.10982379714672,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,False,True,False,52,si_activo,True
+37.1,True,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,False,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,False,True,65,de_toda_la_vida,False
+35.708949458852445,True,seca,molestia_leve,ninguna,True,Resfrio Común,Leve,False,False,True,52,si_activo,True
+37.1,False,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,False,True,1,si_activo,False
+39.19185973661796,True,con_flema_transparente_verdosa,ninguno,empeora_con_anios,False,Gripe,Moderado,False,False,False,52,si_activo,True
+38.556104191217884,False,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,False,True,False,52,si_activo,True
+37.353607468721606,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,False,True,True,52,si_activo,True
+37.1,True,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,True,False,62,de_toda_la_vida,True
+36.8332962077016,True,seca,ninguno,empeora_con_anios,False,Resfrio Común,Leve,True,True,True,52,si_activo,False
+37.1,True,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,False,False,1,si_activo,True
+39.514636197496486,True,seca,molestia_leve,ninguna,False,Gripe,Moderado,True,True,False,52,si_activo,False
+39.701678458147036,True,con_flema_purulenta_sangre,puntada_al_respirar,agotado,False,Neumonía,Grave,False,True,True,52,si_activo,True
+36.84252587850723,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,False,True,True,52,si_activo,False
+37.1,False,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,False,True,65,de_toda_la_vida,True
+35.704508547852726,True,seca,molestia_leve,empeora_con_anios,True,Resfrio Común,Leve,False,True,True,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,False,True,1,si_activo,True
+40.05915934417047,True,con_flema_transparente_verdosa,molestia_leve,repentina,False,Gripe,Moderado,True,False,False,52,si_activo,True
+39.77853477693806,True,con_flema_purulenta_sangre,puntada_al_respirar,agotado,True,Neumonía,Grave,False,True,True,52,si_activo,False
+36.75317275571816,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,False,False,True,52,si_activo,True
+37.1,False,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,False
+37.1,False,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,True,False,True,64,de_toda_la_vida,False
+35.93271737845792,True,seca,molestia_leve,al_caminar_rapido,True,Resfrio Común,Leve,False,False,True,52,si_activo,True
+37.1,False,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,True,True,1,si_activo,False
+39.50442367782679,True,con_flema_transparente_verdosa,ninguno,empeora_con_anios,False,Gripe,Moderado,True,True,False,52,si_activo,True
+39.274847236792155,False,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,True,False,False,52,si_activo,False
+36.76365007084969,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,False,True,True,52,si_activo,False
+37.1,False,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,False
+37.1,True,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,True,False,63,de_toda_la_vida,True
+36.59865228602355,True,seca,molestia_leve,ninguna,False,Resfrio Común,Leve,False,False,True,52,si_activo,True
+37.1,True,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,False,True,1,si_activo,False
+39.31270607230622,True,seca,molestia_leve,ninguna,False,Gripe,Moderado,False,True,False,52,si_activo,True
+39.32490665992528,False,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,False,True,True,52,si_activo,True
+37.23121418594411,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,True,False,True,52,si_activo,False
+37.1,False,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,False,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,True,False,True,63,de_toda_la_vida,False
+36.967470940242336,True,seca,ninguno,ninguna,False,Resfrio Común,Leve,False,False,True,52,si_activo,True
+37.1,False,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,False,False,1,si_activo,False
+40.33653024538446,True,con_flema_transparente_verdosa,ninguno,empeora_con_anios,False,Gripe,Moderado,True,True,True,52,si_activo,False
+39.467377979062434,False,con_flema_purulenta_sangre,puntada_al_respirar,agotado,False,Neumonía,Grave,False,False,True,52,si_activo,True
+37.336674497650336,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,False,False,True,52,si_activo,False
+37.1,False,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,False
+37.1,True,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,True,False,67,de_toda_la_vida,True
+35.66957708810725,True,seca,molestia_leve,ninguna,True,Resfrio Común,Leve,True,False,True,52,si_activo,False
+37.1,False,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,True,True,1,si_activo,True
+39.89017205946536,True,seca,molestia_leve,repentina,False,Gripe,Moderado,False,False,False,52,si_activo,False
+39.39616962496265,False,con_flema_purulenta_sangre,puntada_al_respirar,agotado,True,Neumonía,Grave,False,False,False,52,si_activo,True
+37.242548609275836,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,True,True,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,False
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,True,False,False,68,de_toda_la_vida,False
+36.32677592711327,True,seca,molestia_leve,ninguna,False,Resfrio Común,Leve,False,True,False,52,si_activo,False
+37.1,False,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,True,True,1,si_activo,False
+39.90103197046978,True,seca,ninguno,empeora_con_anios,False,Gripe,Moderado,True,False,False,52,si_activo,True
+39.32112466930132,False,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,True,True,False,52,si_activo,True
+37.0729091691079,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,False,False,True,52,si_activo,True
+37.1,True,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,True,False,False,69,de_toda_la_vida,True
+35.795284286258806,True,seca,ninguno,al_caminar_rapido,False,Resfrio Común,Leve,True,False,False,52,si_activo,True
+37.1,False,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,True,False,1,si_activo,True
+39.249630427241115,True,seca,molestia_leve,al_caminar_rapido,False,Gripe,Moderado,True,False,False,52,si_activo,True
+39.04214803732716,False,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,True,True,True,52,si_activo,True
+36.54325631438681,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,True,False,False,52,si_activo,True
+37.1,False,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,True,True,False,61,de_toda_la_vida,True
+36.19132224397808,True,seca,molestia_leve,repentina,False,Resfrio Común,Leve,True,False,False,52,si_activo,True
+37.1,False,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,True,True,1,si_activo,True
+39.095971566476656,True,con_flema_transparente_verdosa,molestia_leve,empeora_con_anios,False,Gripe,Moderado,True,True,False,52,si_activo,False
+39.658297083869265,False,con_flema_purulenta_sangre,puntada_al_respirar,agotado,False,Neumonía,Grave,False,True,False,52,si_activo,True
+36.92281216804009,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,True,False,True,52,si_activo,False
+37.1,False,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,False
+37.1,False,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,True,True,61,de_toda_la_vida,True
+35.5126250149422,True,seca,molestia_leve,al_caminar_rapido,False,Resfrio Común,Leve,True,True,True,52,si_activo,True
+37.1,True,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,False,False,1,si_activo,True
+39.58916258109794,True,con_flema_transparente_verdosa,ninguno,repentina,False,Gripe,Moderado,True,False,True,52,si_activo,False
+38.64705189680249,False,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,True,True,False,52,si_activo,True
+37.25087018193836,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,True,True,False,52,si_activo,True
+37.1,True,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,True,False,69,de_toda_la_vida,True
+36.32544385993594,True,seca,molestia_leve,empeora_con_anios,False,Resfrio Común,Leve,False,False,True,52,si_activo,False
+37.1,False,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,True,False,1,si_activo,False
+39.19078367603382,True,con_flema_transparente_verdosa,molestia_leve,al_caminar_rapido,False,Gripe,Moderado,True,False,True,52,si_activo,False
+39.9804147805018,True,con_flema_purulenta_sangre,puntada_al_respirar,agotado,False,Neumonía,Grave,False,True,False,52,si_activo,True
+37.0110220136888,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,False,True,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,False,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,True,False,True,61,de_toda_la_vida,True
+35.592431093217236,True,seca,ninguno,empeora_con_anios,True,Resfrio Común,Leve,True,False,False,52,si_activo,False
+37.1,False,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,False,False,1,si_activo,False
+40.186077282762355,True,seca,ninguno,ninguna,False,Gripe,Moderado,True,False,False,52,si_activo,False
+39.499527044558036,False,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,True,False,True,52,si_activo,True
+36.425251911289244,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,False,True,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,False
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,True,True,False,67,de_toda_la_vida,False
+36.013740972552114,True,seca,ninguno,repentina,True,Resfrio Común,Leve,True,False,True,52,si_activo,False
+37.1,True,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,True,False,1,si_activo,True
+39.35646815463143,True,con_flema_transparente_verdosa,ninguno,ninguna,False,Gripe,Moderado,True,True,True,52,si_activo,False
+38.90400129303653,False,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,False,False,False,52,si_activo,False
+36.99963689620383,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,True,False,True,52,si_activo,True
+37.1,True,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,False,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,True,True,True,68,de_toda_la_vida,True
+36.72249248916881,True,seca,ninguno,al_caminar_rapido,True,Resfrio Común,Leve,False,True,False,52,si_activo,True
+37.1,False,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,False,False,1,si_activo,True
+40.24024871118354,True,seca,ninguno,empeora_con_anios,False,Gripe,Moderado,False,True,True,52,si_activo,False
+39.97660390604351,True,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,True,True,True,52,si_activo,False
+36.022978357176655,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,False,True,False,52,si_activo,True
+37.1,False,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,False
+37.1,False,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,False,False,67,de_toda_la_vida,True
+36.35930895512203,True,seca,molestia_leve,empeora_con_anios,True,Resfrio Común,Leve,True,False,True,52,si_activo,False
+37.1,True,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,False,False,1,si_activo,True
+40.392058850896845,True,con_flema_transparente_verdosa,molestia_leve,empeora_con_anios,False,Gripe,Moderado,False,True,False,52,si_activo,False
+38.776119622400564,False,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,False,False,True,52,si_activo,False
+37.24886872308548,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,True,True,False,52,si_activo,True
+37.1,True,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,False,False,67,de_toda_la_vida,True
+36.56920822283547,True,seca,molestia_leve,al_caminar_rapido,True,Resfrio Común,Leve,True,False,True,52,si_activo,True
+37.1,False,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,False,False,1,si_activo,True
+39.2028476918269,True,con_flema_transparente_verdosa,molestia_leve,repentina,False,Gripe,Moderado,False,False,True,52,si_activo,True
+38.62133655687434,False,con_flema_purulenta_sangre,puntada_al_respirar,agotado,True,Neumonía,Grave,True,True,True,52,si_activo,True
+37.499384268716604,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,False,True,True,52,si_activo,True
+37.1,False,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,False
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,True,True,63,de_toda_la_vida,True
+36.333485907403336,True,seca,ninguno,empeora_con_anios,True,Resfrio Común,Leve,False,False,True,52,si_activo,True
+37.1,False,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,False,True,1,si_activo,False
+40.100292421663376,True,seca,molestia_leve,empeora_con_anios,False,Gripe,Moderado,False,False,True,52,si_activo,True
+38.94975211669358,True,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,False,True,False,52,si_activo,True
+36.94735225312797,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,False,False,False,52,si_activo,False
+37.1,False,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,False,True,66,de_toda_la_vida,False
+36.64252882158868,True,seca,ninguno,repentina,True,Resfrio Común,Leve,False,True,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,True,True,1,si_activo,False
+40.42860703007648,True,con_flema_transparente_verdosa,ninguno,al_caminar_rapido,False,Gripe,Moderado,True,True,False,52,si_activo,False
+39.146249110689915,True,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,False,False,False,52,si_activo,True
+36.27606164972958,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,False,True,True,52,si_activo,False
+37.1,True,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,False
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,True,True,True,69,de_toda_la_vida,True
+36.14737558762875,True,seca,molestia_leve,al_caminar_rapido,False,Resfrio Común,Leve,True,True,True,52,si_activo,False
+37.1,True,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,True,True,1,si_activo,True
+39.58256308035392,True,seca,ninguno,empeora_con_anios,False,Gripe,Moderado,True,True,False,52,si_activo,False
+39.56281897990236,True,con_flema_purulenta_sangre,puntada_al_respirar,agotado,False,Neumonía,Grave,True,True,False,52,si_activo,True
+36.983019815523356,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,False,True,False,52,si_activo,True
+37.1,False,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,True,True,False,63,de_toda_la_vida,False
+36.63092783010081,True,seca,ninguno,empeora_con_anios,True,Resfrio Común,Leve,False,True,True,52,si_activo,True
+37.1,False,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,True,False,1,si_activo,False
+39.87079838591811,True,seca,ninguno,empeora_con_anios,False,Gripe,Moderado,False,True,True,52,si_activo,False
+39.60083318498029,False,con_flema_purulenta_sangre,puntada_al_respirar,agotado,True,Neumonía,Grave,True,False,False,52,si_activo,False
+37.22168297729203,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,True,True,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,False,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,True,False,True,67,de_toda_la_vida,True
+36.31066962232679,True,seca,ninguno,al_caminar_rapido,True,Resfrio Común,Leve,True,False,False,52,si_activo,True
+37.1,False,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,False,True,1,si_activo,False
+40.372158438082415,True,seca,molestia_leve,repentina,False,Gripe,Moderado,True,False,False,52,si_activo,False
+38.52608677310296,False,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,False,False,True,52,si_activo,False
+37.29734894413951,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,True,True,False,52,si_activo,True
+37.1,False,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,False,True,63,de_toda_la_vida,False
+35.99371578234381,True,seca,ninguno,empeora_con_anios,True,Resfrio Común,Leve,True,False,False,52,si_activo,True
+37.1,False,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,True,True,1,si_activo,False
+39.01927472831591,True,con_flema_transparente_verdosa,molestia_leve,repentina,False,Gripe,Moderado,True,True,False,52,si_activo,True
+38.609437747402765,False,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,True,False,False,52,si_activo,True
+36.14196467856885,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,False,False,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,False,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,False,True,64,de_toda_la_vida,False
+36.315683466460285,True,seca,ninguno,repentina,True,Resfrio Común,Leve,True,False,False,52,si_activo,False
+37.1,False,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,True,True,1,si_activo,True
+39.996618836384066,True,seca,ninguno,empeora_con_anios,False,Gripe,Moderado,False,False,True,52,si_activo,False
+38.94665486554361,False,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,False,False,False,52,si_activo,True
+37.10394097142649,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,False,True,True,52,si_activo,False
+37.1,False,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,False
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,False,True,67,de_toda_la_vida,True
+35.663422533551525,True,seca,ninguno,al_caminar_rapido,True,Resfrio Común,Leve,False,False,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,False,False,1,si_activo,False
+39.187610962284246,True,con_flema_transparente_verdosa,ninguno,ninguna,False,Gripe,Moderado,True,True,False,52,si_activo,False
+39.717883483187855,False,con_flema_purulenta_sangre,puntada_al_respirar,agotado,True,Neumonía,Grave,True,False,True,52,si_activo,True
+36.011770229587796,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,True,False,False,52,si_activo,True
+37.1,True,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,False,True,62,de_toda_la_vida,True
+36.415348454510564,True,seca,ninguno,empeora_con_anios,True,Resfrio Común,Leve,False,False,True,52,si_activo,False
+37.1,True,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,True,True,1,si_activo,False
+40.27835291729588,True,con_flema_transparente_verdosa,molestia_leve,repentina,False,Gripe,Moderado,True,False,False,52,si_activo,False
+39.196186890332754,False,con_flema_purulenta_sangre,puntada_al_respirar,agotado,True,Neumonía,Grave,False,True,False,52,si_activo,True
+37.10189445044143,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,False,True,True,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,True,False,65,de_toda_la_vida,False
+35.931262784215896,True,seca,molestia_leve,empeora_con_anios,False,Resfrio Común,Leve,True,False,False,52,si_activo,True
+37.1,False,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,False,False,1,si_activo,False
+39.27820564616789,True,con_flema_transparente_verdosa,molestia_leve,al_caminar_rapido,False,Gripe,Moderado,True,True,False,52,si_activo,False
+39.36532128654435,True,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,True,True,False,52,si_activo,False
+37.404961334198646,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,False,False,True,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,True,True,False,65,de_toda_la_vida,True
+36.67094632989643,True,seca,molestia_leve,empeora_con_anios,True,Resfrio Común,Leve,True,True,True,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,True,False,1,si_activo,True
+39.08540141559583,True,seca,molestia_leve,ninguna,False,Gripe,Moderado,False,True,False,52,si_activo,True
+39.49946877761377,False,con_flema_purulenta_sangre,puntada_al_respirar,agotado,True,Neumonía,Grave,True,False,True,52,si_activo,False
+36.683479904237515,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,True,False,True,52,si_activo,False
+37.1,False,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,True,False,63,de_toda_la_vida,True
+36.460304154192876,True,seca,molestia_leve,repentina,False,Resfrio Común,Leve,False,False,True,52,si_activo,False
+37.1,False,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,True,False,1,si_activo,False
+40.112559753285666,True,seca,molestia_leve,repentina,False,Gripe,Moderado,True,True,True,52,si_activo,False
+39.29308701974645,False,con_flema_purulenta_sangre,puntada_al_respirar,agotado,True,Neumonía,Grave,True,True,False,52,si_activo,True
+36.49867526494694,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,True,True,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,False,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,True,False,True,66,de_toda_la_vida,False
+36.64615459105333,True,seca,molestia_leve,ninguna,True,Resfrio Común,Leve,False,True,True,52,si_activo,True
+37.1,True,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,True,False,1,si_activo,False
+40.333583447259485,True,seca,molestia_leve,ninguna,False,Gripe,Moderado,False,True,True,52,si_activo,True
+38.6035935272366,False,con_flema_purulenta_sangre,puntada_al_respirar,agotado,True,Neumonía,Grave,False,True,False,52,si_activo,True
+36.87798665518008,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,False,True,False,52,si_activo,False
+37.1,False,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,True,True,False,66,de_toda_la_vida,True
+36.06619796418558,True,seca,ninguno,empeora_con_anios,False,Resfrio Común,Leve,False,False,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,True,True,1,si_activo,True
+40.08938436376774,True,seca,molestia_leve,al_caminar_rapido,False,Gripe,Moderado,True,False,False,52,si_activo,False
+39.664577554249206,True,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,False,True,False,52,si_activo,False
+37.39543433373132,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,True,False,False,67,de_toda_la_vida,False
+36.77747243795886,True,seca,ninguno,empeora_con_anios,True,Resfrio Común,Leve,False,False,True,52,si_activo,False
+37.1,False,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,False,False,1,si_activo,False
+39.163099421939954,True,con_flema_transparente_verdosa,ninguno,empeora_con_anios,False,Gripe,Moderado,False,True,False,52,si_activo,True
+39.518337734205694,True,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,False,True,True,52,si_activo,False
+36.827046920750185,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,False,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,False,False,62,de_toda_la_vida,True
+35.86470588086713,True,seca,ninguno,empeora_con_anios,False,Resfrio Común,Leve,False,True,False,52,si_activo,True
+37.1,True,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,False,False,1,si_activo,True
+39.40388690940436,True,seca,molestia_leve,al_caminar_rapido,False,Gripe,Moderado,True,True,False,52,si_activo,True
+39.197888603325424,True,con_flema_purulenta_sangre,puntada_al_respirar,agotado,True,Neumonía,Grave,True,False,True,52,si_activo,False
+36.07899163489253,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,True,False,False,52,si_activo,True
+37.1,False,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,True,True,67,de_toda_la_vida,False
+36.6872812389035,True,seca,molestia_leve,repentina,False,Resfrio Común,Leve,False,True,True,52,si_activo,False
+37.1,False,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,True,True,1,si_activo,False
+39.81507599838789,True,seca,molestia_leve,al_caminar_rapido,False,Gripe,Moderado,False,True,True,52,si_activo,True
+39.10537601381772,False,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,False,True,False,52,si_activo,False
+36.95667518998749,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,False,False,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,True,True,False,65,de_toda_la_vida,False
+36.47456084473259,True,seca,molestia_leve,ninguna,True,Resfrio Común,Leve,True,True,True,52,si_activo,True
+37.1,True,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,True,False,1,si_activo,False
+39.53341956954137,True,con_flema_transparente_verdosa,molestia_leve,empeora_con_anios,False,Gripe,Moderado,True,True,True,52,si_activo,True
+39.520309383371114,True,con_flema_purulenta_sangre,puntada_al_respirar,agotado,False,Neumonía,Grave,True,False,False,52,si_activo,True
+36.56307075510033,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,True,True,False,52,si_activo,True
+37.1,True,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,False
+37.1,False,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,False,True,69,de_toda_la_vida,False
+36.4523195467866,True,seca,ninguno,repentina,False,Resfrio Común,Leve,False,True,True,52,si_activo,False
+37.1,True,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,False,False,1,si_activo,False
+39.513071060309905,True,con_flema_transparente_verdosa,molestia_leve,ninguna,False,Gripe,Moderado,True,False,True,52,si_activo,False
+38.63342104521975,True,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,True,False,True,52,si_activo,False
+36.74064345552357,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,False,True,True,52,si_activo,False
+37.1,False,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,False
+37.1,True,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,True,False,False,63,de_toda_la_vida,True
+35.576463026793704,True,seca,ninguno,al_caminar_rapido,True,Resfrio Común,Leve,False,True,False,52,si_activo,True
+37.1,False,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,False,True,1,si_activo,False
+39.042085309989275,True,seca,molestia_leve,al_caminar_rapido,False,Gripe,Moderado,True,True,True,52,si_activo,True
+39.07259997460891,False,con_flema_purulenta_sangre,puntada_al_respirar,agotado,True,Neumonía,Grave,False,False,False,52,si_activo,False
+36.66918864333237,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,True,False,True,52,si_activo,False
+37.1,False,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,False
+37.1,True,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,False,True,66,de_toda_la_vida,True
+35.84257599447949,True,seca,molestia_leve,ninguna,False,Resfrio Común,Leve,False,True,False,52,si_activo,True
+37.1,False,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,True,True,1,si_activo,False
+40.2977093431054,True,seca,ninguno,ninguna,False,Gripe,Moderado,False,True,False,52,si_activo,False
+39.90275038654431,False,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,False,False,True,52,si_activo,True
+36.932560859654586,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,False,False,True,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,False,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,True,False,62,de_toda_la_vida,False
+36.19491986544576,True,seca,molestia_leve,repentina,True,Resfrio Común,Leve,True,True,True,52,si_activo,False
+37.1,False,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,True,True,1,si_activo,False
+39.90420200402462,True,seca,molestia_leve,al_caminar_rapido,False,Gripe,Moderado,False,False,True,52,si_activo,False
+39.696877429637034,False,con_flema_purulenta_sangre,puntada_al_respirar,agotado,True,Neumonía,Grave,False,True,True,52,si_activo,True
+36.626329777038904,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,False,False,True,52,si_activo,True
+37.1,False,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,False,True,61,de_toda_la_vida,False
+35.51179293569776,True,seca,molestia_leve,ninguna,True,Resfrio Común,Leve,True,False,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,True,True,1,si_activo,False
+39.29498612996634,True,seca,molestia_leve,repentina,False,Gripe,Moderado,True,False,False,52,si_activo,False
+39.992274468130674,False,con_flema_purulenta_sangre,puntada_al_respirar,agotado,True,Neumonía,Grave,True,False,True,52,si_activo,False
+36.90298873690215,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,False,False,False,52,si_activo,True
+37.1,False,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,True,True,61,de_toda_la_vida,False
+35.56759293247869,True,seca,ninguno,repentina,True,Resfrio Común,Leve,False,False,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,False,True,1,si_activo,False
+40.204131523005564,True,con_flema_transparente_verdosa,ninguno,al_caminar_rapido,False,Gripe,Moderado,False,False,False,52,si_activo,False
+39.41566684991995,False,con_flema_purulenta_sangre,puntada_al_respirar,agotado,False,Neumonía,Grave,True,True,False,52,si_activo,True
+36.57961696626252,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,False,False,False,52,si_activo,True
+37.1,False,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,True,False,65,de_toda_la_vida,False
+35.765888138964804,True,seca,molestia_leve,empeora_con_anios,True,Resfrio Común,Leve,False,True,False,52,si_activo,False
+37.1,False,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,True,True,1,si_activo,True
+40.45982320317776,True,seca,molestia_leve,repentina,False,Gripe,Moderado,True,True,True,52,si_activo,True
+38.63025267199461,False,con_flema_purulenta_sangre,puntada_al_respirar,agotado,False,Neumonía,Grave,True,True,True,52,si_activo,True
+37.23171903469016,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,False,False,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,True,False,62,de_toda_la_vida,True
+36.666213017052264,True,seca,molestia_leve,al_caminar_rapido,False,Resfrio Común,Leve,False,True,True,52,si_activo,True
+37.1,False,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,True,True,1,si_activo,True
+40.079285149591676,True,seca,ninguno,al_caminar_rapido,False,Gripe,Moderado,False,True,True,52,si_activo,True
+39.367708947794135,True,con_flema_purulenta_sangre,puntada_al_respirar,agotado,True,Neumonía,Grave,False,False,True,52,si_activo,False
+36.583093329756174,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,False,True,True,52,si_activo,True
+37.1,False,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,True,True,66,de_toda_la_vida,True
+36.57094746115537,True,seca,molestia_leve,empeora_con_anios,True,Resfrio Común,Leve,False,False,False,52,si_activo,True
+37.1,True,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,False,False,1,si_activo,True
+39.26721912918064,True,seca,ninguno,empeora_con_anios,False,Gripe,Moderado,False,False,True,52,si_activo,False
+39.659708974815565,True,con_flema_purulenta_sangre,puntada_al_respirar,agotado,False,Neumonía,Grave,False,True,False,52,si_activo,False
+37.03933108266145,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,False,True,True,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,False,False,68,de_toda_la_vida,True
+36.07621435011147,True,seca,molestia_leve,repentina,True,Resfrio Común,Leve,False,False,True,52,si_activo,True
+37.1,True,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,False,True,1,si_activo,False
+39.1595967229994,True,seca,ninguno,repentina,False,Gripe,Moderado,False,False,True,52,si_activo,True
+39.13064294995073,True,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,True,True,False,52,si_activo,False
+37.17242789037455,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,False,True,False,52,si_activo,False
+37.1,False,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,True,True,True,65,de_toda_la_vida,False
+35.91705392092981,True,seca,molestia_leve,repentina,True,Resfrio Común,Leve,False,True,True,52,si_activo,False
+37.1,True,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,True,False,1,si_activo,True
+40.33010813441409,True,seca,molestia_leve,repentina,False,Gripe,Moderado,True,False,True,52,si_activo,False
+39.55794272746471,False,con_flema_purulenta_sangre,puntada_al_respirar,agotado,True,Neumonía,Grave,False,False,True,52,si_activo,False
+36.529392165714846,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,False,True,True,52,si_activo,True
+37.1,True,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,False,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,True,False,True,63,de_toda_la_vida,False
+35.77671994918035,True,seca,molestia_leve,ninguna,True,Resfrio Común,Leve,True,False,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,True,False,1,si_activo,True
+40.25825955134675,True,seca,ninguno,repentina,False,Gripe,Moderado,False,True,True,52,si_activo,False
+39.69365493110778,False,con_flema_purulenta_sangre,puntada_al_respirar,agotado,True,Neumonía,Grave,True,True,True,52,si_activo,False
+36.1335034464437,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,False,False,True,52,si_activo,False
+37.1,False,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,True,False,True,62,de_toda_la_vida,True
+36.72530985703708,True,seca,molestia_leve,repentina,True,Resfrio Común,Leve,False,False,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,True,True,1,si_activo,True
+39.815646820181776,True,seca,molestia_leve,repentina,False,Gripe,Moderado,False,True,True,52,si_activo,True
+39.98906211000925,False,con_flema_purulenta_sangre,puntada_al_respirar,agotado,False,Neumonía,Grave,False,True,True,52,si_activo,True
+37.18251152652688,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,False,False,False,52,si_activo,True
+37.1,False,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,True,False,65,de_toda_la_vida,True
+36.699741156412664,True,seca,ninguno,ninguna,True,Resfrio Común,Leve,False,True,False,52,si_activo,True
+37.1,True,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,True,True,1,si_activo,False
+39.3192659734988,True,seca,ninguno,repentina,False,Gripe,Moderado,True,True,True,52,si_activo,False
+38.73271429756903,True,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,False,False,False,52,si_activo,True
+36.07981135959911,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,False,True,True,52,si_activo,True
+37.1,True,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,False
+37.1,True,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,True,True,True,69,de_toda_la_vida,True
+35.89863519763152,True,seca,ninguno,ninguna,False,Resfrio Común,Leve,True,False,False,52,si_activo,True
+37.1,True,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,True,False,1,si_activo,True
+39.80155016352888,True,seca,ninguno,al_caminar_rapido,False,Gripe,Moderado,True,False,False,52,si_activo,True
+38.77433280597221,True,con_flema_purulenta_sangre,puntada_al_respirar,agotado,False,Neumonía,Grave,True,False,True,52,si_activo,False
+36.608080521227734,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,False,True,False,52,si_activo,True
+37.1,True,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,False,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,True,True,68,de_toda_la_vida,False
+35.913974156674556,True,seca,ninguno,repentina,False,Resfrio Común,Leve,False,False,False,52,si_activo,True
+37.1,True,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,True,False,1,si_activo,False
+39.29334525809075,True,seca,molestia_leve,ninguna,False,Gripe,Moderado,False,True,True,52,si_activo,True
+39.614168217027476,True,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,True,True,True,52,si_activo,True
+36.21640784433189,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,False,True,True,52,si_activo,True
+37.1,False,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,True,True,61,de_toda_la_vida,True
+36.535068447875204,True,seca,ninguno,al_caminar_rapido,True,Resfrio Común,Leve,False,True,False,52,si_activo,False
+37.1,False,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,True,True,1,si_activo,True
+39.09861545516104,True,con_flema_transparente_verdosa,molestia_leve,ninguna,False,Gripe,Moderado,False,True,False,52,si_activo,False
+39.59078602146084,True,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,True,False,False,52,si_activo,True
+36.747676361565034,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,True,False,False,52,si_activo,True
+37.1,True,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,False,True,69,de_toda_la_vida,True
+35.53569268071928,True,seca,molestia_leve,repentina,False,Resfrio Común,Leve,True,True,False,52,si_activo,False
+37.1,False,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,False,True,1,si_activo,True
+40.01056779729445,True,seca,ninguno,ninguna,False,Gripe,Moderado,False,False,False,52,si_activo,False
+39.556180752836056,True,con_flema_purulenta_sangre,puntada_al_respirar,agotado,True,Neumonía,Grave,True,False,False,52,si_activo,True
+36.093546394512806,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,True,False,False,52,si_activo,True
+37.1,False,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,False
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,True,False,True,69,de_toda_la_vida,False
+36.48835710187484,True,seca,molestia_leve,repentina,False,Resfrio Común,Leve,False,True,True,52,si_activo,True
+37.1,True,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,True,True,1,si_activo,True
+40.44828734168421,True,con_flema_transparente_verdosa,molestia_leve,empeora_con_anios,False,Gripe,Moderado,False,False,False,52,si_activo,False
+38.680826587306285,True,con_flema_purulenta_sangre,puntada_al_respirar,agotado,True,Neumonía,Grave,False,False,False,52,si_activo,True
+36.608283513539014,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,True,False,True,52,si_activo,False
+37.1,False,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,False
+37.1,True,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,True,True,67,de_toda_la_vida,False
+36.938014015340094,True,seca,ninguno,ninguna,False,Resfrio Común,Leve,True,True,False,52,si_activo,True
+37.1,False,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,False,False,1,si_activo,False
+40.446276950346785,True,con_flema_transparente_verdosa,molestia_leve,ninguna,False,Gripe,Moderado,False,True,True,52,si_activo,True
+39.69115930164015,True,con_flema_purulenta_sangre,puntada_al_respirar,agotado,False,Neumonía,Grave,True,True,True,52,si_activo,True
+37.25932261715049,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,False,False,True,52,si_activo,False
+37.1,False,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,False,False,67,de_toda_la_vida,True
+36.61318482115627,True,seca,molestia_leve,al_caminar_rapido,False,Resfrio Común,Leve,True,False,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,False,False,1,si_activo,True
+40.326238634476134,True,seca,ninguno,ninguna,False,Gripe,Moderado,True,False,True,52,si_activo,False
+38.624424518634626,True,con_flema_purulenta_sangre,puntada_al_respirar,agotado,True,Neumonía,Grave,True,False,True,52,si_activo,False
+36.1334415316416,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,False,True,False,52,si_activo,True
+37.1,True,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,True,True,True,64,de_toda_la_vida,False
+36.9644855833297,True,seca,ninguno,al_caminar_rapido,True,Resfrio Común,Leve,False,True,True,52,si_activo,True
+37.1,False,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,False,True,1,si_activo,False
+39.400062217563196,True,con_flema_transparente_verdosa,molestia_leve,al_caminar_rapido,False,Gripe,Moderado,True,False,False,52,si_activo,False
+39.99230612319796,True,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,False,False,False,52,si_activo,False
+36.005242398500464,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,False,False,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,True,False,True,63,de_toda_la_vida,False
+36.98768314289597,True,seca,ninguno,repentina,True,Resfrio Común,Leve,True,False,True,52,si_activo,True
+37.1,False,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,False,False,1,si_activo,True
+39.10434594453447,True,con_flema_transparente_verdosa,molestia_leve,empeora_con_anios,False,Gripe,Moderado,True,False,False,52,si_activo,True
+38.58955646288761,True,con_flema_purulenta_sangre,puntada_al_respirar,agotado,False,Neumonía,Grave,False,False,True,52,si_activo,True
+36.82027127773857,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,True,False,True,63,de_toda_la_vida,False
+36.505148597458984,True,seca,molestia_leve,ninguna,True,Resfrio Común,Leve,False,False,False,52,si_activo,True
+37.1,False,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,True,False,1,si_activo,False
+39.819640212476585,True,con_flema_transparente_verdosa,ninguno,al_caminar_rapido,False,Gripe,Moderado,False,False,True,52,si_activo,True
+39.80318817247568,False,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,False,True,False,52,si_activo,False
+37.2941118138164,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,True,True,True,52,si_activo,True
+37.1,True,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,False
+37.1,False,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,True,True,65,de_toda_la_vida,False
+36.9905435241584,True,seca,ninguno,ninguna,True,Resfrio Común,Leve,True,True,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,True,False,1,si_activo,False
+40.48165467275685,True,seca,molestia_leve,empeora_con_anios,False,Gripe,Moderado,True,False,False,52,si_activo,True
+39.94186893234292,True,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,False,False,True,52,si_activo,True
+37.20654997891783,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,True,False,True,52,si_activo,False
+37.1,True,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,False,True,66,de_toda_la_vida,True
+36.52287263805973,True,seca,ninguno,repentina,True,Resfrio Común,Leve,True,True,False,52,si_activo,True
+37.1,False,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,False,True,1,si_activo,True
+39.41927922687723,True,seca,molestia_leve,al_caminar_rapido,False,Gripe,Moderado,True,False,False,52,si_activo,False
+39.711814187056696,True,con_flema_purulenta_sangre,puntada_al_respirar,agotado,True,Neumonía,Grave,False,True,False,52,si_activo,False
+36.18918675435764,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,True,False,False,52,si_activo,False
+37.1,False,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,False,False,62,de_toda_la_vida,False
+35.66306046002238,True,seca,molestia_leve,empeora_con_anios,False,Resfrio Común,Leve,True,False,True,52,si_activo,True
+37.1,True,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,True,False,1,si_activo,True
+39.36384578198857,True,con_flema_transparente_verdosa,molestia_leve,repentina,False,Gripe,Moderado,False,False,True,52,si_activo,True
+39.09256142247281,True,con_flema_purulenta_sangre,puntada_al_respirar,agotado,False,Neumonía,Grave,False,True,True,52,si_activo,True
+37.058543683471434,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,True,True,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,False,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,True,False,False,62,de_toda_la_vida,True
+36.28722614802283,True,seca,ninguno,al_caminar_rapido,True,Resfrio Común,Leve,True,True,True,52,si_activo,False
+37.1,False,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,True,True,1,si_activo,False
+39.217634552157854,True,seca,molestia_leve,ninguna,False,Gripe,Moderado,False,False,True,52,si_activo,False
+39.17122619347889,True,con_flema_purulenta_sangre,puntada_al_respirar,agotado,True,Neumonía,Grave,False,True,False,52,si_activo,False
+36.56887626417384,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,False,False,True,52,si_activo,False
+37.1,False,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,False
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,True,False,True,63,de_toda_la_vida,True
+36.99439902598983,True,seca,ninguno,empeora_con_anios,False,Resfrio Común,Leve,True,True,True,52,si_activo,False
+37.1,True,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,False,True,1,si_activo,False
+40.122111645425456,True,con_flema_transparente_verdosa,ninguno,repentina,False,Gripe,Moderado,True,True,True,52,si_activo,True
+38.55769381309276,True,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,True,True,True,52,si_activo,False
+36.03484333326259,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,False,False,True,52,si_activo,False
+37.1,True,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,True,False,64,de_toda_la_vida,False
+36.49166640005638,True,seca,ninguno,ninguna,True,Resfrio Común,Leve,False,False,False,52,si_activo,False
+37.1,False,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,False,False,1,si_activo,True
+39.750623356473504,True,seca,molestia_leve,empeora_con_anios,False,Gripe,Moderado,False,True,True,52,si_activo,False
+38.553368561137496,True,con_flema_purulenta_sangre,puntada_al_respirar,agotado,True,Neumonía,Grave,True,True,True,52,si_activo,True
+36.09382194967026,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,True,True,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,True,False,True,67,de_toda_la_vida,True
+36.84904512879813,True,seca,ninguno,empeora_con_anios,False,Resfrio Común,Leve,False,True,False,52,si_activo,True
+37.1,True,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,False,True,1,si_activo,True
+39.645213572676674,True,con_flema_transparente_verdosa,ninguno,al_caminar_rapido,False,Gripe,Moderado,False,True,True,52,si_activo,False
+39.58333444799607,True,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,True,True,True,52,si_activo,True
+36.68263832524814,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,True,False,False,52,si_activo,True
+37.1,True,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,True,True,False,68,de_toda_la_vida,False
+35.62002091272753,True,seca,molestia_leve,ninguna,True,Resfrio Común,Leve,True,True,False,52,si_activo,False
+37.1,False,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,False,False,1,si_activo,False
+40.013196476563294,True,con_flema_transparente_verdosa,molestia_leve,empeora_con_anios,False,Gripe,Moderado,False,True,False,52,si_activo,False
+38.882790990199275,True,con_flema_purulenta_sangre,puntada_al_respirar,agotado,False,Neumonía,Grave,False,True,False,52,si_activo,False
+37.19678826656265,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,False,True,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,False,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,True,False,False,63,de_toda_la_vida,False
+36.9584403445516,True,seca,ninguno,ninguna,True,Resfrio Común,Leve,False,True,True,52,si_activo,False
+37.1,False,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,True,False,1,si_activo,False
+40.29113552142651,True,seca,molestia_leve,al_caminar_rapido,False,Gripe,Moderado,False,False,True,52,si_activo,False
+39.45910729152634,False,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,True,True,False,52,si_activo,False
+36.448861690932155,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,False,True,False,52,si_activo,True
+37.1,True,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,False,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,True,False,67,de_toda_la_vida,False
+36.55337486596959,True,seca,molestia_leve,repentina,True,Resfrio Común,Leve,False,True,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,False,True,1,si_activo,True
+40.11760938514752,True,seca,ninguno,repentina,False,Gripe,Moderado,True,False,False,52,si_activo,False
+38.81560194967736,True,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,False,False,True,52,si_activo,True
+37.45923675407289,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,True,False,True,52,si_activo,False
+37.1,False,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,False,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,False,False,62,de_toda_la_vida,False
+35.79904512712724,True,seca,molestia_leve,al_caminar_rapido,False,Resfrio Común,Leve,False,False,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,True,True,1,si_activo,True
+40.35563175815967,True,con_flema_transparente_verdosa,ninguno,al_caminar_rapido,False,Gripe,Moderado,False,True,True,52,si_activo,True
+38.623871240670034,True,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,False,False,False,52,si_activo,False
+37.33019564514619,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,True,False,True,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,True,False,61,de_toda_la_vida,True
+36.445654994067965,True,seca,molestia_leve,empeora_con_anios,True,Resfrio Común,Leve,False,False,True,52,si_activo,True
+37.1,False,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,True,True,1,si_activo,True
+39.786623216928064,True,seca,molestia_leve,ninguna,False,Gripe,Moderado,True,True,True,52,si_activo,False
+39.58798262713214,False,con_flema_purulenta_sangre,puntada_al_respirar,agotado,False,Neumonía,Grave,True,True,True,52,si_activo,False
+36.43782173384727,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,True,False,False,52,si_activo,True
+37.1,False,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,False
+37.1,True,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,True,True,67,de_toda_la_vida,False
+35.75791996814926,True,seca,molestia_leve,empeora_con_anios,False,Resfrio Común,Leve,True,False,True,52,si_activo,True
+37.1,False,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,False,False,1,si_activo,True
+39.95295062619205,True,seca,molestia_leve,ninguna,False,Gripe,Moderado,False,False,False,52,si_activo,True
+39.80780706834451,True,con_flema_purulenta_sangre,puntada_al_respirar,agotado,True,Neumonía,Grave,True,True,False,52,si_activo,False
+37.00571012978801,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,False,False,True,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,True,True,62,de_toda_la_vida,False
+36.603448769946255,True,seca,ninguno,ninguna,True,Resfrio Común,Leve,True,True,False,52,si_activo,True
+37.1,False,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,True,True,1,si_activo,True
+39.79303270829266,True,seca,ninguno,ninguna,False,Gripe,Moderado,True,True,True,52,si_activo,False
+38.63495583328895,False,con_flema_purulenta_sangre,puntada_al_respirar,agotado,False,Neumonía,Grave,False,True,False,52,si_activo,False
+37.390864861500766,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,True,False,False,52,si_activo,False
+37.1,False,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,False
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,True,False,65,de_toda_la_vida,False
+36.786749521135846,True,seca,ninguno,ninguna,False,Resfrio Común,Leve,True,True,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,False,True,1,si_activo,False
+39.54295844681958,True,seca,ninguno,repentina,False,Gripe,Moderado,False,True,True,52,si_activo,False
+39.15961089678164,True,con_flema_purulenta_sangre,puntada_al_respirar,agotado,False,Neumonía,Grave,False,False,True,52,si_activo,True
+37.45373806557671,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,True,False,True,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,False
+37.1,True,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,False,False,67,de_toda_la_vida,True
+35.62156487308021,True,seca,molestia_leve,repentina,True,Resfrio Común,Leve,True,False,False,52,si_activo,False
+37.1,False,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,True,False,1,si_activo,False
+39.38173629128113,True,con_flema_transparente_verdosa,ninguno,repentina,False,Gripe,Moderado,True,True,False,52,si_activo,False
+38.82892194242701,False,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,True,False,False,52,si_activo,False
+36.16275686507809,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,False,True,False,52,si_activo,False
+37.1,False,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,False,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,False,False,True,61,de_toda_la_vida,False
+36.47086850757388,True,seca,ninguno,al_caminar_rapido,False,Resfrio Común,Leve,True,True,False,52,si_activo,True
+37.1,True,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,True,True,1,si_activo,False
+40.351087090722714,True,seca,molestia_leve,repentina,False,Gripe,Moderado,True,False,True,52,si_activo,True
+39.55856039687319,True,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,False,False,True,52,si_activo,True
+36.066421246724346,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,False,True,False,52,si_activo,True
+37.1,True,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,True,False,False,67,de_toda_la_vida,True
+35.92577012494853,True,seca,molestia_leve,ninguna,True,Resfrio Común,Leve,True,True,True,52,si_activo,True
+37.1,True,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,True,False,1,si_activo,False
+40.05438453179098,True,con_flema_transparente_verdosa,molestia_leve,ninguna,False,Gripe,Moderado,False,False,True,52,si_activo,False
+39.35154170284092,True,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,False,True,True,52,si_activo,False
+37.15734292455076,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,False,True,False,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,True,EPOC,Moderado,True,False,False,69,de_toda_la_vida,False
+35.7111264044175,True,seca,molestia_leve,ninguna,False,Resfrio Común,Leve,False,True,True,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,False,True,1,si_activo,False
+40.36004277667556,True,seca,molestia_leve,repentina,False,Gripe,Moderado,False,True,True,52,si_activo,False
+38.59550379535308,False,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,True,False,False,52,si_activo,True
+37.29739852882506,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,False,True,True,52,si_activo,False
+37.1,True,seca,ninguno,repentina,True,Crisis Asmática,Moderado,True,True,False,52,si_activo,True
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,True,False,False,69,de_toda_la_vida,True
+36.46416507603708,True,seca,molestia_leve,repentina,True,Resfrio Común,Leve,False,False,True,52,si_activo,False
+37.1,True,seca,ninguno,repentina,False,Bronquiolitis,Moderado,True,False,False,1,si_activo,True
+40.31882105409691,True,seca,molestia_leve,ninguna,False,Gripe,Moderado,False,False,True,52,si_activo,True
+38.822948136404584,False,con_flema_purulenta_sangre,puntada_al_respirar,repentina,True,Neumonía,Grave,True,False,True,52,si_activo,True
+37.11765041604376,True,con_flema_transparente_verdosa,ninguno,repentina,True,Bronquitis Aguda,Leve,False,False,True,52,si_activo,True
+37.1,True,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,False
+37.1,False,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,True,False,67,de_toda_la_vida,False
+36.78602035090449,True,seca,ninguno,ninguna,False,Resfrio Común,Leve,True,False,True,52,si_activo,True
+37.1,True,seca,ninguno,repentina,True,Bronquiolitis,Moderado,True,False,True,1,si_activo,True
+39.83301273082968,True,seca,ninguno,ninguna,False,Gripe,Moderado,True,False,False,52,si_activo,True
+39.80173157083682,True,con_flema_purulenta_sangre,puntada_al_respirar,agotado,False,Neumonía,Grave,True,True,True,52,si_activo,True
+37.48642270127013,True,con_flema_transparente_verdosa,ninguno,repentina,False,Bronquitis Aguda,Leve,True,True,True,52,si_activo,False
+37.1,False,seca,ninguno,repentina,False,Crisis Asmática,Moderado,True,True,True,52,si_activo,True
+37.1,True,seca,ninguno,empeora_con_anios,False,EPOC,Moderado,False,False,False,64,de_toda_la_vida,True
+35.91895053762882,True,seca,ninguno,ninguna,False,Resfrio Común,Leve,False,True,True,52,si_activo,False

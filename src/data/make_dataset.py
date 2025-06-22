@@ -5,8 +5,11 @@ import os
 
 # --- Configuración ---
 NUM_SAMPLES = 1000
-OUTPUT_PATH = "c:/Users/NEVER/OneDrive/Documentos/VSCode/MisProyectos/Politecnico_Sistema_Experto/data/processed/dataset_respiratorio.csv"
-RULES_PATH = "c:/Users/NEVER/OneDrive/Documentos/VSCode/MisProyectos/Politecnico_Sistema_Experto/src/reglas/diagnostico_reglas.json"
+
+# Rutas relativas desde src/data/ hacia la raíz del proyecto
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+OUTPUT_PATH = os.path.join(BASE_DIR, "data", "processed", "dataset_respiratorio.csv")
+RULES_PATH = os.path.join(BASE_DIR, "src", "reglas", "diagnostico_reglas.json")
 
 # --- Atributos y sus posibles valores ---
 # Estos deben coincidir con los 'hechos' en las reglas JSON

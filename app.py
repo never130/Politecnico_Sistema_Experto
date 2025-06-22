@@ -1,5 +1,6 @@
 
-from flask import Flask, render_template_string, request
+from flask import Flask, render_template_string, request, jsonify
+from flask_cors import CORS
 import sys
 import os
 
@@ -10,6 +11,7 @@ sys.path.append(SRC_DIR)
 from models.predict_model import MotorDiagnostico
 
 app = Flask(__name__)
+CORS(app)  # Permitir CORS para el frontend Next.js
 
 # Inicializar el motor de diagnóstico
 motor = MotorDiagnostico()
@@ -144,20 +146,26 @@ def home():
     return render_template_string(HTML_TEMPLATE)
 
 @app.route('/diagnosticar', methods=['POST'])
-def diagnosticar():    # Recolectar datos del formulario
+def diagnosticar():
+    # Recolectar datos del formulario (ahora también soporta JSON)
+    if request.is_json:
+        form_data = request.get_json()
+    else:
+        form_data = request.form
+    
     datos_paciente = {
-        'tos': request.form['tos'],
-        'fiebre': float(request.form['fiebre']),
-        'dolor_toracico': request.form['dolor_toracico'],
-        'falta_de_aire': request.form['falta_de_aire'],
-        'sibilancias': 'sibilancias' in request.form,
-        'pecho_apretado': 'pecho_apretado' in request.form,
-        'malestar_general': 'malestar_general' in request.form,
-        'confusion': 'confusion' in request.form,
-        'edad': int(request.form['edad']),
-        'fumador': request.form['fumador'],
-        'antecedentes_asma': 'antecedentes_asma' in request.form,
-        'antecedentes_alergias': 'antecedentes_alergias' in request.form
+        'tos': form_data.get('tos'),
+        'fiebre': float(form_data.get('fiebre', 36.5)),
+        'dolor_toracico': form_data.get('dolor_toracico'),
+        'falta_de_aire': form_data.get('falta_de_aire'),
+        'sibilancias': form_data.get('sibilancias') == True or 'sibilancias' in form_data,
+        'pecho_apretado': form_data.get('pecho_apretado') == True or 'pecho_apretado' in form_data,
+        'malestar_general': form_data.get('malestar_general') == True or 'malestar_general' in form_data,
+        'confusion': form_data.get('confusion') == True or 'confusion' in form_data,
+        'edad': int(form_data.get('edad', 30)),
+        'fumador': form_data.get('fumador'),
+        'antecedentes_asma': form_data.get('antecedentes_asma') == True or 'antecedentes_asma' in form_data,
+        'antecedentes_alergias': form_data.get('antecedentes_alergias') == True or 'antecedentes_alergias' in form_data
     }
 
     # Obtener diagnóstico del motor
@@ -169,7 +177,12 @@ def diagnosticar():    # Recolectar datos del formulario
         'explicacion': explicacion
     }
 
-    return render_template_string(HTML_TEMPLATE, resultado=resultado)
+    # Si es una petición JSON (API), devolver JSON
+    if request.is_json or request.headers.get('Content-Type') == 'application/x-www-form-urlencoded':
+        return jsonify(resultado)
+    else:
+        # Si es una petición normal de formulario, devolver HTML
+        return render_template_string(HTML_TEMPLATE, resultado=resultado)
 
 if __name__ == '__main__':
     # Para desarrollo, puedes ejecutarlo así.

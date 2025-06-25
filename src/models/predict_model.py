@@ -1,4 +1,3 @@
-
 import joblib
 import pandas as pd
 import json
@@ -35,23 +34,38 @@ class MotorDiagnostico:
         edad = datos_paciente.get('edad', 30)
         dolor_toracico = datos_paciente.get('dolor_toracico', '')
         falta_aire = datos_paciente.get('falta_de_aire', '')
-        
+        antecedentes_asma = datos_paciente.get('antecedentes_asma', False)
+
         # Regla 1: Si hay fiebre alta + malestar + tos, pero sin síntomas graves específicos -> GRIPE
         if (fiebre > 38.0 and malestar and 
             not confusion and edad < 65 and 
             dolor_toracico != 'puntada_al_respirar' and 
             falta_aire != 'agotado'):
             return "Gripe"
-        
+
         # Regla 2: Neumonía solo si hay síntomas realmente graves
-        if (diagnostico_ml == "Neumonía" and 
-            not (fiebre > 39.0 or confusion or 
-                 (dolor_toracico == 'puntada_al_respirar' and falta_aire == 'agotado'))):
-            # Si el ML dice neumonía pero no hay síntomas graves, cambiar a gripe
-            if fiebre > 38.0 and malestar:
-                return "Gripe"
-        
-        # Regla 3: Mantener diagnóstico original si los síntomas son claros
+        if (diagnostico_ml == "Neumonía"):
+            criterios_gravedad = (
+                fiebre > 38.5 or
+                dolor_toracico == "puntada_al_respirar" or
+                confusion or
+                falta_aire in ["agotado", "repentina"]
+            )
+            if not criterios_gravedad:
+                # Si hay tos persistente, antecedentes de asma, disnea solo en actividad, malestar general
+                if tos == "seca" and antecedentes_asma and falta_aire == "al_caminar_rapido":
+                    return "Bronquitis Aguda"
+                elif tos in ["seca", "con_flema_transparente_verdosa"] and malestar:
+                    return "Gripe"
+                else:
+                    return "Resfrío Común"
+
+        # Regla 3: Si el ML predice bronquitis aguda y no hay fiebre alta ni síntomas graves, mantener bronquitis aguda
+        if diagnostico_ml == "Bronquitis Aguda":
+            if fiebre < 38.5 and not confusion and dolor_toracico != "puntada_al_respirar":
+                return "Bronquitis Aguda"
+
+        # Regla 4: Mantener diagnóstico original si los síntomas son claros
         return diagnostico_ml
 
     def _encontrar_regla_explicativa(self, datos_paciente, diagnostico_predicho):

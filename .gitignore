@@ -24,6 +24,7 @@ frontend/node_modules/
 frontend/.next/
 frontend/dist/
 frontend/.env.local
+PRESENTACION_IA.md
 
 # Archivos temporales del sistema
 .DS_Store

@@ -249,5 +249,3 @@ Este proyecto está bajo la Licencia MIT - ver el archivo `LICENSE` para más de
 Centro Politécnico Superior Malvinas Argentinas  
 Tierra del Fuego, Argentina
 
-📧 Email: [tu-email@ejemplo.com]  
-🌐 Portfolio: [https://everloza-porfolio.netlify.app/](https://everloza-porfolio.netlify.app/)

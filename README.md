@@ -170,7 +170,7 @@ python src/data/make_dataset.py
 **💎 Interfaz Moderna (Recomendado)**
 ```bash
 # Terminal 1: Backend
-python app.py
+python -m src.webapp.app  
 
 # Terminal 2: Frontend  
 cd frontend

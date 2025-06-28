@@ -3,13 +3,14 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { HeartIcon, UserIcon, ClipboardDocumentListIcon } from '@heroicons/react/24/outline'
-import DiagnosticForm from './components/DiagnosticForm'
+import DiagnosticoForm from './components/DiagnosticoForm'
 import ResultCard from './components/ResultCard'
+import { obtenerDiagnostico } from './api/diagnostico'
 
 interface DiagnosticResult {
   diagnostico: string
-  gravedad: string
   explicacion: string
+  regla_disparada: string
 }
 
 export default function Home() {
@@ -19,15 +20,7 @@ export default function Home() {
   const handleDiagnostic = async (formData: any) => {
     setIsLoading(true)
     try {
-      const response = await fetch('/api/diagnosticar', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: new URLSearchParams(formData).toString(),
-      })
-      
-      const data = await response.json()
+      const data = await obtenerDiagnostico(formData)
       setResult(data)
     } catch (error) {
       console.error('Error:', error)
@@ -93,7 +86,7 @@ export default function Home() {
             transition={{ delay: 0.4 }}
             className="order-2 xl:order-1"
           >
-            <DiagnosticForm onSubmit={handleDiagnostic} isLoading={isLoading} />
+            <DiagnosticoForm onSubmit={handleDiagnostic} isLoading={isLoading} />
           </motion.div>
 
           {/* Results */}

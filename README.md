@@ -249,3 +249,47 @@ Este proyecto está bajo la Licencia MIT - ver el archivo `LICENSE` para más de
 Centro Politécnico Superior Malvinas Argentinas  
 Tierra del Fuego, Argentina
 
+## Estructura Profesional del Proyecto
+
+- `data/` — Datasets (raw, processed, interim) para entrenamiento y pruebas.
+- `notebooks/` — Jupyter Notebooks para experimentación y entrenamiento de modelos.
+- `models/` — Modelos entrenados (solo para experimentación, no usados en producción).
+- `src/knowledge_base/` — Motor de inferencia y reglas SI-ENTONCES (puro Python, explicable).
+- `src/webapp/` — Backend Flask, expone `/diagnostico` para recibir síntomas y devolver diagnóstico, explicación y regla disparada.
+- `frontend/` — Aplicación React/Next.js, formulario de síntomas, consumo de API y visualización de resultados.
+- `tests/` — Pruebas unitarias del motor de inferencia.
+- `documentacion/` — Justificación de reglas y documentación académica.
+- `reports/` — Figuras, gráficos y resultados de experimentos.
+
+## Flujo de Integración
+
+1. **Frontend**: El usuario ingresa síntomas en el formulario y envía la consulta.
+2. **Backend**: Flask recibe los datos, ejecuta el motor de reglas y responde con diagnóstico, explicación y regla disparada.
+3. **Explicabilidad**: El motor retorna la regla SI-ENTONCES disparada y una justificación textual.
+
+## Cómo Ejecutar
+
+### Backend
+```bash
+cd src/webapp
+python app.py
+```
+
+### Frontend
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+### Pruebas
+```bash
+pytest tests/
+```
+
+## Notas Importantes
+- El sistema NO usa modelos ML en producción, solo reglas explícitas y explicables.
+- El código está limpio, sin duplicados ni archivos basura.
+- La estructura cumple con los criterios académicos y el ejemplo profesional.
+- Ver documentación en `documentacion/` para justificación de reglas y detalles de integración.
+

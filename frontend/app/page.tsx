@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { HeartIcon, UserIcon, ClipboardDocumentListIcon } from '@heroicons/react/24/outline'
 import DiagnosticoForm from './components/DiagnosticoForm'
 import ResultCard from './components/ResultCard'
+import ReglasManager from './components/ReglasManager'
 import { obtenerDiagnostico } from './api/diagnostico'
 
 interface DiagnosticResult {
@@ -99,6 +100,10 @@ export default function Home() {
             <ResultCard result={result} isLoading={isLoading} />
           </motion.div>
         </div>
+      </div>
+      {/* Sección de gestión de reglas */}
+      <div className="max-w-3xl mx-auto">
+        <ReglasManager />
       </div>
     </div>
   )

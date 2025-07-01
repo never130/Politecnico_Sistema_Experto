@@ -11,13 +11,14 @@ import {
 interface ResultCardProps {
   result: {
     diagnostico: string
-    gravedad: string
     explicacion: string
+    gravedad?: string // ahora opcional
   } | null
   isLoading: boolean
 }
 
-export default function ResultCard({ result, isLoading }: ResultCardProps) {  const getSeverityIcon = (gravedad: string) => {
+export default function ResultCard({ result, isLoading }: ResultCardProps) {
+  const getSeverityIcon = (gravedad?: string) => {
     switch (gravedad?.toLowerCase()) {
       case 'grave':
         return <ExclamationTriangleIcon className="h-5 w-5 sm:h-6 sm:w-6 text-red-600" />
@@ -30,7 +31,7 @@ export default function ResultCard({ result, isLoading }: ResultCardProps) {  co
     }
   }
 
-  const getSeverityClass = (gravedad: string) => {
+  const getSeverityClass = (gravedad?: string) => {
     switch (gravedad?.toLowerCase()) {
       case 'grave':
         return 'severity-grave'
@@ -84,13 +85,14 @@ export default function ResultCard({ result, isLoading }: ResultCardProps) {  co
                   {result.diagnostico}
                 </h3>
               </div>
-              
-              <div className="flex items-center">
-                <span className="text-sm text-gray-600 mr-2">Gravedad:</span>
-                <span className={`medical-badge ${getSeverityClass(result.gravedad)}`}>
-                  {result.gravedad}
-                </span>
-              </div>
+              {result.gravedad && (
+                <div className="flex items-center">
+                  <span className="text-sm text-gray-600 mr-2">Gravedad:</span>
+                  <span className={`medical-badge ${getSeverityClass(result.gravedad)}`}>
+                    {result.gravedad}
+                  </span>
+                </div>
+              )}
             </div>
 
             {/* Explicación */}
@@ -99,9 +101,57 @@ export default function ResultCard({ result, isLoading }: ResultCardProps) {  co
                 <InformationCircleIcon className="h-5 w-5 text-gray-600 mr-2" />
                 Explicación del Diagnóstico
               </h4>
-              <p className="text-gray-700 leading-relaxed">
-                {result.explicacion}
-              </p>
+              {/* Explicación para ML y reglas */}
+              {result.explicacion.includes('Síntomas analizados:') ? (
+                (() => {
+                  // Separar partes de la explicación ML
+                  const [cabecera, ...resto] = result.explicacion.split('Síntomas analizados:');
+                  const sintomasYnota = resto.join('Síntomas analizados:').split('Nota:');
+                  const sintomas = sintomasYnota[0]
+                    .split('\n')
+                    .map(s => s.trim())
+                    .filter(s => s.startsWith('- '));
+                  const nota = sintomasYnota[1]?.trim();
+                  return (
+                    <>
+                      <div className="mb-2 text-blue-900 whitespace-pre-line">{cabecera.trim()}</div>
+                      <ul className="mb-3 list-disc list-inside text-blue-900">
+                        {sintomas.map((s, idx) => (
+                          <li key={idx}>{s.replace('- ', '')}</li>
+                        ))}
+                      </ul>
+                      {nota && (
+                        <div className="bg-blue-50 border-l-4 border-blue-400 p-3 rounded text-blue-800 mt-2">
+                          {nota}
+                        </div>
+                      )}
+                    </>
+                  );
+                })()
+              ) : result.explicacion.includes('Se detectó:') ? (
+                (() => {
+                  // Separar condiciones y explicación médica
+                  const partes = result.explicacion.split('Explicación médica:');
+                  const condiciones = partes[0].replace('Se detectó:', '').replace(/\n/g, '').split(';').map(s => s.trim()).filter(Boolean);
+                  const explicacionMedica = partes[1]?.trim();
+                  return (
+                    <>
+                      <ul className="mb-3 list-disc list-inside text-blue-900">
+                        {condiciones.map((cond, idx) => (
+                          <li key={idx} className="mb-1"><span className="font-semibold">{cond}</span></li>
+                        ))}
+                      </ul>
+                      {explicacionMedica && (
+                        <div className="bg-blue-50 border-l-4 border-blue-400 p-3 rounded text-blue-800">
+                          {explicacionMedica}
+                        </div>
+                      )}
+                    </>
+                  );
+                })()
+              ) : (
+                <p className="text-gray-700 leading-relaxed whitespace-pre-line">{result.explicacion}</p>
+              )}
             </div>
 
             {/* Recomendaciones */}

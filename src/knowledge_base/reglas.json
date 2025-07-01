@@ -1,0 +1,72 @@
+[
+  {
+    "nombre": "Gripe",
+    "condiciones": [
+      {"hecho": "fiebre", "operador": ">", "valor": 38.5},
+      {"hecho": "tos", "operador": "==", "valor": "seca"},
+      {"hecho": "malestar_general", "operador": "==", "valor": true}
+    ],
+    "diagnostico": "Gripe",
+    "explicacion": "Fiebre alta, tos seca y malestar general."
+  },
+  {
+    "nombre": "Neumonía",
+    "condiciones": [
+      {"hecho": "fiebre", "operador": ">", "valor": 39},
+      {"hecho": "dolor_toracico", "operador": "==", "valor": "puntada_al_respirar"},
+      {"hecho": "falta_de_aire", "operador": "==", "valor": "agotado"}
+    ],
+    "diagnostico": "Neumonía",
+    "explicacion": "Fiebre muy alta, dolor torácico y falta de aire grave."
+  },
+  {
+    "nombre": "Bronquitis Aguda",
+    "condiciones": [
+      {"hecho": "tos", "operador": "in", "valor": ["seca", "con_flema_transparente_verdosa"]},
+      {"hecho": "fiebre", "operador": "<", "valor": 38.5},
+      {"hecho": "malestar_general", "operador": "==", "valor": true}
+    ],
+    "diagnostico": "Bronquitis Aguda",
+    "explicacion": "Tos persistente, fiebre baja o ausente, malestar general."
+  },
+  {
+    "nombre": "Crisis Asmática",
+    "condiciones": [
+      {"hecho": "sibilancias", "operador": "==", "valor": true},
+      {"hecho": "falta_de_aire", "operador": "in", "valor": ["repentina", "al_caminar_rapido"]},
+      {"hecho": "antecedentes_asma", "operador": "==", "valor": true}
+    ],
+    "diagnostico": "Crisis Asmática",
+    "explicacion": "Sibilancias, disnea súbita y antecedentes de asma."
+  },
+  {
+    "nombre": "EPOC",
+    "condiciones": [
+      {"hecho": "fumador", "operador": "in", "valor": ["si_activo", "ex_fumador"]},
+      {"hecho": "falta_de_aire", "operador": "==", "valor": "empeora_con_anios"},
+      {"hecho": "edad", "operador": ">", "valor": 45}
+    ],
+    "diagnostico": "EPOC",
+    "explicacion": "Fumador, disnea progresiva y edad mayor."
+  },
+  {
+    "nombre": "Resfrío Común",
+    "condiciones": [
+      {"hecho": "fiebre", "operador": "<", "valor": 37.5},
+      {"hecho": "tos", "operador": "in", "valor": ["ninguna", "seca"]},
+      {"hecho": "malestar_general", "operador": "==", "valor": false}
+    ],
+    "diagnostico": "Resfrío Común",
+    "explicacion": "Síntomas leves, sin fiebre ni malestar importante."
+  },
+  {
+    "nombre": "Bronquiolitis",
+    "condiciones": [
+      {"hecho": "edad", "operador": "<", "valor": 2},
+      {"hecho": "falta_de_aire", "operador": "==", "valor": "repentina"},
+      {"hecho": "sibilancias", "operador": "==", "valor": false}
+    ],
+    "diagnostico": "Bronquiolitis",
+    "explicacion": "Lactante con disnea súbita y sibilancias."
+  }
+]

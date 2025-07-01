@@ -133,18 +133,64 @@ export default function ReglasManager() {
       )}
       <form onSubmit={handleAgregarRegla} className="space-y-2 mt-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <input type="text" name="fiebre" placeholder="Fiebre (ej: 38.5)" onChange={handleCondicionChange} className="medical-input mt-1 mr-2 w-full" />
-          <input type="text" name="tos" placeholder="Tos (ej: seca)" onChange={handleCondicionChange} className="medical-input mt-1 mr-2 w-full" />
-          <input type="text" name="dolor_toracico" placeholder="Dolor torácico (ej: puntada_al_respirar)" onChange={handleCondicionChange} className="medical-input mt-1 mr-2 w-full" />
-          <input type="text" name="falta_de_aire" placeholder="Falta de aire (ej: agotado)" onChange={handleCondicionChange} className="medical-input mt-1 mr-2 w-full" />
-          <input type="text" name="sibilancias" placeholder="¿Silbido al respirar? (Sí/No)" onChange={handleCondicionChange} className="medical-input mt-1 mr-2 w-full" />
-          <input type="text" name="pecho_apretado" placeholder="¿Pecho apretado? (Sí/No)" onChange={handleCondicionChange} className="medical-input mt-1 mr-2 w-full" />
-          <input type="text" name="malestar_general" placeholder="¿Malestar general/cansancio? (Sí/No)" onChange={handleCondicionChange} className="medical-input mt-1 mr-2 w-full" />
-          <input type="text" name="confusion" placeholder="¿Confusión/desorientación? (Sí/No)" onChange={handleCondicionChange} className="medical-input mt-1 mr-2 w-full" />
-          <input type="text" name="edad" placeholder="Edad (ej: 45)" onChange={handleCondicionChange} className="medical-input mt-1 mr-2 w-full" />
-          <input type="text" name="fumador" placeholder="Hábito de fumar (si_activo/ex_fumador/no)" onChange={handleCondicionChange} className="medical-input mt-1 mr-2 w-full" />
-          <input type="text" name="antecedentes_asma" placeholder="¿Antecedentes de asma? (Sí/No)" onChange={handleCondicionChange} className="medical-input mt-1 mr-2 w-full" />
-          <input type="text" name="antecedentes_alergias" placeholder="¿Antecedentes de alergias/rinitis? (Sí/No)" onChange={handleCondicionChange} className="medical-input mt-1 mr-2 w-full" />
+          <input type="number" name="fiebre" placeholder="Fiebre (ej: 38.5)" step="0.1" onChange={handleCondicionChange} className="medical-input mt-1 mr-2 w-full" />
+          <select name="tos" onChange={handleCondicionChange} className="medical-input mt-1 mr-2 w-full" defaultValue="">
+            <option value="">Tos</option>
+            <option value="seca">Seca</option>
+            <option value="con_flema_transparente_verdosa">Con flema transparente/verdosa</option>
+            <option value="ninguna">Ninguna</option>
+          </select>
+          <select name="dolor_toracico" onChange={handleCondicionChange} className="medical-input mt-1 mr-2 w-full" defaultValue="">
+            <option value="">Dolor torácico</option>
+            <option value="puntada_al_respirar">Puntada al respirar</option>
+            <option value="opresivo">Opresivo</option>
+            <option value="ninguno">Ninguno</option>
+          </select>
+          <select name="falta_de_aire" onChange={handleCondicionChange} className="medical-input mt-1 mr-2 w-full" defaultValue="">
+            <option value="">Falta de aire</option>
+            <option value="agotado">Agotado</option>
+            <option value="repentina">Repentina</option>
+            <option value="al_caminar_rapido">Al caminar rápido</option>
+            <option value="empeora_con_anios">Empeora con los años</option>
+            <option value="ninguna">Ninguna</option>
+          </select>
+          <select name="sibilancias" onChange={handleCondicionChange} className="medical-input mt-1 mr-2 w-full" defaultValue="">
+            <option value="">¿Silbido al respirar?</option>
+            <option value="true">Sí</option>
+            <option value="false">No</option>
+          </select>
+          <select name="pecho_apretado" onChange={handleCondicionChange} className="medical-input mt-1 mr-2 w-full" defaultValue="">
+            <option value="">¿Pecho apretado?</option>
+            <option value="true">Sí</option>
+            <option value="false">No</option>
+          </select>
+          <select name="malestar_general" onChange={handleCondicionChange} className="medical-input mt-1 mr-2 w-full" defaultValue="">
+            <option value="">¿Malestar general/cansancio?</option>
+            <option value="true">Sí</option>
+            <option value="false">No</option>
+          </select>
+          <select name="confusion" onChange={handleCondicionChange} className="medical-input mt-1 mr-2 w-full" defaultValue="">
+            <option value="">¿Confusión/desorientación?</option>
+            <option value="true">Sí</option>
+            <option value="false">No</option>
+          </select>
+          <input type="number" name="edad" placeholder="Edad (ej: 45)" min="0" max="120" onChange={handleCondicionChange} className="medical-input mt-1 mr-2 w-full" />
+          <select name="fumador" onChange={handleCondicionChange} className="medical-input mt-1 mr-2 w-full" defaultValue="">
+            <option value="">Hábito de fumar</option>
+            <option value="si_activo">Sí, activo</option>
+            <option value="ex_fumador">Ex fumador</option>
+            <option value="no">No</option>
+          </select>
+          <select name="antecedentes_asma" onChange={handleCondicionChange} className="medical-input mt-1 mr-2 w-full" defaultValue="">
+            <option value="">¿Antecedentes de asma?</option>
+            <option value="true">Sí</option>
+            <option value="false">No</option>
+          </select>
+          <select name="antecedentes_alergias" onChange={handleCondicionChange} className="medical-input mt-1 mr-2 w-full" defaultValue="">
+            <option value="">¿Antecedentes de alergias/rinitis?</option>
+            <option value="true">Sí</option>
+            <option value="false">No</option>
+          </select>
         </div>
         <div>
           <label className="block font-medium">Diagnóstico:</label>

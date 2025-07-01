@@ -1,68 +1,82 @@
 # Sistema Experto para el Diagnóstico de Enfermedades Respiratorias
 **Autor:** Ever Loza – Centro Politécnico Superior Malvinas Argentinas
 
-## 🎯 Objetivo
-Este proyecto implementa un **sistema experto** que combina reglas médicas tradicionales con machine learning para asistir al personal de salud en el diagnóstico de enfermedades respiratorias comunes (asma, bronquitis, neumonía y EPOC) en Tierra del Fuego. 
+## Objetivo
+Sistema experto que asiste al personal de salud en el diagnóstico de enfermedades respiratorias (asma, bronquitis, neumonía, EPOC, etc.) combinando reglas médicas SI-ENTONCES y machine learning, con interfaz web moderna y explicabilidad total.
 
-**Características principales:**
-- 🧠 **Sistema Experto**: Reglas SI-ENTONCES basadas en conocimiento médico (editables en `src/knowledge_base/reglas.json`)
-- 🤖 **Machine Learning**: DecisionTreeClassifier para patrones complejos  
-- 🎨 **Interfaz Moderna**: Frontend Next.js + Tailwind CSS
-- 📊 **Explicabilidad**: Justificación clara de cada diagnóstico
+---
 
-## 🧠 Representación del Conocimiento
-El conocimiento se extrajo mediante entrevista con un agente sanitario local y se representa en dos niveles:
+## ¿Cómo Funciona?
 
-1. **Reglas Expertas**: Formato JSON con estructura SI-ENTONCES (`src/knowledge_base/reglas.json`)
-2. **Modelo ML**: Árbol de decisión entrenado con 1000 casos sintéticos
+1. **Ingreso de síntomas:**
+   El usuario completa un formulario web intuitivo con síntomas y antecedentes.
 
-**Módulos clínicos organizados:**
-- Evaluación clínica
-- Factores de riesgo  
-- Diagnóstico diferencial
-- Clasificación de gravedad
+2. **Motor de inferencia desacoplado:**
+   El backend primero evalúa reglas SI-ENTONCES (editables en JSON). Si alguna regla se cumple, retorna el diagnóstico y una explicación médica clara.
 
-## 🛠️ Arquitectura del Sistema
+3. **Respaldo con Machine Learning:**
+   Si ninguna regla se dispara, un modelo ML (DecisionTree) predice el diagnóstico y explica los síntomas analizados.
 
-### **Enfoque Híbrido Inteligente**
+4. **Explicabilidad:**
+   Siempre se muestra al usuario la justificación del diagnóstico, ya sea por reglas o por ML.
+
+5. **Gestión de reglas:**
+   Las reglas pueden verse, agregarse y editarse desde la interfaz, sin tocar el código.
+
+---
+
+## Representación del Conocimiento
+- **Reglas Expertas:** Formato JSON SI-ENTONCES, editable y desacoplado (`src/knowledge_base/reglas.json`).
+- **Modelo ML:** Árbol de decisión entrenado con casos sintéticos para cubrir escenarios complejos.
+
+---
+
+## 🛠️ Arquitectura Profesional
+
+- **Backend:** Python + Flask, motor de inferencia desacoplado, API RESTful, integración ML.
+- **Frontend:** Next.js + Tailwind CSS, componentes responsivos, visualización clara y profesional.
+- **Explicabilidad:** Explicación detallada de cada diagnóstico, visualización de reglas y resultados amigable.
 
 ```mermaid
 graph LR
     A[Síntomas Paciente] --> B[Motor Híbrido]
     B --> C[ML: DecisionTree]
     B --> D[Reglas Expertas]
-    C --> E[Predicción Inicial]
-    D --> F[Refinamiento Clínico]
+    C --> E[Predicción ML]
+    D --> F[Diagnóstico por Reglas]
     E --> G[Diagnóstico Final]
     F --> G
-    G --> H[Explicación]
+    G --> H[Explicación Detallada]
 ```
 
-### 📁 Estructura del Proyecto
+---
+
+## 📁 Estructura del Proyecto
 
 ```
-📁 Politecnico_Sistema_Experto/
-├── README.md                # Documentación principal
-├── requisitos.txt           # Dependencias Python
-├── documentacion/           # Documentos académicos y justificación
+Politecnico_Sistema_Experto/
+├── README.md
+├── requisitos.txt
+├── documentacion/
 ├── src/
 │   ├── knowledge_base/
-│   │   ├── reglas.json      # Base de conocimiento SI-ENTONCES 
-│   │   ├── motor_inferencia.py # Motor de inferencia desacoplado
-│   │   └── predict_model.py # Integración ML (scikit-learn)
+│   │   ├── reglas.json
+│   │   ├── motor_inferencia.py
+│   │   └── predict_model.py
 │   └── webapp/
-│       └── app.py           # API Flask (endpoints /diagnostico y /reglas)
-├── frontend/                # Interfaz Next.js + Tailwind
-│   └── ...                  # Componentes, páginas y estilos (responsive y accesibles)
-└── ...                      # Otros archivos relevantes
+│       └── app.py
+├── frontend/
+│   └── ... (componentes, páginas y estilos responsive)
+└── ...
 ```
 
-## 🚀 Instalación y Uso
+---
+
+## Instalación y Uso
 
 ### Backend
 ```bash
-cd src/webapp
-python app.py
+python -m src.webapp.app
 ```
 
 ### Frontend
@@ -77,19 +91,35 @@ npm run dev
 pytest tests/
 ```
 
-## 🔗 Endpoints RESTful
+---
 
-- `POST /diagnostico` — Recibe síntomas, retorna diagnóstico, explicación y regla disparada (o predicción ML si no hay coincidencia)
-- `GET /reglas` — Lista todas las reglas SI-ENTONCES
-- `POST /reglas` — Agrega una nueva regla a la base de conocimiento (JSON)
+## Endpoints RESTful
 
-## 📝 Gestión y Edición de Reglas
-
-- Las reglas SI-ENTONCES se encuentran en `src/knowledge_base/reglas.json` y pueden editarse manualmente o mediante el endpoint `/reglas`.
-- Para agregar una regla desde el frontend, se recomienda implementar un formulario que consuma el endpoint `POST /reglas`.
-- El motor de inferencia está desacoplado y evalúa reglas desde el JSON, permitiendo fácil mantenimiento y explicabilidad.
-
+- `POST /diagnostico` — Recibe síntomas, retorna diagnóstico y explicación (regla disparada o predicción ML).
+- `GET /reglas` — Lista todas las reglas SI-ENTONCES.
+- `POST /reglas` — Agrega una nueva regla a la base de conocimiento.
 
 ---
 
-Sistema experto híbrido listo para entrega profesional y académica. Para más detalles, consulta la documentación en la carpeta `documentacion/`.
+## Gestión y Edición de Reglas
+
+- Las reglas SI-ENTONCES se editan fácilmente desde la interfaz o vía API.
+- El motor de inferencia evalúa reglas desde el JSON, permitiendo mantenimiento y escalabilidad sin tocar el código.
+- La interfaz permite agregar reglas con lenguaje natural y visualización clara.
+
+---
+
+## Responsive y Accesibilidad
+
+- Interfaz optimizada para móvil, tablet y escritorio.
+- Componentes y formularios adaptativos, colores suaves y alto contraste.
+- Navegación y botones grandes, accesibles y amigables.
+
+---
+
+## Documentación y Soporte
+
+- Consulta la carpeta `docs/` para detalles académicos, justificación y anexos.
+- El sistema está listo para entrega profesional, defensa y ampliación futura.
+
+---

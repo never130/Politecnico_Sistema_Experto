@@ -133,9 +133,18 @@ export default function ReglasManager() {
       )}
       <form onSubmit={handleAgregarRegla} className="space-y-2 mt-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <input type="text" name="fiebre" placeholder="Fiebre (ej: 38)" onChange={handleCondicionChange} className="medical-input mt-1 mr-2 w-full" />
+          <input type="text" name="fiebre" placeholder="Fiebre (ej: 38.5)" onChange={handleCondicionChange} className="medical-input mt-1 mr-2 w-full" />
           <input type="text" name="tos" placeholder="Tos (ej: seca)" onChange={handleCondicionChange} className="medical-input mt-1 mr-2 w-full" />
-          {/* Agrega más campos según tus variables */}
+          <input type="text" name="dolor_toracico" placeholder="Dolor torácico (ej: puntada_al_respirar)" onChange={handleCondicionChange} className="medical-input mt-1 mr-2 w-full" />
+          <input type="text" name="falta_de_aire" placeholder="Falta de aire (ej: agotado)" onChange={handleCondicionChange} className="medical-input mt-1 mr-2 w-full" />
+          <input type="text" name="sibilancias" placeholder="¿Silbido al respirar? (Sí/No)" onChange={handleCondicionChange} className="medical-input mt-1 mr-2 w-full" />
+          <input type="text" name="pecho_apretado" placeholder="¿Pecho apretado? (Sí/No)" onChange={handleCondicionChange} className="medical-input mt-1 mr-2 w-full" />
+          <input type="text" name="malestar_general" placeholder="¿Malestar general/cansancio? (Sí/No)" onChange={handleCondicionChange} className="medical-input mt-1 mr-2 w-full" />
+          <input type="text" name="confusion" placeholder="¿Confusión/desorientación? (Sí/No)" onChange={handleCondicionChange} className="medical-input mt-1 mr-2 w-full" />
+          <input type="text" name="edad" placeholder="Edad (ej: 45)" onChange={handleCondicionChange} className="medical-input mt-1 mr-2 w-full" />
+          <input type="text" name="fumador" placeholder="Hábito de fumar (si_activo/ex_fumador/no)" onChange={handleCondicionChange} className="medical-input mt-1 mr-2 w-full" />
+          <input type="text" name="antecedentes_asma" placeholder="¿Antecedentes de asma? (Sí/No)" onChange={handleCondicionChange} className="medical-input mt-1 mr-2 w-full" />
+          <input type="text" name="antecedentes_alergias" placeholder="¿Antecedentes de alergias/rinitis? (Sí/No)" onChange={handleCondicionChange} className="medical-input mt-1 mr-2 w-full" />
         </div>
         <div>
           <label className="block font-medium">Diagnóstico:</label>
@@ -147,8 +156,8 @@ export default function ReglasManager() {
         </div>
         <button type="submit" className="medical-button w-full text-base py-3">Agregar Regla</button>
       </form>
-      {mensaje && <p className="text-green-600 mt-2">{mensaje}</p>}
-      {error && <p className="text-red-600 mt-2">{error}</p>}
+      {mensaje && <div className="mt-4 p-3 bg-green-50 border-l-4 border-green-400 rounded text-green-900 text-sm">{mensaje}</div>}
+      {error && <div className="mt-4 p-3 bg-red-50 border-l-4 border-red-400 rounded text-red-900 text-sm">{error}</div>}
     </motion.div>
   );
 }

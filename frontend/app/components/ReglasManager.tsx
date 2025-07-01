@@ -63,39 +63,74 @@ export default function ReglasManager() {
     }
   };
 
+  // Definir el tipo de etiquetas para evitar el error de tipado
+  const etiquetas: Record<string, string> = {
+    'fiebre': 'Fiebre (°C)',
+    'tos': 'Tos',
+    'dolor_toracico': 'Dolor torácico',
+    'falta_de_aire': 'Falta de aire (disnea)',
+    'sibilancias': '¿Silbido al respirar (sibilancias)?',
+    'pecho_apretado': '¿Sensación de pecho apretado?',
+    'malestar_general': '¿Malestar general / cansancio?',
+    'confusion': '¿Confusión / desorientación?',
+    'edad': 'Edad',
+    'fumador': 'Hábito de fumar',
+    'antecedentes_asma': '¿Antecedentes de asma?',
+    'antecedentes_alergias': '¿Antecedentes de alergias/rinitis?'
+  };
+
   return (
-    <div className="medical-card p-4 mt-8">
-      <h2 className="text-xl font-bold mb-4">Gestión de Reglas SI-ENTONCES</h2>
+    <div className="medical-card p-2 sm:p-4 md:p-6 lg:p-8 max-w-full md:max-w-2xl mx-auto bg-gradient-to-br from-white via-blue-50 to-blue-100 border border-blue-200">
+      <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6 flex items-center flex-wrap">
+        <span className="bg-blue-100 p-2 rounded-lg mr-3 mb-2 sm:mb-0" />
+        Gestión de Reglas SI-ENTONCES
+      </h2>
       {loading ? <p>Cargando reglas...</p> : (
         <ul className="mb-4 max-h-40 overflow-y-auto text-sm">
           {reglas.map((regla, idx) => (
-            <li key={idx} className="mb-2 border-b pb-1">
-              <b>SI</b> {Array.isArray(regla.condiciones) ? regla.condiciones.map((cond, i) => (
-                <span key={i}>
-                  {cond.hecho} {cond.operador} {typeof cond.valor === 'object' ? JSON.stringify(cond.valor) : cond.valor}{i < regla.condiciones.length - 1 ? ' Y ' : ''}
-                </span>
-              )) : ''} <b>ENTONCES</b> {regla.diagnostico}
-              <br /><span className="text-gray-500">{regla.explicacion}</span>
+            <li key={idx} className="mb-4 p-2 sm:p-3 rounded-lg bg-gradient-to-r from-blue-100 via-blue-50 to-blue-100 border border-blue-200">
+              <div className="mb-1">
+                <b>SI</b> {Array.isArray(regla.condiciones) ? regla.condiciones.map((cond, i) => {
+                  let valor = cond.valor;
+                  let operador = cond.operador;
+                  if (typeof valor === 'boolean') valor = valor ? 'Sí' : 'No';
+                  if (Array.isArray(valor)) valor = valor.map(v => typeof v === 'boolean' ? (v ? 'Sí' : 'No') : v).join(' o ');
+                  // Operadores en lenguaje natural
+                  let opNat = '';
+                  switch (operador) {
+                    case '==': opNat = 'es igual a'; break;
+                    case '>': opNat = 'es mayor que'; break;
+                    case '<': opNat = 'es menor que'; break;
+                    case 'in': opNat = 'es uno de'; break;
+                    default: opNat = operador;
+                  }
+                  return (
+                    <span key={i}>
+                      <span className="font-semibold text-blue-900">{etiquetas[cond.hecho] || cond.hecho}</span> {opNat} <span className="bg-blue-100 text-blue-800 px-1 rounded text-xs">{valor}</span>{i < regla.condiciones.length - 1 ? <span className="text-blue-700 font-bold"> Y </span> : ''}
+                    </span>
+                  );
+                }) : ''} <b>ENTONCES</b> <span className="font-bold text-indigo-700">{regla.diagnostico}</span>
+              </div>
+              <div className="text-gray-700 text-sm italic mt-1">{regla.explicacion}</div>
             </li>
           ))}
         </ul>
       )}
-      <form onSubmit={handleAgregarRegla} className="space-y-2">
-        <div>
-          <label className="block font-medium">Condiciones (ej: fiebre, tos...):</label>
-          <input type="text" name="fiebre" placeholder="Fiebre (ej: 38)" onChange={handleCondicionChange} className="medical-input mt-1 mr-2" />
-          <input type="text" name="tos" placeholder="Tos (ej: seca)" onChange={handleCondicionChange} className="medical-input mt-1 mr-2" />
+      <form onSubmit={handleAgregarRegla} className="space-y-2 mt-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+          <input type="text" name="fiebre" placeholder="Fiebre (ej: 38)" onChange={handleCondicionChange} className="medical-input mt-1 mr-2 w-full" />
+          <input type="text" name="tos" placeholder="Tos (ej: seca)" onChange={handleCondicionChange} className="medical-input mt-1 mr-2 w-full" />
           {/* Agrega más campos según tus variables */}
         </div>
         <div>
           <label className="block font-medium">Diagnóstico:</label>
-          <input type="text" name="diagnostico" value={nuevaRegla.diagnostico || ''} onChange={handleInputChange} className="medical-input mt-1" required />
+          <input type="text" name="diagnostico" value={nuevaRegla.diagnostico || ''} onChange={handleInputChange} className="medical-input mt-1 w-full" required />
         </div>
         <div>
           <label className="block font-medium">Explicación:</label>
-          <textarea name="explicacion" value={nuevaRegla.explicacion || ''} onChange={handleInputChange} className="medical-input mt-1" required />
+          <textarea name="explicacion" value={nuevaRegla.explicacion || ''} onChange={handleInputChange} className="medical-input mt-1 w-full" required />
         </div>
-        <button type="submit" className="medical-button">Agregar Regla</button>
+        <button type="submit" className="medical-button w-full text-base py-3">Agregar Regla</button>
       </form>
       {mensaje && <p className="text-green-600 mt-2">{mensaje}</p>}
       {error && <p className="text-red-600 mt-2">{error}</p>}

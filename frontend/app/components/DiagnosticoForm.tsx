@@ -61,7 +61,7 @@ export default function DiagnosticoForm({ onSubmit, isLoading }: DiagnosticoForm
   };
 
   return (
-    <div className="medical-card p-4 sm:p-6 lg:p-8">
+    <div className="medical-card p-2 sm:p-4 md:p-6 lg:p-8 max-w-full md:max-w-2xl mx-auto bg-gradient-to-br from-white via-blue-50 to-blue-100 border border-blue-200">
       <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
         <span className="bg-blue-100 p-2 rounded-lg mr-3">
           {/* Ícono opcional aquí si se desea */}
@@ -70,13 +70,13 @@ export default function DiagnosticoForm({ onSubmit, isLoading }: DiagnosticoForm
       </h2>
       <form onSubmit={handleSubmit} className="space-y-5">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <label className="block">
+          <label className="block w-full">
             Fiebre (°C):
-            <input type="number" step="0.1" name="fiebre" value={form.fiebre} onChange={handleChange} required disabled={isLoading} className="medical-input mt-1" />
+            <input type="number" step="0.1" name="fiebre" value={form.fiebre} onChange={handleChange} required disabled={isLoading} className="medical-input mt-1 w-full" />
           </label>
-          <label className="block">
+          <label className="block w-full">
             Tos:
-            <select name="tos" value={form.tos} onChange={handleChange} required disabled={isLoading} className="medical-select mt-1">
+            <select name="tos" value={form.tos} onChange={handleChange} required disabled={isLoading} className="medical-select mt-1 w-full">
               <option value="">Seleccione</option>
               <option value="seca">Seca</option>
               <option value="con_flema_transparente_verdosa">Con flema transparente/verdosa</option>
@@ -84,18 +84,18 @@ export default function DiagnosticoForm({ onSubmit, isLoading }: DiagnosticoForm
               <option value="ninguna">Ninguna</option>
             </select>
           </label>
-          <label className="block">
+          <label className="block w-full">
             Dolor torácico:
-            <select name="dolor_toracico" value={form.dolor_toracico} onChange={handleChange} required disabled={isLoading} className="medical-select mt-1">
+            <select name="dolor_toracico" value={form.dolor_toracico} onChange={handleChange} required disabled={isLoading} className="medical-select mt-1 w-full">
               <option value="">Seleccione</option>
               <option value="ninguno">Ninguno</option>
               <option value="molestia_leve">Molestia leve</option>
               <option value="puntada_al_respirar">Puntada al respirar/toser</option>
             </select>
           </label>
-          <label className="block">
+          <label className="block w-full">
             Falta de aire (disnea):
-            <select name="falta_de_aire" value={form.falta_de_aire} onChange={handleChange} required disabled={isLoading} className="medical-select mt-1">
+            <select name="falta_de_aire" value={form.falta_de_aire} onChange={handleChange} required disabled={isLoading} className="medical-select mt-1 w-full">
               <option value="">Seleccione</option>
               <option value="ninguna">Ninguna</option>
               <option value="repentina">Repentina</option>
@@ -120,13 +120,13 @@ export default function DiagnosticoForm({ onSubmit, isLoading }: DiagnosticoForm
             <input type="checkbox" name="confusion" checked={form.confusion} onChange={handleChange} disabled={isLoading} className="form-checkbox" />
             <span>¿Confusión / desorientación?</span>
           </label>
-          <label className="block">
+          <label className="block w-full">
             Edad:
-            <input type="number" name="edad" value={form.edad} onChange={handleChange} required disabled={isLoading} className="medical-input mt-1" />
+            <input type="number" name="edad" value={form.edad} onChange={handleChange} required disabled={isLoading} className="medical-input mt-1 w-full" />
           </label>
-          <label className="block">
+          <label className="block w-full">
             Hábito de fumar:
-            <select name="fumador" value={form.fumador} onChange={handleChange} required disabled={isLoading} className="medical-select mt-1">
+            <select name="fumador" value={form.fumador} onChange={handleChange} required disabled={isLoading} className="medical-select mt-1 w-full">
               <option value="">Seleccione</option>
               <option value="no">No fumador</option>
               <option value="ex_fumador">Ex-fumador</option>
@@ -144,7 +144,7 @@ export default function DiagnosticoForm({ onSubmit, isLoading }: DiagnosticoForm
           </label>
         </div>
         <div className="pt-4">
-          <button type="submit" disabled={isLoading} className="medical-button w-full">
+          <button type="submit" disabled={isLoading} className="medical-button w-full text-base py-3">
             {isLoading ? 'Obteniendo diagnóstico...' : 'Obtener diagnóstico'}
           </button>
         </div>

@@ -102,7 +102,7 @@ export default function Home() {
         </div>
       </div>
       {/* Sección de gestión de reglas */}
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-3xl mx-auto mt-10 sm:mt-14 lg:mt-20 mb-8">
         <ReglasManager />
       </div>
     </div>

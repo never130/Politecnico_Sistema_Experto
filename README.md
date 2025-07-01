@@ -2,14 +2,13 @@
 **Autor:** Ever Loza – Centro Politécnico Superior Malvinas Argentinas
 
 ## 🎯 Objetivo
-Este proyecto implementa un **sistema experto híbrido** que combina reglas médicas tradicionales con machine learning para asistir al personal de salud en el diagnóstico de enfermedades respiratorias comunes (asma, bronquitis, neumonía y EPOC) en Tierra del Fuego. 
+Este proyecto implementa un **sistema experto** que combina reglas médicas tradicionales con machine learning para asistir al personal de salud en el diagnóstico de enfermedades respiratorias comunes (asma, bronquitis, neumonía y EPOC) en Tierra del Fuego. 
 
 **Características principales:**
 - 🧠 **Sistema Experto**: Reglas SI-ENTONCES basadas en conocimiento médico (editables en `src/knowledge_base/reglas.json`)
 - 🤖 **Machine Learning**: DecisionTreeClassifier para patrones complejos  
 - 🎨 **Interfaz Moderna**: Frontend Next.js + Tailwind CSS
 - 📊 **Explicabilidad**: Justificación clara de cada diagnóstico
-- 🛡️ **Estructura profesional y limpia**: Solo archivos necesarios, sin duplicados ni residuos
 
 ## 🧠 Representación del Conocimiento
 El conocimiento se extrajo mediante entrevista con un agente sanitario local y se representa en dos niveles:
@@ -39,23 +38,22 @@ graph LR
     G --> H[Explicación]
 ```
 
-### 📁 Estructura del Proyecto (Versión Final Limpia)
+### 📁 Estructura del Proyecto
 
 ```
 📁 Politecnico_Sistema_Experto/
 ├── README.md                # Documentación principal
 ├── requisitos.txt           # Dependencias Python
-├── LIMPIEZA_REALIZADA.txt   # Evidencia de limpieza y estructura final
 ├── documentacion/           # Documentos académicos y justificación
 ├── src/
 │   ├── knowledge_base/
-│   │   ├── reglas.json      # Base de conocimiento SI-ENTONCES (editable)
+│   │   ├── reglas.json      # Base de conocimiento SI-ENTONCES 
 │   │   ├── motor_inferencia.py # Motor de inferencia desacoplado
 │   │   └── predict_model.py # Integración ML (scikit-learn)
 │   └── webapp/
 │       └── app.py           # API Flask (endpoints /diagnostico y /reglas)
 ├── frontend/                # Interfaz Next.js + Tailwind
-│   └── ...                  # Componentes, páginas y estilos
+│   └── ...                  # Componentes, páginas y estilos (responsive y accesibles)
 └── ...                      # Otros archivos relevantes
 ```
 
@@ -91,19 +89,7 @@ pytest tests/
 - Para agregar una regla desde el frontend, se recomienda implementar un formulario que consuma el endpoint `POST /reglas`.
 - El motor de inferencia está desacoplado y evalúa reglas desde el JSON, permitiendo fácil mantenimiento y explicabilidad.
 
-## 🧹 Observaciones de Limpieza
-
-- Se eliminaron archivos y carpetas innecesarias: reglas antiguas en Python, duplicados, archivos `.DELETE_ME`, carpetas `__pycache__`.
-- La estructura final es profesional, clara y lista para entrega académica.
-- Ver detalles en `LIMPIEZA_REALIZADA.txt`.
-
-## 📞 Contacto
-
-**Ever Loza**  
-Centro Politécnico Superior Malvinas Argentinas  
-Tierra del Fuego, Argentina
 
 ---
 
 Sistema experto híbrido listo para entrega profesional y académica. Para más detalles, consulta la documentación en la carpeta `documentacion/`.
-

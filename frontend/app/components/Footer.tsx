@@ -2,10 +2,10 @@ import { HeartIcon } from '@heroicons/react/24/outline'
 
 export default function Footer() {
   return (
-    <footer className="bg-white/80 backdrop-blur-sm border-t border-blue-100 mt-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+    <footer className="bg-white/80 backdrop-blur-sm border-t border-blue-100 mt-8 sm:mt-16 w-full">
+      <div className="max-w-full sm:max-w-7xl mx-auto px-2 sm:px-4 md:px-6 lg:px-8 py-4">
         {/* Desktop: Una línea horizontal */}
-        <div className="hidden lg:flex justify-between items-center text-sm">
+        <div className="hidden lg:flex flex-wrap justify-between items-center text-sm">
           
           {/* Sistema */}
           <div className="flex items-center text-blue-700">
@@ -66,8 +66,8 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Mobile: Centrado vertical */}
-        <div className="flex md:hidden flex-col items-center space-y-3 text-center">
+        {/* Mobile: Una columna */}
+        <div className="flex flex-col md:hidden space-y-2 text-xs sm:text-sm mt-2">
           <div className="flex items-center text-blue-700">
             <HeartIcon className="h-4 w-4 text-blue-500 mr-2" />
             <span className="font-medium text-sm">Sistema Experto Respiratorio</span>

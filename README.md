@@ -78,6 +78,7 @@ Politecnico_Sistema_Experto/
 
 ### Backend
 ```bash
+pip install -r requirements.txt
 python -m src.webapp.app
 ```
 

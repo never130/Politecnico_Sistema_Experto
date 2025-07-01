@@ -101,9 +101,32 @@ export default function Home() {
           </motion.div>
         </div>
       </div>
-      {/* Sección de gestión de reglas */}
-      <div className="max-w-3xl mx-auto mt-10 sm:mt-14 lg:mt-20 mb-8">
-        <ReglasManager />
+      {/* Sección de gestión de reglas con imagen al lado derecho, perfectamente alineados y con medidas sincronizadas */}
+      <div className="max-w-7xl mx-auto mt-10 sm:mt-14 lg:mt-20 mb-8">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-6 lg:gap-8 items-stretch">
+          {/* Gestor de reglas, igual ancho que DiagnosticoForm */}
+          <div className="order-2 xl:order-1 flex items-center justify-center">
+            <div className="w-full max-w-2xl">
+              <ReglasManager />
+            </div>
+          </div>
+          {/* Imagen decorativa, igual ancho que ResultCard, animada y más alargada */}
+          <motion.div
+            initial={{ opacity: 0, x: 40 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.2, duration: 0.6, type: 'spring' }}
+            className="order-1 xl:order-2 hidden md:flex items-center justify-center w-full max-w-2xl mx-auto"
+          >
+            <img
+              src="/image.jpeg"
+              alt="Ilustración médica"
+              className="rounded-2xl shadow-2xl object-cover w-full h-[420px] lg:h-[540px] xl:h-[620px] border border-blue-100 transition-all duration-300"
+              style={{ minHeight: '420px', maxHeight: '620px' }}
+              loading="lazy"
+              draggable="false"
+            />
+          </motion.div>
+        </div>
       </div>
     </div>
   )

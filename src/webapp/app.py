@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from src.knowledge_base.motor_inferencia import inferir
-from src.knowledge_base.predict_model import predecir_ml
+from src.engine.motor_inferencia import inferir
+from src.ml_model.predict_model import predecir_ml
 import os
 import json
 

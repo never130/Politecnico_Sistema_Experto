@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 
 interface Regla {
   id?: number;
   condiciones: Record<string, any>;
   diagnostico: string;
   explicacion: string;
+  gravedad?: 'grave' | 'moderado' | 'leve';
 }
 
 export default function ReglasManager() {
@@ -80,16 +82,26 @@ export default function ReglasManager() {
   };
 
   return (
-    <div className="medical-card p-2 sm:p-4 md:p-6 lg:p-8 max-w-full md:max-w-2xl mx-auto bg-gradient-to-br from-white via-blue-50 to-blue-100 border border-blue-200">
+    <motion.div 
+      className="medical-card p-2 sm:p-4 md:p-6 lg:p-8 max-w-full md:max-w-2xl mx-auto bg-gradient-to-br from-white via-blue-50 to-blue-100 border border-blue-200"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
+      transition={{ duration: 0.3 }}
+    >
       <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6 flex items-center flex-wrap">
         <span className="bg-blue-100 p-2 rounded-lg mr-3 mb-2 sm:mb-0" />
         Gestión de Reglas SI-ENTONCES
       </h2>
+      <div className="mb-6 p-3 bg-blue-50 border-l-4 border-blue-400 rounded text-blue-900 text-sm">
+        <b>¿Cómo usar?</b> Visualiza las reglas activas. Para agregar una regla, completa las condiciones, el diagnóstico y la explicación, y haz clic en <b>Agregar Regla</b>. Las reglas nuevas se aplican de inmediato al sistema. Ejemplo:<br/>
+        <span className="block mt-2 italic text-blue-800">SI Fiebre (°C) es mayor que 38.5 Y Tos es igual a seca ENTONCES Gripe<br/>Explicación: Fiebre alta, tos seca y malestar general.</span>
+      </div>
       {loading ? <p>Cargando reglas...</p> : (
         <ul className="mb-4 max-h-40 overflow-y-auto text-sm">
           {reglas.map((regla, idx) => (
             <li key={idx} className="mb-4 p-2 sm:p-3 rounded-lg bg-gradient-to-r from-blue-100 via-blue-50 to-blue-100 border border-blue-200">
-              <div className="mb-1">
+              <div className="mb-1 flex flex-col sm:flex-row sm:items-center gap-2">
                 <b>SI</b> {Array.isArray(regla.condiciones) ? regla.condiciones.map((cond, i) => {
                   let valor = cond.valor;
                   let operador = cond.operador;
@@ -110,6 +122,9 @@ export default function ReglasManager() {
                     </span>
                   );
                 }) : ''} <b>ENTONCES</b> <span className="font-bold text-indigo-700">{regla.diagnostico}</span>
+                {regla.gravedad && (
+                  <span className={`ml-2 px-2 py-0.5 rounded text-xs font-semibold ${regla.gravedad === 'grave' ? 'bg-red-100 text-red-700' : regla.gravedad === 'moderado' ? 'bg-yellow-100 text-yellow-800' : 'bg-green-100 text-green-700'}`}>Gravedad: {regla.gravedad}</span>
+                )}
               </div>
               <div className="text-gray-700 text-sm italic mt-1">{regla.explicacion}</div>
             </li>
@@ -134,6 +149,6 @@ export default function ReglasManager() {
       </form>
       {mensaje && <p className="text-green-600 mt-2">{mensaje}</p>}
       {error && <p className="text-red-600 mt-2">{error}</p>}
-    </div>
+    </motion.div>
   );
 }

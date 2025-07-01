@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 
 interface DiagnosticoFormProps {
   onSubmit: (form: any) => void;
@@ -61,11 +62,15 @@ export default function DiagnosticoForm({ onSubmit, isLoading }: DiagnosticoForm
   };
 
   return (
-    <div className="medical-card p-2 sm:p-4 md:p-6 lg:p-8 max-w-full md:max-w-2xl mx-auto bg-gradient-to-br from-white via-blue-50 to-blue-100 border border-blue-200">
+    <motion.div
+      className="medical-card p-2 sm:p-4 md:p-6 lg:p-8 max-w-full md:max-w-2xl mx-auto bg-gradient-to-br from-white via-blue-50 to-blue-100 border border-blue-200"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
+      transition={{ duration: 0.3 }}
+    >
       <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-        <span className="bg-blue-100 p-2 rounded-lg mr-3">
-          {/* Ícono opcional aquí si se desea */}
-        </span>
+        <span className="bg-blue-100 p-2 rounded-lg mr-3" />
         Complete el formulario para obtener el diagnóstico
       </h2>
       <form onSubmit={handleSubmit} className="space-y-5">
@@ -150,6 +155,6 @@ export default function DiagnosticoForm({ onSubmit, isLoading }: DiagnosticoForm
         </div>
       </form>
       {error && <p className="text-red-600 mt-4">{error}</p>}
-    </div>
+    </motion.div>
   );
 }

@@ -60,8 +60,10 @@ Politecnico_Sistema_Experto/
 ├── documentacion/
 ├── src/
 │   ├── knowledge_base/
-│   │   ├── reglas.json
-│   │   ├── motor_inferencia.py
+│   │   └── reglas.json
+│   ├── engine/
+│   │   └── motor_inferencia.py
+│   ├── ml_model/
 │   │   └── predict_model.py
 │   └── webapp/
 │       └── app.py

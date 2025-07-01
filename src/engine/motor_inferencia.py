@@ -1,3 +1,4 @@
+# Archivo movido desde knowledge_base
 import json
 import operator
 import os
@@ -13,7 +14,7 @@ OPERADORES = {
     'not in': lambda a, b: a not in b
 }
 
-RUTA_REGLAS = os.path.abspath(os.path.join(os.path.dirname(__file__), 'reglas.json'))
+RUTA_REGLAS = os.path.abspath(os.path.join(os.path.dirname(__file__), '../knowledge_base/reglas.json'))
 with open(RUTA_REGLAS, 'r', encoding='utf-8') as f:
     reglas = json.load(f)
 

@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
 interface DiagnosticoFormProps {
   onSubmit: (form: any) => void;
   isLoading: boolean;
+  resetForm?: boolean; // Prop para reiniciar el formulario
+  onReset?: () => void; // Callback cuando se reinicia
 }
 
 const initialForm = {
@@ -21,9 +23,18 @@ const initialForm = {
   antecedentes_alergias: false,
 };
 
-export default function DiagnosticoForm({ onSubmit, isLoading }: DiagnosticoFormProps) {
+export default function DiagnosticoForm({ onSubmit, isLoading, resetForm, onReset }: DiagnosticoFormProps) {
   const [form, setForm] = useState(initialForm);
   const [error, setError] = useState<string | null>(null);
+
+  // Efecto para reiniciar el formulario cuando se solicite
+  useEffect(() => {
+    if (resetForm) {
+      setForm(initialForm);
+      setError(null);
+      onReset?.(); // Notificar que se completó el reset
+    }
+  }, [resetForm, onReset]);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value, type } = e.target;

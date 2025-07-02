@@ -24,22 +24,28 @@ def diagnostico():
     
     if diagnostico == 'Sin diagnóstico':
         diag_ml, proba = predecir_ml(datos)
-        # Explicación amigable para ML
-        sintomas = []
-        for k, v in datos.items():
-            sintomas.append(f"{k.replace('_', ' ').capitalize()}: {v}")
-        sintomas_str = '\n'.join(f"- {s}" for s in sintomas)
+        
+        # Obtener gravedad correcta desde las reglas para el diagnóstico ML
+        gravedad_ml = 'moderado'  # Valor por defecto
+        with open(REGLAS_PATH, 'r', encoding='utf-8') as f:
+            reglas_lista = json.load(f)
+            for regla in reglas_lista:
+                if regla['diagnostico'].lower() == diag_ml.lower():
+                    gravedad_ml = regla['gravedad']
+                    break
+        
+        # Explicación simple y amigable para ML
         explicacion_ml = (
-            f"Predicción ML (probabilidad: {proba:.2f})\n"
-            "No se encontró una regla explícita para su caso, por lo que se utilizó el modelo de aprendizaje automático.\n"
-            f"\nSíntomas analizados:\n{sintomas_str}\n\n"
-            "Nota: El modelo ML no puede explicar el diagnóstico como un médico, pero utiliza patrones aprendidos de muchos casos reales."
+            f"Basándose en el análisis de sus síntomas, el sistema sugiere: {diag_ml}.\n\n"
+            "Esta predicción se basa en patrones aprendidos de casos médicos similares. "
+            "Se recomienda consultar con un profesional de la salud para confirmar el diagnóstico "
+            "y recibir el tratamiento adecuado."
         )
         return jsonify({
             'diagnostico': diag_ml,
             'explicacion': explicacion_ml,
             'regla_disparada': None,
-            'gravedad': 'moderado'
+            'gravedad': gravedad_ml
         })
     return jsonify({
         'diagnostico': diagnostico,

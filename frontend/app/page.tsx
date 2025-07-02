@@ -17,6 +17,7 @@ interface DiagnosticResult {
 export default function Home() {
   const [result, setResult] = useState<DiagnosticResult | null>(null)
   const [isLoading, setIsLoading] = useState(false)
+  const [resetForm, setResetForm] = useState(false)
 
   const handleDiagnostic = async (formData: any) => {
     setIsLoading(true)
@@ -28,6 +29,16 @@ export default function Home() {
     } finally {
       setIsLoading(false)
     }
+  }
+
+  const handleNewConsultation = () => {
+    setResult(null)
+    setIsLoading(false)
+    setResetForm(true) // Solicitar reset del formulario
+  }
+
+  const handleFormReset = () => {
+    setResetForm(false) // Resetear la bandera después de que el formulario se reinicie
   }
   return (
     <div className="min-h-screen py-4 sm:py-6 lg:py-8 px-3 sm:px-4 lg:px-6">
@@ -87,7 +98,12 @@ export default function Home() {
             transition={{ delay: 0.4 }}
             className="order-2 xl:order-1"
           >
-            <DiagnosticoForm onSubmit={handleDiagnostic} isLoading={isLoading} />
+            <DiagnosticoForm 
+              onSubmit={handleDiagnostic} 
+              isLoading={isLoading}
+              resetForm={resetForm}
+              onReset={handleFormReset}
+            />
           </motion.div>
 
           {/* Results */}
@@ -97,7 +113,11 @@ export default function Home() {
             transition={{ delay: 0.6 }}
             className="order-1 xl:order-2"
           >
-            <ResultCard result={result} isLoading={isLoading} />
+            <ResultCard 
+              result={result} 
+              isLoading={isLoading} 
+              onNewConsultation={handleNewConsultation}
+            />
           </motion.div>
         </div>
       </div>

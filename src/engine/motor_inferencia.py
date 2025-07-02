@@ -29,23 +29,9 @@ def evaluar_regla(regla, hechos):
     return True
 
 def explicar_regla(regla, hechos):
-    partes = []
-    for cond in regla['condiciones']:
-        hecho_val = hechos.get(cond['hecho'])
-        operador = cond['operador']
-        valor = cond['valor']
-        # Formato amigable para el usuario
-        if operador == 'in':
-            partes.append(f"{cond['hecho']} = {hecho_val} (esperado: uno de {valor})")
-        elif operador == 'not in':
-            partes.append(f"{cond['hecho']} = {hecho_val} (esperado: distinto de {valor})")
-        else:
-            partes.append(f"{cond['hecho']} = {hecho_val} ({cond['hecho']} {operador} {valor})")
-    condiciones_str = '; '.join(partes)
-    return (
-        f"Se detectó: {condiciones_str}.\n"
-        f"Explicación médica: {regla['explicacion']}"
-    )
+    """Genera una explicación simple y amigable para el usuario"""
+    # Solo retornamos la explicación médica de la regla, sin detalles técnicos
+    return regla['explicacion']
 
 def inferir(hechos):
     for regla in reglas:

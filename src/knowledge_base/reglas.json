@@ -1,72 +1,236 @@
 [
   {
-    "nombre": "Gripe",
+    "nombre": "Gripe (Influenza)",
     "condiciones": [
-      {"hecho": "fiebre", "operador": ">", "valor": 38.5},
-      {"hecho": "tos", "operador": "==", "valor": "seca"},
-      {"hecho": "malestar_general", "operador": "==", "valor": true}
+      {
+        "hecho": "fiebre",
+        "operador": ">",
+        "valor": 38.5
+      },
+      {
+        "hecho": "tos",
+        "operador": "==",
+        "valor": "seca"
+      },
+      {
+        "hecho": "malestar_general",
+        "operador": "==",
+        "valor": true
+      }
     ],
-    "diagnostico": "Gripe",
-    "explicacion": "Fiebre alta, tos seca y malestar general."
+    "diagnostico": "Gripe (Influenza)",
+    "explicacion": "Presenta síntomas típicos de gripe: fiebre alta, tos seca y malestar general. Es recomendable reposo, hidratación abundante y manejo de síntomas. Si los síntomas empeoran o persisten más de una semana, consulte a su médico.",
+    "gravedad": "moderado"
   },
   {
     "nombre": "Neumonía",
     "condiciones": [
-      {"hecho": "fiebre", "operador": ">", "valor": 39},
-      {"hecho": "dolor_toracico", "operador": "==", "valor": "puntada_al_respirar"},
-      {"hecho": "falta_de_aire", "operador": "==", "valor": "agotado"}
+      {
+        "hecho": "fiebre",
+        "operador": ">",
+        "valor": 39
+      },
+      {
+        "hecho": "dolor_toracico",
+        "operador": "==",
+        "valor": "puntada_al_respirar"
+      },
+      {
+        "hecho": "falta_de_aire",
+        "operador": "==",
+        "valor": "agotado"
+      }
     ],
     "diagnostico": "Neumonía",
-    "explicacion": "Fiebre muy alta, dolor torácico y falta de aire grave."
-  },
-  {
-    "nombre": "Bronquitis Aguda",
-    "condiciones": [
-      {"hecho": "tos", "operador": "in", "valor": ["seca", "con_flema_transparente_verdosa"]},
-      {"hecho": "fiebre", "operador": "<", "valor": 38.5},
-      {"hecho": "malestar_general", "operador": "==", "valor": true}
-    ],
-    "diagnostico": "Bronquitis Aguda",
-    "explicacion": "Tos persistente, fiebre baja o ausente, malestar general."
+    "explicacion": "Los síntomas sugieren una posible neumonía: fiebre muy alta, dolor punzante en el pecho al respirar y dificultad respiratoria severa. Esta es una condición que requiere atención médica inmediata. Diríjase al centro de salud más cercano.",
+    "gravedad": "grave"
   },
   {
     "nombre": "Crisis Asmática",
     "condiciones": [
-      {"hecho": "sibilancias", "operador": "==", "valor": true},
-      {"hecho": "falta_de_aire", "operador": "in", "valor": ["repentina", "al_caminar_rapido"]},
-      {"hecho": "antecedentes_asma", "operador": "==", "valor": true}
+      {
+        "hecho": "sibilancias",
+        "operador": "==",
+        "valor": true
+      },
+      {
+        "hecho": "falta_de_aire",
+        "operador": "in",
+        "valor": [
+          "repentina",
+          "al_caminar_rapido"
+        ]
+      },
+      {
+        "hecho": "antecedentes_asma",
+        "operador": "==",
+        "valor": true
+      }
     ],
     "diagnostico": "Crisis Asmática",
-    "explicacion": "Sibilancias, disnea súbita y antecedentes de asma."
+    "explicacion": "Los síntomas indican una crisis asmática: silbido al respirar, dificultad respiratoria súbita y antecedentes de asma. Use su inhalador de rescate si lo tiene disponible. Si no mejora en 15-20 minutos o empeora, busque atención médica inmediata.",
+    "gravedad": "moderado"
   },
   {
-    "nombre": "EPOC",
+    "nombre": "EPOC (Enfermedad Pulmonar Obstructiva Crónica)",
     "condiciones": [
-      {"hecho": "fumador", "operador": "in", "valor": ["si_activo", "ex_fumador"]},
-      {"hecho": "falta_de_aire", "operador": "==", "valor": "empeora_con_anios"},
-      {"hecho": "edad", "operador": ">", "valor": 45}
+      {
+        "hecho": "fumador",
+        "operador": "in",
+        "valor": [
+          "si_activo",
+          "ex_fumador"
+        ]
+      },
+      {
+        "hecho": "falta_de_aire",
+        "operador": "==",
+        "valor": "empeora_con_anios"
+      },
+      {
+        "hecho": "edad",
+        "operador": ">",
+        "valor": 45
+      }
     ],
-    "diagnostico": "EPOC",
-    "explicacion": "Fumador, disnea progresiva y edad mayor."
+    "diagnostico": "EPOC (Enfermedad Pulmonar Obstructiva Crónica)",
+    "explicacion": "Los síntomas sugieren EPOC: historial de tabaquismo, dificultad respiratoria que ha empeorado gradualmente con los años y edad mayor de 45 años. Es importante una evaluación médica para confirmar el diagnóstico y establecer un plan de tratamiento adecuado.",
+    "gravedad": "moderado"
+  },
+  {
+    "nombre": "Bronquitis Aguda",
+    "condiciones": [
+      {
+        "hecho": "tos",
+        "operador": "in",
+        "valor": [
+          "seca",
+          "con_flema_transparente_verdosa"
+        ]
+      },
+      {
+        "hecho": "fiebre",
+        "operador": "<",
+        "valor": 38.5
+      },
+      {
+        "hecho": "malestar_general",
+        "operador": "==",
+        "valor": true
+      },
+      {
+        "hecho": "edad",
+        "operador": ">",
+        "valor": 2
+      },
+      {
+        "hecho": "fumador",
+        "operador": "==",
+        "valor": "no"
+      }
+    ],
+    "diagnostico": "Bronquitis Aguda",
+    "explicacion": "Presenta síntomas compatibles con bronquitis aguda: tos persistente (con o sin flema), fiebre baja y malestar general. Generalmente mejora con reposo, hidratación y evitar irritantes como el humo. Si persiste más de 2 semanas, consulte a su médico.",
+    "gravedad": "leve"
   },
   {
     "nombre": "Resfrío Común",
     "condiciones": [
-      {"hecho": "fiebre", "operador": "<", "valor": 37.5},
-      {"hecho": "tos", "operador": "in", "valor": ["ninguna", "seca"]},
-      {"hecho": "malestar_general", "operador": "==", "valor": false}
+      {
+        "hecho": "fiebre",
+        "operador": "<",
+        "valor": 37.5
+      },
+      {
+        "hecho": "tos",
+        "operador": "in",
+        "valor": [
+          "ninguna",
+          "seca"
+        ]
+      },
+      {
+        "hecho": "malestar_general",
+        "operador": "==",
+        "valor": false
+      }
     ],
     "diagnostico": "Resfrío Común",
-    "explicacion": "Síntomas leves, sin fiebre ni malestar importante."
+    "explicacion": "Los síntomas son compatibles con un resfrío común: síntomas leves, sin fiebre significativa ni malestar importante. Generalmente se resuelve solo en 7-10 días con reposo, hidratación y cuidados caseros. Si desarrolla fiebre alta o empeora, consulte a su médico.",
+    "gravedad": "leve"
   },
   {
     "nombre": "Bronquiolitis",
     "condiciones": [
-      {"hecho": "edad", "operador": "<", "valor": 2},
-      {"hecho": "falta_de_aire", "operador": "==", "valor": "repentina"},
-      {"hecho": "sibilancias", "operador": "==", "valor": false}
+      {
+        "hecho": "edad",
+        "operador": "<",
+        "valor": 2
+      },
+      {
+        "hecho": "falta_de_aire",
+        "operador": "==",
+        "valor": "repentina"
+      },
+      {
+        "hecho": "sibilancias",
+        "operador": "==",
+        "valor": true
+      }
     ],
     "diagnostico": "Bronquiolitis",
-    "explicacion": "Lactante con disnea súbita y sibilancias."
+    "explicacion": "Los síntomas en un lactante sugieren bronquiolitis: dificultad respiratoria súbita y silbido al respirar en un niño menor de 2 años. Esta condición requiere evaluación médica inmediata, especialmente en bebés pequeños. Acuda al centro de salud más cercano.",
+    "gravedad": "grave"
+  },
+  {
+    "nombre": "Síndrome Respiratorio Viral",
+    "condiciones": [
+      {
+        "hecho": "fiebre",
+        "operador": ">",
+        "valor": 38.0
+      },
+      {
+        "hecho": "tos",
+        "operador": "==",
+        "valor": "con_flema_transparente_verdosa"
+      },
+      {
+        "hecho": "malestar_general",
+        "operador": "==",
+        "valor": true
+      },
+      {
+        "hecho": "dolor_toracico",
+        "operador": "==",
+        "valor": "opresivo"
+      }
+    ],
+    "diagnostico": "Síndrome Respiratorio Viral",
+    "explicacion": "Los síntomas sugieren una infección respiratoria viral: fiebre moderada, tos con flema, malestar general y molestia en el pecho. Mantenga reposo, hidratación abundante y aislamiento para evitar contagios. Si presenta dificultad respiratoria severa, consulte inmediatamente.",
+    "gravedad": "moderado"
+  },
+  {
+    "nombre": "Síntomas Respiratorios Leves",
+    "condiciones": [
+      {
+        "hecho": "fiebre",
+        "operador": "<",
+        "valor": 37.0
+      },
+      {
+        "hecho": "tos",
+        "operador": "==",
+        "valor": "seca"
+      },
+      {
+        "hecho": "malestar_general",
+        "operador": "==",
+        "valor": false
+      }
+    ],
+    "diagnostico": "Síntomas Respiratorios Leves",
+    "explicacion": "Presenta síntomas respiratorios muy leves: tos seca ocasional sin fiebre ni malestar. Probablemente relacionado con irritación leve de las vías respiratorias. Mantenga hidratación y observe la evolución. Si los síntomas persisten o empeoran, consulte a su médico.",
+    "gravedad": "leve"
   }
 ]

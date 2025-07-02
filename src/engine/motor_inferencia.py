@@ -51,5 +51,6 @@ def inferir(hechos):
     for regla in reglas:
         if evaluar_regla(regla, hechos):
             explicacion_detallada = explicar_regla(regla, hechos)
-            return regla['diagnostico'], explicacion_detallada, regla['nombre']
-    return 'Sin diagnóstico', 'No se encontró una regla que explique los síntomas ingresados.', None
+            gravedad = regla.get('gravedad', 'moderado')  # Valor por defecto si no existe
+            return regla['diagnostico'], explicacion_detallada, regla['nombre'], gravedad
+    return 'Sin diagnóstico', 'No se encontró una regla que explique los síntomas ingresados.', None, 'leve'

@@ -13,7 +13,15 @@ REGLAS_PATH = os.path.abspath(os.path.join(os.path.dirname(__file__), '../knowle
 @app.route('/diagnostico', methods=['POST'])
 def diagnostico():
     datos = request.json
-    diagnostico, explicacion, regla = inferir(datos)
+    resultado = inferir(datos)
+    
+    # Verificar si inferir retorna 4 elementos (incluye gravedad) o 3 elementos (sin gravedad)
+    if len(resultado) == 4:
+        diagnostico, explicacion, regla, gravedad = resultado
+    else:
+        diagnostico, explicacion, regla = resultado
+        gravedad = 'moderado'  # Valor por defecto
+    
     if diagnostico == 'Sin diagnóstico':
         diag_ml, proba = predecir_ml(datos)
         # Explicación amigable para ML
@@ -30,12 +38,14 @@ def diagnostico():
         return jsonify({
             'diagnostico': diag_ml,
             'explicacion': explicacion_ml,
-            'regla_disparada': None
+            'regla_disparada': None,
+            'gravedad': 'moderado'
         })
     return jsonify({
         'diagnostico': diagnostico,
         'explicacion': explicacion,
-        'regla_disparada': regla
+        'regla_disparada': regla,
+        'gravedad': gravedad
     })
 
 @app.route('/reglas', methods=['GET'])

@@ -197,8 +197,17 @@ export default function ReglasManager() {
           <input type="text" name="diagnostico" value={nuevaRegla.diagnostico || ''} onChange={handleInputChange} className="medical-input mt-1 w-full" required />
         </div>
         <div>
+          <label className="block font-medium">Gravedad:</label>
+          <select name="gravedad" value={nuevaRegla.gravedad || ''} onChange={handleInputChange} className="medical-input mt-1 w-full" required>
+            <option value="">Seleccionar gravedad</option>
+            <option value="leve">Leve</option>
+            <option value="moderado">Moderado</option>
+            <option value="grave">Grave</option>
+          </select>
+        </div>
+        <div>
           <label className="block font-medium">Explicación:</label>
-          <textarea name="explicacion" value={nuevaRegla.explicacion || ''} onChange={handleInputChange} className="medical-input mt-1 w-full" required />
+          <textarea name="explicacion" value={nuevaRegla.explicacion || ''} onChange={handleInputChange} className="medical-input mt-1 w-full" rows={3} required />
         </div>
         <button type="submit" className="medical-button w-full text-base py-3">Agregar Regla</button>
       </form>

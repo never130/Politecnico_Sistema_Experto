@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -9,20 +10,33 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          50: '#eff6ff',
-          500: '#3b82f6',
-          600: '#2563eb',
-          700: '#1d4ed8',
-        },        medical: {
-          50: '#f0f9ff',
-          100: '#e0f2fe',
-          500: '#0ea5e9',
-          600: '#0284c7',
-          700: '#0369a1',
-        }
+          50: '#eaf6f6',
+          100: '#b8e0e6',
+          200: '#7ed6df',
+          300: '#48b1f3',
+          400: '#5f6caf',
+          500: '#3a506b', // azul petróleo
+          600: '#5f4b8b', // violeta
+          700: '#00b8a9', // aqua
+          800: '#ff6f61', // coral suave
+        },
+        medical: {
+          50: '#eaf6f6',
+          100: '#b8e0e6',
+          500: '#3a506b',
+          600: '#5f4b8b',
+          700: '#00b8a9',
+          800: '#ff6f61',
+        },
+        accent: {
+          100: '#f9e7e7',
+          200: '#f7cac9',
+          300: '#92a8d1',
+          400: '#b8a9c9',
+        },
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
+        sans: ['Inter', 'Nunito', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
         'medical': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',

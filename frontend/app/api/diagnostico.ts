@@ -9,7 +9,8 @@ export async function obtenerDiagnostico(datos: Record<string, any>) {
     body: JSON.stringify(datos),
   });
   if (!response.ok) {
-    throw new Error('Error al obtener diagnóstico');
+    // throw a generic code so the client can present a localized message
+    throw new Error('ERR_FETCH_DIAG');
   }
   return await response.json();
 }

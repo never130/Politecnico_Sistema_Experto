@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useLanguage } from '../i18n/LanguageProvider'
 import { motion } from 'framer-motion';
 
 interface DiagnosticoFormProps {
@@ -26,6 +27,7 @@ const initialForm = {
 export default function DiagnosticoForm({ onSubmit, isLoading, resetForm, onReset }: DiagnosticoFormProps) {
   const [form, setForm] = useState(initialForm);
   const [error, setError] = useState<string | null>(null);
+  const { t } = useLanguage()
 
   // Efecto para reiniciar el formulario cuando se solicite
   useEffect(() => {
@@ -68,104 +70,120 @@ export default function DiagnosticoForm({ onSubmit, isLoading, resetForm, onRese
       };
       await onSubmit(datos);
     } catch (err) {
-      setError('Error al obtener diagnóstico');
+      setError(t('form.error_fetching'));
     }
   };
 
   return (
     <motion.div
-      className="medical-card p-2 sm:p-4 md:p-6 lg:p-8 max-w-full md:max-w-2xl mx-auto bg-gradient-to-br from-white via-blue-50 to-blue-100 border border-blue-200"
+      className="medical-card p-2 sm:p-4 md:p-6 lg:p-8 max-w-full md:max-w-2xl mx-auto bg-[#f7fafd] dark:bg-[#15202b] border border-gray-200 dark:border-[#22303c] rounded-xl shadow-sm"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.3 }}
     >
-      <h2 className="text-2xl font-bold text-gray-900 mb-6 flex items-center">
-        <span className="bg-blue-100 p-2 rounded-lg mr-3" />
-        Complete el formulario para obtener el diagnóstico
+  <h2 className="text-2xl font-bold text-[#1a2733] dark:text-white mb-6 flex items-center">
+        <span className="bg-[#e8f5fe] dark:bg-[#22303c] p-2 rounded-lg mr-3">
+          <svg width='24' height='24' fill='none' viewBox='0 0 24 24'><circle cx='12' cy='12' r='10' fill='#1da1f2' /></svg>
+        </span>
+  {t('form.header')}
       </h2>
       <form onSubmit={handleSubmit} className="space-y-5">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <label className="block w-full">
-            Fiebre (°C):
+            {t('form.fiebre')}
             <input type="number" step="0.1" name="fiebre" value={form.fiebre} onChange={handleChange} required disabled={isLoading} className="medical-input mt-1 w-full" />
           </label>
           <label className="block w-full">
-            Tos:
+            {t('form.tos')}
             <select name="tos" value={form.tos} onChange={handleChange} required disabled={isLoading} className="medical-select mt-1 w-full">
-              <option value="">Seleccione</option>
-              <option value="seca">Seca</option>
-              <option value="con_flema_transparente_verdosa">Con flema transparente/verdosa</option>
-              <option value="con_flema_purulenta_sangre">Con flema purulenta/sangre</option>
-              <option value="ninguna">Ninguna</option>
+              <option value="">{t('form.select')}</option>
+              <option value="seca">{t('form.options.tos.seca')}</option>
+              <option value="con_flema_transparente_verdosa">{t('form.options.tos.con_flema_transparente_verdosa')}</option>
+              <option value="con_flema_purulenta_sangre">{t('form.options.tos.con_flema_purulenta_sangre')}</option>
+              <option value="ninguna">{t('form.options.tos.ninguna')}</option>
             </select>
           </label>
           <label className="block w-full">
-            Dolor torácico:
+            {t('form.dolor_toracico')}
             <select name="dolor_toracico" value={form.dolor_toracico} onChange={handleChange} required disabled={isLoading} className="medical-select mt-1 w-full">
-              <option value="">Seleccione</option>
-              <option value="ninguno">Ninguno</option>
-              <option value="molestia_leve">Molestia leve</option>
-              <option value="puntada_al_respirar">Puntada al respirar/toser</option>
+              <option value="">{t('form.select')}</option>
+              <option value="ninguno">{t('form.options.dolor_toracico.ninguno')}</option>
+              <option value="molestia_leve">{t('form.options.dolor_toracico.molestia_leve')}</option>
+              <option value="puntada_al_respirar">{t('form.options.dolor_toracico.puntada_al_respirar')}</option>
             </select>
           </label>
           <label className="block w-full">
-            Falta de aire (disnea):
+            {t('form.falta_de_aire')}
             <select name="falta_de_aire" value={form.falta_de_aire} onChange={handleChange} required disabled={isLoading} className="medical-select mt-1 w-full">
-              <option value="">Seleccione</option>
-              <option value="ninguna">Ninguna</option>
-              <option value="repentina">Repentina</option>
-              <option value="empeora_con_anios">Empeora con los años</option>
-              <option value="al_caminar_rapido">Al caminar rápido</option>
-              <option value="agotado">Agotado/en reposo</option>
+              <option value="">{t('form.select')}</option>
+              <option value="ninguna">{t('form.options.falta_de_aire.ninguna')}</option>
+              <option value="repentina">{t('form.options.falta_de_aire.repentina')}</option>
+              <option value="empeora_con_anios">{t('form.options.falta_de_aire.empeora_con_anios')}</option>
+              <option value="al_caminar_rapido">{t('form.options.falta_de_aire.al_caminar_rapido')}</option>
+              <option value="agotado">{t('form.options.falta_de_aire.agotado')}</option>
             </select>
           </label>
           <label className="flex items-center space-x-2">
             <input type="checkbox" name="sibilancias" checked={form.sibilancias} onChange={handleChange} disabled={isLoading} className="form-checkbox" />
-            <span>¿Silbido al respirar (sibilancias)?</span>
+            <span>{t('form.sibilancias')}</span>
           </label>
           <label className="flex items-center space-x-2">
             <input type="checkbox" name="pecho_apretado" checked={form.pecho_apretado} onChange={handleChange} disabled={isLoading} className="form-checkbox" />
-            <span>¿Sensación de pecho apretado?</span>
+            <span>{t('form.pecho_apretado')}</span>
           </label>
           <label className="flex items-center space-x-2">
             <input type="checkbox" name="malestar_general" checked={form.malestar_general} onChange={handleChange} disabled={isLoading} className="form-checkbox" />
-            <span>¿Malestar general / cansancio?</span>
+            <span>{t('form.malestar_general')}</span>
           </label>
           <label className="flex items-center space-x-2">
             <input type="checkbox" name="confusion" checked={form.confusion} onChange={handleChange} disabled={isLoading} className="form-checkbox" />
-            <span>¿Confusión / desorientación?</span>
+            <span>{t('form.confusion')}</span>
           </label>
           <label className="block w-full">
-            Edad:
+            {t('form.edad')}
             <input type="number" name="edad" value={form.edad} onChange={handleChange} required disabled={isLoading} className="medical-input mt-1 w-full" />
           </label>
           <label className="block w-full">
-            Hábito de fumar:
+            {t('form.fumador')}
             <select name="fumador" value={form.fumador} onChange={handleChange} required disabled={isLoading} className="medical-select mt-1 w-full">
-              <option value="">Seleccione</option>
-              <option value="no">No fumador</option>
-              <option value="ex_fumador">Ex-fumador</option>
-              <option value="si_activo">Fumador activo</option>
-              <option value="de_toda_la_vida">Fumador de toda la vida</option>
+              <option value="">{t('form.select')}</option>
+              <option value="no">{t('form.options.fumador.no')}</option>
+              <option value="ex_fumador">{t('form.options.fumador.ex_fumador')}</option>
+              <option value="si_activo">{t('form.options.fumador.si_activo')}</option>
+              <option value="de_toda_la_vida">{t('form.options.fumador.de_toda_la_vida')}</option>
             </select>
           </label>
           <label className="flex items-center space-x-2">
             <input type="checkbox" name="antecedentes_asma" checked={form.antecedentes_asma} onChange={handleChange} disabled={isLoading} className="form-checkbox" />
-            <span>¿Antecedentes de asma?</span>
+            <span>{t('form.antecedentes_asma')}</span>
           </label>
           <label className="flex items-center space-x-2">
             <input type="checkbox" name="antecedentes_alergias" checked={form.antecedentes_alergias} onChange={handleChange} disabled={isLoading} className="form-checkbox" />
-            <span>¿Antecedentes de alergias/rinitis?</span>
+            <span>{t('form.antecedentes_alergias')}</span>
           </label>
         </div>
         <div className="pt-4">
-          <button type="submit" disabled={isLoading} className="medical-button w-full text-base py-3">
-            {isLoading ? 'Obteniendo diagnóstico...' : 'Obtener diagnóstico'}
+          <button
+            type="submit"
+            disabled={isLoading}
+            className="medical-button w-full text-base py-3 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 active:scale-95"
+            tabIndex={0}
+          >
+            {isLoading ? (
+              <span className="flex items-center justify-center gap-2">
+                <span className="animate-spin h-5 w-5 border-2" style={{borderColor: '#1da1f2', borderTopColor: '#0f91d6', borderRadius: '9999px'}}></span>
+                {t('form.obteniendo')}
+              </span>
+            ) : t('form.obtener')}
           </button>
         </div>
       </form>
-      {error && <p className="text-red-600 mt-4">{error}</p>}
+      {error && (
+        <div className="mt-4 p-3 bg-transparent border-l-4" style={{borderColor:'#1da1f2'}}>
+          <span className="font-semibold text-[#1a2733] dark:text-white">{t('result.error')}</span> <span className="text-[#1a2733] dark:text-white">{error}</span>
+        </div>
+      )}
     </motion.div>
   );
 }

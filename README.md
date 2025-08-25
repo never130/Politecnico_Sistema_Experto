@@ -1,4 +1,140 @@
-# Sistema Experto para el Diagnóstico de Enfermedades Respiratorias
+
+# 1# Expert System for Respiratory Disease Diagnosis
+**Author:** Ever Loza – Centro Politécnico Superior Malvinas Argentinas
+
+## Objective
+Expert system that assists healthcare personnel in diagnosing respiratory diseases (asthma, bronchitis, pneumonia, COPD, etc.) by combining IF-THEN medical rules and machine learning, with a modern web interface and full explainability.
+
+---
+
+## How does it work?
+
+1. **Symptom input:**
+   The user fills out an intuitive web form with symptoms and background information.
+
+2. **Decoupled inference engine:**
+   The backend first evaluates IF-THEN rules (editable in JSON). If a rule matches, it returns the diagnosis and a clear medical explanation.
+
+3. **Machine Learning backup:**
+   If no rule matches, an ML model (DecisionTree) predicts the diagnosis and explains the analyzed symptoms.
+
+4. **Explainability:**
+   The user always sees the justification for the diagnosis, whether by rules or ML.
+
+5. **Rule management:**
+   Rules can be viewed, added, and edited from the interface, without touching the code.
+
+---
+
+## Knowledge Representation
+- **Expert Rules:** Editable and decoupled IF-THEN JSON format (`src/knowledge_base/reglas.json`).
+- **ML Model:** Decision tree trained with synthetic cases to cover complex scenarios.
+
+---
+
+## 🛠️ Professional Architecture
+
+- **Backend:** Python + Flask, decoupled inference engine, RESTful API, ML integration.
+- **Frontend:** Next.js + Tailwind CSS, responsive components, clear and professional visualization.
+- **Explainability:** Detailed explanation of each diagnosis, user-friendly rule/result visualization.
+
+```mermaid
+graph LR
+    A[Patient Symptoms] --> B[Hybrid Engine]
+    B --> C[ML: DecisionTree]
+    B --> D[Expert Rules]
+    C --> E[ML Prediction]
+    D --> F[Rule-based Diagnosis]
+    E --> G[Final Diagnosis]
+    F --> G
+    G --> H[Detailed Explanation]
+```
+
+---
+
+## 📁 Project Structure
+
+```
+Politecnico_Sistema_Experto/
+├── README.md
+├── requirements.txt
+├── docs/
+├── src/
+│   ├── knowledge_base/
+│   │   └── reglas.json
+│   ├── engine/
+│   │   └── motor_inferencia.py
+│   ├── ml_model/
+│   │   └── predict_model.py
+│   └── webapp/
+│       └── app.py
+├── frontend/
+│   └── ... (components, pages and responsive styles)
+└── ...
+```
+
+---
+
+## Installation & Usage
+
+### Backend
+```bash
+pip install -r requirements.txt
+python -m src.webapp.app
+```
+
+### Frontend
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+### Tests
+```bash
+pytest tests/
+```
+
+---
+
+## RESTful Endpoints
+
+- `POST /diagnostico` — Receives symptoms, returns diagnosis and explanation (triggered rule or ML prediction).
+- `GET /reglas` — Lists all IF-THEN rules.
+- `POST /reglas` — Adds a new rule to the knowledge base.
+
+---
+
+## Rule Management & Editing
+
+- IF-THEN rules can be easily edited from the interface or via API.
+- The inference engine evaluates rules from JSON, allowing maintenance and scalability without touching the code.
+- The interface allows adding rules in natural language and clear visualization.
+
+---
+
+## Responsive & Accessibility
+
+- Interface optimized for mobile, tablet, and desktop.
+- Adaptive components and forms, soft colors and high contrast.
+- Large, accessible, and user-friendly navigation and buttons.
+
+---
+
+## Documentation & Support
+
+- See the `docs/` folder for academic details, justification, and annexes.
+- The system is ready for professional delivery, defense, and future expansion.
+
+---
+
+## Built by Ever Loza ([never130](https://github.com/never130)) — Software & AI Developer
+
+Portfolio: [everloza-porfolio.netlify.app](https://everloza-porfolio.netlify.app)
+
+---
+
+# 2# Sistema Experto para el Diagnóstico de Enfermedades Respiratorias
 **Autor:** Ever Loza – Centro Politécnico Superior Malvinas Argentinas
 
 ## Objetivo
@@ -56,8 +192,8 @@ graph LR
 ```
 Politecnico_Sistema_Experto/
 ├── README.md
-├── requisitos.txt
-├── documentacion/
+├── requirements.txt
+├── docs/
 ├── src/
 │   ├── knowledge_base/
 │   │   └── reglas.json
@@ -126,3 +262,7 @@ pytest tests/
 - El sistema está listo para entrega profesional, defensa y ampliación futura.
 
 ---
+
+## Built by Ever Loza ([never130](https://github.com/never130)) — Software & AI Developer
+
+Portafolio: [everloza-porfolio.netlify.app](https://everloza-porfolio.netlify.app)

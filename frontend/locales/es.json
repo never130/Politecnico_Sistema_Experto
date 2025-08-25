@@ -1,0 +1,117 @@
+{
+  "title": "Sistema Experto - Diagnóstico Respiratorio",
+  "description": "Sistema experto para el diagnóstico de enfermedades respiratorias en Tierra del Fuego",
+  "form": {
+    "header": "Complete el formulario para obtener el diagnóstico",
+    "fiebre": "Fiebre (°C):",
+    "tos": "Tos:",
+    "dolor_toracico": "Dolor torácico:",
+    "falta_de_aire": "Falta de aire (disnea):",
+    "sibilancias": "¿Silbido al respirar (sibilancias)?",
+    "pecho_apretado": "¿Sensación de pecho apretado?",
+    "malestar_general": "¿Malestar general / cansancio?",
+    "confusion": "¿Confusión / desorientación?",
+    "edad": "Edad:",
+    "fumador": "Hábito de fumar:",
+    "antecedentes_asma": "¿Antecedentes de asma?",
+    "antecedentes_alergias": "¿Antecedentes de alergias/rinitis?",
+    "obtener": "Obtener diagnóstico",
+    "obteniendo": "Obteniendo diagnóstico...",
+    "select": "Seleccione",
+    "error_fetching": "Error al obtener diagnóstico",
+    "options": {
+      "tos": {
+        "seca": "Seca",
+        "con_flema_transparente_verdosa": "Con flema transparente/verdosa",
+        "con_flema_purulenta_sangre": "Con flema purulenta/sangre",
+        "ninguna": "Ninguna"
+      },
+      "dolor_toracico": {
+        "ninguno": "Ninguno",
+        "molestia_leve": "Molestia leve",
+        "puntada_al_respirar": "Puntada al respirar/toser"
+      },
+      "falta_de_aire": {
+        "ninguna": "Ninguna",
+        "repentina": "Repentina",
+        "empeora_con_anios": "Empeora con los años",
+        "al_caminar_rapido": "Al caminar rápido",
+        "agotado": "Agotado/en reposo"
+      },
+      "fumador": {
+        "no": "No fumador",
+        "ex_fumador": "Ex-fumador",
+        "si_activo": "Fumador activo",
+        "de_toda_la_vida": "Fumador de toda la vida"
+      }
+    }
+  },
+  "result": {
+    "title": "Resultado del Diagnóstico",
+    "analyzing": "Analizando síntomas...",
+    "applying": "Aplicando conocimiento experto",
+    "recommendation": "Recomendación",
+    "new_consultation": "Nueva Consulta",
+    "empty": "Complete el formulario para obtener un diagnóstico",
+    "error": "Error:",
+    "severity_label": "Gravedad:",
+    "severity_values": {
+      "grave": "Grave",
+      "moderado": "Moderado",
+      "leve": "Leve"
+    },
+    "recommendations": {
+      "grave": "🚨 Busque atención médica inmediata. Diríjase al centro de salud más cercano.",
+      "moderado": "⚠️ Se recomienda consultar con un profesional de la salud para confirmar el diagnóstico.",
+      "leve": "✅ Generalmente manejable con cuidados caseros. Consulte si los síntomas empeoran."
+    }
+  },
+  "home": {
+    "title": "Sistema Experto para Diagnóstico Respiratorio",
+    "subtitle": "Basado en el conocimiento de un agente experto",
+    "location": "Tierra del Fuego, Argentina",
+    "card": {
+      "primary": { "title": "Atención Primaria", "desc": "Apoyo a la toma de decisiones" },
+      "count": { "title": "7 Enfermedades", "desc": "Sistema experto completo" },
+      "accuracy": { "title": "95% Precisión", "desc": "Basado en ML + Reglas" }
+    }
+  ,"illustration_alt": "Ilustración médica"
+  },
+  "rules": {
+    "etiquetas": {
+      "fiebre": "Fiebre (°C)",
+      "tos": "Tos",
+      "dolor_toracico": "Dolor torácico",
+      "falta_de_aire": "Falta de aire (disnea)",
+      "sibilancias": "¿Silbido al respirar (sibilancias)?",
+      "pecho_apretado": "¿Sensación de pecho apretado?",
+      "malestar_general": "¿Malestar general / cansancio?",
+      "confusion": "¿Confusión / desorientación?",
+      "edad": "Edad",
+      "fumador": "Hábito de fumar",
+      "antecedentes_asma": "¿Antecedentes de asma?",
+      "antecedentes_alergias": "¿Antecedentes de alergias/rinitis?"
+    },
+    "loading": "Cargando reglas...",
+    "loading_error": "Error al cargar reglas",
+    "add_success": "Regla agregada exitosamente",
+    "add_error": "Error al agregar regla",
+    "add": "Agregar Regla",
+    "select_severity": "Seleccionar gravedad",
+    "labels": { "diagnostico": "Diagnóstico:", "gravedad": "Gravedad:", "explicacion": "Explicación:" },
+    "placeholders": { "fiebre": "Fiebre (ej: 38.5)" },
+  "fiebre_example_age": "Edad (ej: 45)",
+    "severity": "Gravedad",
+    "severity_values": { "leve": "Leve", "moderado": "Moderado", "grave": "Grave" },
+    "op": { "eq": "es igual a", "gt": "mayor que", "lt": "menor que", "in": "en" }
+  },
+  "common": { "yes": "Sí", "no": "No", "and": "Y", "or": "o" },
+  "footer": {
+    "title": "Sistema Experto Respiratorio",
+    "location": "Tierra del Fuego, Argentina",
+    "developed_by": "Desarrollado por",
+    "portfolio": "🌐 Portfolio",
+    "project": "Desarrollo de Sistema de IA",
+    "institution": "Politécnico Malvinas Argentinas"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "title": "Expert System - Respiratory Diagnosis",
+  "description": "Expert system for diagnosing respiratory diseases in Tierra del Fuego",
+  "form": {
+    "header": "Complete the form to get a diagnosis",
+    "fiebre": "Fever (°C):",
+    "tos": "Cough:",
+    "dolor_toracico": "Chest pain:",
+    "falta_de_aire": "Shortness of breath (dyspnea):",
+    "sibilancias": "Wheezing?",
+    "pecho_apretado": "Tight chest?",
+    "malestar_general": "General discomfort / tiredness?",
+    "confusion": "Confusion / disorientation?",
+    "edad": "Age:",
+    "fumador": "Smoking habit:",
+    "antecedentes_asma": "History of asthma?",
+    "antecedentes_alergias": "History of allergies/rhinitis?",
+    "obtener": "Get diagnosis",
+    "obteniendo": "Obtaining diagnosis...",
+    "select": "Select",
+    "error_fetching": "Error fetching diagnosis",
+    "options": {
+      "tos": {
+        "seca": "Dry",
+        "con_flema_transparente_verdosa": "With clear/greenish phlegm",
+        "con_flema_purulenta_sangre": "With purulent/bloody phlegm",
+        "ninguna": "None"
+      },
+      "dolor_toracico": {
+        "ninguno": "None",
+        "molestia_leve": "Mild discomfort",
+        "puntada_al_respirar": "Sharp pain when breathing/coughing"
+      },
+      "falta_de_aire": {
+        "ninguna": "None",
+        "repentina": "Sudden",
+        "empeora_con_anios": "Worsens with years",
+        "al_caminar_rapido": "When walking fast",
+        "agotado": "At rest / exhausted"
+      },
+      "fumador": {
+        "no": "Non-smoker",
+        "ex_fumador": "Ex-smoker",
+        "si_activo": "Active smoker",
+        "de_toda_la_vida": "Lifetime smoker"
+      }
+    }
+  },
+  "result": {
+    "title": "Diagnosis Result",
+    "analyzing": "Analyzing symptoms...",
+    "applying": "Applying expert knowledge",
+    "recommendation": "Recommendation",
+    "new_consultation": "New Consultation",
+    "empty": "Complete the form to get a diagnosis",
+    "error": "Error:",
+    "severity_label": "Severity:",
+    "severity_values": {
+      "grave": "Severe",
+      "moderado": "Moderate",
+      "leve": "Mild"
+    },
+    "recommendations": {
+      "grave": "🚨 Seek immediate medical attention. Go to the nearest health center.",
+      "moderado": "⚠️ It is recommended to consult a healthcare professional to confirm the diagnosis.",
+      "leve": "✅ Generally manageable with home care. Consult if symptoms worsen."
+    }
+  },
+  "home": {
+    "title": "Respiratory Expert System",
+    "subtitle": "Based on expert knowledge",
+    "location": "Tierra del Fuego, Argentina",
+    "card": {
+      "primary": { "title": "Primary Care", "desc": "Decision support" },
+      "count": { "title": "7 Conditions", "desc": "Complete expert system" },
+      "accuracy": { "title": "95% Accuracy", "desc": "Based on ML + Rules" }
+    }
+  ,"illustration_alt": "Medical illustration"
+  },
+  "rules": {
+    "etiquetas": {
+      "fiebre": "Fever (°C)",
+      "tos": "Cough",
+      "dolor_toracico": "Chest pain",
+      "falta_de_aire": "Shortness of breath (dyspnea)",
+      "sibilancias": "Wheezing?",
+      "pecho_apretado": "Tight chest?",
+      "malestar_general": "General discomfort / tiredness?",
+      "confusion": "Confusion / disorientation?",
+      "edad": "Age",
+      "fumador": "Smoking habit",
+      "antecedentes_asma": "History of asthma?",
+      "antecedentes_alergias": "History of allergies/rhinitis?"
+    },
+    "loading": "Loading rules...",
+    "loading_error": "Error loading rules",
+    "add_success": "Rule added successfully",
+    "add_error": "Error adding rule",
+    "add": "Add Rule",
+    "select_severity": "Select severity",
+    "labels": { "diagnostico": "Diagnosis:", "gravedad": "Severity:", "explicacion": "Explanation:" },
+    "placeholders": { "fiebre": "Fever (e.g. 38.5)" },
+  "fiebre_example_age": "Age (e.g. 45)",
+    "severity": "Severity",
+    "severity_values": { "leve": "Mild", "moderado": "Moderate", "grave": "Severe" },
+    "op": { "eq": "is equal to", "gt": "greater than", "lt": "less than", "in": "in" }
+  },
+  "common": { "yes": "Yes", "no": "No", "and": "and", "or": "or" },
+  "footer": {
+    "title": "Respiratory Expert System",
+    "location": "Tierra del Fuego, Argentina",
+    "developed_by": "Developed by",
+    "portfolio": "🌐 Portfolio",
+    "project": "AI System Development",
+    "institution": "Politécnico Malvinas Argentinas"
+  }
+}

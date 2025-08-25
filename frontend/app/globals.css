@@ -1,49 +1,88 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Nunito:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
 @layer base {
   html {
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: 'Nunito', 'Poppins', 'Inter', system-ui, sans-serif;
+    letter-spacing: 0.01em;
+    font-feature-settings: "ss01" on, "ss02" on;
+  }
+  h1, .h1 {
+    font-family: 'Poppins', 'Nunito', 'Inter', system-ui, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  h2, .h2 {
+    font-family: 'Nunito', 'Poppins', 'Inter', system-ui, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  h3, .h3 {
+    font-family: 'Nunito', 'Poppins', 'Inter', system-ui, sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+  h4, .h4 {
+    font-family: 'Nunito', 'Inter', system-ui, sans-serif;
+    font-weight: 600;
+  }
+  body {
+  @apply bg-white text-neutral-900;
+    font-size: 1.05rem;
+    font-family: 'Nunito', 'Poppins', 'Inter', system-ui, sans-serif;
+  }
+  .dark body {
+  background: #15202b; /* azul marino X-like */
+  color: #ffffff;
+  }
+  strong, b {
+    font-family: 'Poppins', 'Nunito', 'Inter', system-ui, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+  }
+  em, i {
+    font-family: 'Nunito', 'Inter', system-ui, sans-serif;
+    font-style: italic;
   }
 }
 
 @layer components {
   .medical-card {
-    @apply bg-white rounded-lg sm:rounded-xl shadow-medical border border-gray-100;
+    @apply bg-white dark:bg-[#15202b] rounded-xl border border-gray-200 dark:border-[#22303c] shadow-sm;
+    transition: background 0.3s, border 0.3s;
   }
   
   .medical-input {
-    @apply w-full px-3 py-2 sm:px-4 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-medical-500 focus:border-transparent transition-all duration-200 text-sm sm:text-base;
+    @apply w-full px-3 py-2 sm:px-4 sm:py-3 border border-gray-300 dark:border-[#22303c] rounded-lg focus:ring-2 focus:ring-[#1da1f2] focus:border-transparent transition-all duration-200 text-sm sm:text-base bg-white dark:bg-[#22303c] dark:text-white placeholder-gray-400 dark:placeholder-neutral-500;
   }
   
   .medical-select {
-    @apply w-full px-3 py-2 sm:px-4 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-medical-500 focus:border-transparent transition-all duration-200 bg-white text-sm sm:text-base;
+    @apply w-full px-3 py-2 sm:px-4 sm:py-3 border border-gray-300 dark:border-[#22303c] rounded-lg focus:ring-2 focus:ring-[#1da1f2] focus:border-transparent transition-all duration-200 bg-white dark:bg-[#22303c] text-sm sm:text-base dark:text-white placeholder-gray-400 dark:placeholder-neutral-500;
   }
   
   .medical-button {
-    @apply bg-gradient-to-r from-medical-500 to-medical-600 text-white px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-medium transform hover:scale-105 transition-all duration-200 shadow-lg text-sm sm:text-base;
-  }
-  
-  .medical-button:hover {
-    @apply from-medical-600 to-medical-700;
+    /* boton plano celeste, mismo en claro y oscuro */
+    @apply text-white px-6 py-3 sm:px-8 sm:py-4 rounded-lg font-bold transform hover:scale-100 transition-all duration-150 text-sm sm:text-base tracking-wide shadow-sm focus:outline-none;
+    background-color: #1da1f2;
+    letter-spacing: 0.03em;
   }
   
   .medical-badge {
-    @apply inline-flex items-center px-2 py-1 sm:px-3 sm:py-1 rounded-full text-xs sm:text-sm font-medium;
+    @apply inline-flex items-center px-2 py-1 sm:px-3 sm:py-1 rounded text-xs sm:text-sm font-bold border shadow-none;
+    border-color: #1da1f2;
+    color: #1da1f2;
+    background: transparent;
+    letter-spacing: 0.02em;
   }
   
-  .severity-grave {
-    @apply bg-red-100 text-red-800;
-  }
-  
-  .severity-moderado {
-    @apply bg-yellow-100 text-yellow-800;
-  }
-  
-  .severity-leve {
-    @apply bg-green-100 text-green-800;
+  /* Usamos una sola tonalidad para sev/etiquetas: celeste */
+  .severity-grave, .severity-moderado, .severity-leve {
+    @apply border rounded px-2 py-0.5 text-xs font-semibold;
+    border-color: #1da1f2;
+    color: #1da1f2;
+    background: transparent;
   }
 }

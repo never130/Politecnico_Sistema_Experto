@@ -24,17 +24,31 @@ export default function ThemeToggle() {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
-      <div className="hidden sm:block">
-        <LanguageSwitcher />
+    <>
+      {/* Desktop: top-right pill with language + theme */}
+      <div className="hidden sm:flex fixed top-6 right-6 z-50 items-center gap-3 bg-white/70 dark:bg-slate-900/70 backdrop-blur rounded-full px-3 py-1 shadow-md border border-slate-200 dark:border-slate-700">
+        <LanguageSwitcher compact />
+        <button
+          aria-label={dark ? 'Switch to light mode' : 'Switch to dark mode'}
+          onClick={toggleTheme}
+          className="ml-2 bg-[#1da1f2] text-white rounded-full p-2 shadow hover:bg-[#1a8cd8] transition-colors duration-150"
+        >
+          <span className="sr-only">Toggle theme</span>
+          {dark ? '🌙' : '☀️'}
+        </button>
       </div>
-      <button
-        aria-label={dark ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro'}
-        onClick={toggleTheme}
-        className="bg-[#1da1f2] text-white rounded-full p-3 shadow-lg hover:bg-[#1a8cd8] transition-all duration-200"
-      >
-        {dark ? '🌙' : '☀️'}
-      </button>
-    </div>
+
+      {/* Mobile: floating button bottom-right */}
+      <div className="sm:hidden fixed bottom-6 right-6 z-50 flex flex-col items-end gap-3">
+        <LanguageSwitcher compact />
+        <button
+          aria-label={dark ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro'}
+          onClick={toggleTheme}
+          className="bg-[#1da1f2] text-white rounded-full p-3 shadow-lg hover:bg-[#1a8cd8] transition-all duration-200"
+        >
+          {dark ? '🌙' : '☀️'}
+        </button>
+      </div>
+    </>
   );
 }

@@ -92,6 +92,12 @@
       "antecedentes_asma": "History of asthma?",
       "antecedentes_alergias": "History of allergies/rhinitis?"
     },
+  "header": "System rules",
+  "howto_title": "How to create a rule:",
+  "howto_desc": "Fill the fields and define the condition that must be met for the rule to trigger",
+  "add_rule_button": "Add rule",
+  "howto_apply": "The new rule will be applied immediately and available for future queries.",
+  "example": "Example: if 'cough' is 'With purulent phlegm' and fever > 38 → Diagnosis: Pneumonia (Severe).",
     "loading": "Loading rules...",
     "loading_error": "Error loading rules",
     "add_success": "Rule added successfully",

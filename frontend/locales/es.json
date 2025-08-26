@@ -92,6 +92,12 @@
       "antecedentes_asma": "¿Antecedentes de asma?",
       "antecedentes_alergias": "¿Antecedentes de alergias/rinitis?"
     },
+  "header": "Reglas del sistema",
+  "howto_title": "Cómo crear una regla:",
+  "howto_desc": "Complete los campos y defina la condición que debe cumplirse para activar la regla",
+  "add_rule_button": "Agregar regla",
+  "howto_apply": "La nueva regla se aplicará inmediatamente y quedará disponible para futuras consultas.",
+  "example": "Ejemplo: si 'tos' es 'Con flema purulenta' y fiebre > 38 → Diagnóstico: Neumonía (Grave).",
     "loading": "Cargando reglas...",
     "loading_error": "Error al cargar reglas",
     "add_success": "Regla agregada exitosamente",

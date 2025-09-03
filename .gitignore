@@ -35,3 +35,7 @@ Thumbs.db
 Thumbs.db
 docs/
 docs/
+.env
+*.env.production
+.env.production
+DEPLOY.md
